@@ -1,1659 +1,0 @@
-Script started on 2024-01-02 12:37:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[36ml[39m[36ml[39m[38;2;153;153;153ms[39m[36ml[36ms[39m[?1l>[?2004l
-README.md  terminal.txt
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit commit -m "criado a rota para adicionar novos projetos"[39m[58D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [56D[38;2;153;153;153m commit -m "criado a rota para adicionar novos projetos"[39m[56D[39m[4mg[39m[4mi[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [57D[38;2;153;153;153mt commit -m "criado a rota para adicionar novos projetos"[39m[57D[4mg[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [58D[4mg[24m[38;2;153;153;153mit commit -m "criado a rota para adicionar novos projetos"[39m[58D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [59D[4mm[24m[4mm[24m[38;2;153;153;153mysql-workbench[39m
-[K[A[5C[4mm[39m[4mk[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [1B[K[A[6C[38;2;153;153;153mdir portfolio[39m[13D[4mm[4mk[39m[4md[24m[4md[39m[4mi[24m[24m[36mm[24m[36mk[24m[36md[24m[36mi[36mr[39m[39m [39mf[39m [39m [39m [39m [39m [39m [39m [39m [8Drontend bacjk  kand[?1l>[?2004l[1B                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[36ml[39m[36ml[39m[38;2;153;153;153ms[39m[36ml[36ms[39m[?1l>[?2004l
-[0m[01;34mbackand[0m  [01;34mfrontend[0m  README.md  terminal.txt
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md frontend[39m[10D[4mc[39m[4mo[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153mde[39m[4mc[4mo[39m[4md[24m[24m[36mc[24m[36mo[24m[36md[36me[39m[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mm[24m[4mm[24m[38;2;153;153;153mkdir frontend backand[39m[21D[24m[36mm[36mv[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[38;2;153;153;153m ~/.config/google-chrome ~/.config/google-chrome-backup[39m
-[38;2;153;153;153mgoogle-chrome[39m[K
-[K[A[A[6C[39m [2B[K[A[A[7C[39m[1m[7mb[39m[1m[7ma[39m[1m[7mc[39m[1m[7mk[39m[1m[7ma[39m[1m[7mn[39m[1m[7md[0m[27m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [1B[K[1B[K[A[A[14C[27m[1mb[27m[1ma[27m[1mc[27m[1mk[27m[1ma[27m[1mn[27m[1md[0m[1C[1C [1m[7mbackand[0m[27m[27m[1mb[27m[1ma[27m[1mc[27m[1mk[27m[1ma[27m[1mn[27m[1md[0m[0mb[0ma[0mc[0mk[0mn[0md[0m end[?1l>[?2004l[1B                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[36ml[39m[36ml[39m[38;2;153;153;153ms[39m[36ml[36ms[39m[?1l>[?2004l
-[0m[01;34mbackend[0m  [01;34mfrontend[0m  README.md  terminal.txt
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153mode[39m[24m[36mc[36md[39m[39m [39m [38;2;153;153;153m frontend[39m[9D[39m [39m[1mb[0m[39m [39m [39m [39m [39m [39m [39m [1mb[1ma[0m[1ma[1mc[0m[1mc[1mk[0m[1mk[1me[0m[1me[1mn[0m[1mn[1md[0m[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca/backend
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca/backend[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mt[24m[4mt[24m[38;2;153;153;153mop[39m[4mt[39m[4mo[24m[4mt[4mo[39m[4mu[24m[4mu[4mc[24m[24m[36mt[24m[36mo[24m[36mu[24m[36mc[36mh[39m app.js server.js[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca/backend
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca/backend[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md backend[39m[9D[24m[36mc[36md[39m[39m [39m[1m.[0m[39m [39m [39m [39m [39m [39m [38;2;153;153;153m.[39m[1m.[39m[1m.[0m[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[36ml[39m[36ml[39m[38;2;153;153;153ms[39m[36ml[36ms[39m[?1l>[?2004l
-[0m[01;34mbackend[0m  [01;34mfrontend[0m  README.md  terminal.txt
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mn[24m[4mn[24m[38;2;153;153;153mpm start[39m[8D[4mn[39m[4mp[24m[24m[36mn[24m[36mp[36mm[39m[39m [39mi[39m [39m [39m [39m [38;2;153;153;153mnstall axios[39m[12D[39mn[39mi[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153mt -y[39m[39mt[39m [39m [39m [?1l>[?2004l
-This utility will walk you through creating a package.json file.
-It only covers the most common items, and tries to guess sensible defaults.
-
-See `npm help init` for definitive documentation on these fields
-and exactly what they do.
-
-Use `npm install <pkg>` afterwards to install a package and
-save it as a dependency in the package.json file.
-
-Press ^C at any time to quit.
-[1G[0Jpackage name: (bigbanca) [26Ge[1G[0Jpackage name: (bigbanca) [26GLoja Virtual
-Sorry, name can only contain URL-friendly characters and name can no longer contain capital letters.
-[1G[0Jpackage name: (bigbanca) [26G
-[1G[0Jversion: (1.0.0) [18G
-[1G[0Jdescription: [14G
-[1G[0Jentry point: (index.js) [25Gbackend/server.js
-[1G[0Jtest command: [15G
-[1G[0Jgit repository: (https://github.com/DiSerafim/bigbanca.git) [61G
-[1G[0Jkeywords: [11G
-[1G[0Jauthor: [9GDiego Serafim de Sousa
-[1G[0Jlicense: (ISC) [16G
-About to write to /home/diserafim/Github/bigbanca/package.json:
-
-{
-  "name": "bigbanca",
-  "version": "1.0.0",
-  "description": "Loja Virtual",
-  "main": "backend/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DiSerafim/bigbanca.git"
-  },
-  "author": "Diego Serafim de Sousa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DiSerafim/bigbanca/issues"
-  },
-  "homepage": "https://github.com/DiSerafim/bigbanca#readme"
-}
-
-
-[1G[0JIs this OK? (yes) [19G
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mn[24m[4mn[24m[38;2;153;153;153mpm init[39m[4mn[39m[4mp[24m[24m[36mn[24m[36mp[36mm[39m[39m [39mi[39mn[39ms[39m [38;2;153;153;153mtall axios[39m[10D[39mt[39ma[39ml[39ml[39m [39me[39m [39m [39m [39m [38;2;153;153;153mxpress[39m[39mx[39mp[39mr[39me[39ms[39ms mongoose dotenv[?1l>[?2004l
-[?25l([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠋ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:bigbanca: [7msill[0m [35midealTree[0m buildDeps[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:bigbanca: [32;40mtiming[0m [35midealTree:#root[0m Completed in[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠸ idealTree:send: [7msill[0m [35mplaceDep[0m ROOT ms@2.0.0 OK for: debu[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠼ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m######[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:mongoose: [32;40mtiming[0m [35midealTree:node_modules/mongoo[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠙ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠹ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠇ idealTree:send: [32;40mtiming[0m [35midealTree:node_modules/send[0m Compl[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠦ idealTree: [32;40mtiming[0m [35midealTree[0m Completed in 9543ms[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠏ reify:dotenv: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ reify:dotenv: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ reify:dotenv: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ reify:dotenv: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m#########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠧ reify:dotenv: [7msill[0m [35maudit[0m bulk request {[0m[K([107;97m##########[0m[100;90m⠂⠂⠂⠂⠂⠂⠂⠂[0m) ⠴ reify:array-flatten: [32;40mtiming[0m [35mreifyNode:node_modules/mquer[0m[K([107;97m##############[0m[100;90m⠂⠂⠂⠂[0m) ⠧ reify:safer-buffer: [32;40mtiming[0m [35mreifyNode:node_modules/has-pr[0m[K([107;97m################[0m[100;90m⠂⠂[0m) ⠇ reify:debug: [32;40mtiming[0m [35mreifyNode:node_modules/body-parser[0m C[0m[K([107;97m#################[0m[100;90m⠂[0m) ⠏ reify:@mongodb-js/saslprep: [32;40mtiming[0m [35mreifyNode:node_module[0m[K([107;97m##################[0m) ⠧ reify:sift: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.or[0m[K([107;97m##################[0m) ⠧ reify:sift: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.or[0m[K([107;97m##################[0m) ⠧ reify:sift: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.or[0m[K([107;97m##################[0m) ⠏ reify:bson: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.or[0m[K([107;97m##################[0m) ⠏ reify:bson: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs.or[0m[K([107;97m##################[0m) ⠙ reify:@types/node: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.n[0m[K([107;97m##################[0m) ⠼ reify:mongodb: [32;40mhttp[0m [35mfetch[0m GET 200 https://registry.npmjs[0m[K[K[?25h
-added 85 packages, and audited 86 packages in 11s
-
-13 packages are looking for funding
-  run `npm fund` for details
-
-found [32m[1m0[22m[39m vulnerabilities
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit commit -m "criado a rota para adicionar novos projetos"[39m[58D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39md[38;2;153;153;153mc[38;2;153;153;153mo[38;2;153;153;153mm[38;2;153;153;153mm[38;2;153;153;153mi[38;2;153;153;153mt[38;2;153;153;153m [38;2;153;153;153m-[38;2;153;153;153mm[38;2;153;153;153m [38;2;153;153;153m"[38;2;153;153;153mc[38;2;153;153;153mr[38;2;153;153;153mi[38;2;153;153;153ma[38;2;153;153;153md[38;2;153;153;153mo[38;2;153;153;153m [38;2;153;153;153ma[38;2;153;153;153m [38;2;153;153;153mr[38;2;153;153;153mo[38;2;153;153;153mt[38;2;153;153;153ma[38;2;153;153;153m [38;2;153;153;153mp[38;2;153;153;153ma[38;2;153;153;153mr[38;2;153;153;153ma[38;2;153;153;153m [38;2;153;153;153ma[38;2;153;153;153md[38;2;153;153;153mi[38;2;153;153;153mc[38;2;153;153;153mi[38;2;153;153;153mo[38;2;153;153;153mn[38;2;153;153;153ma[38;2;153;153;153mr[38;2;153;153;153m [38;2;153;153;153mn[38;2;153;153;153mo[38;2;153;153;153mv[38;2;153;153;153mo[38;2;153;153;153ms[38;2;153;153;153m [38;2;153;153;153mp[38;2;153;153;153mr[38;2;153;153;153mo[38;2;153;153;153mj[38;2;153;153;153me[38;2;153;153;153mt[38;2;153;153;153mo[38;2;153;153;153ms[38;2;153;153;153m"[39m[55D[39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [54D  [38;2;153;153;153mcommit -m "criado a rota para adicionar novos projetos"[39m[55D[39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [54D[38;2;153;153;153mtatus[39m[39mt[39ma[39mt[39mu[39ms[?1l>[?2004l
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	[31mbackend/[m
-	[31mnode_modules/[m
-	[31mpackage-lock.json[m
-	[31mpackage.json[m
-	[31mterminal.txt[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit status[39m[9D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39m[1mb[0m[39m [39m [39m [39m [39m [38;2;153;153;153mranch[39m[0mb[39mr[39ma[39mn[39mc[39mh[?1l>[?2004l
-[?1h=* [32mmain[m[m
-[K[?1l>                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit branch[39m[9D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39ma[39m [39m [39m [39m [39m [38;2;153;153;153mdd .[39m[39md[39md[39m [39m[1m.[0m[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit add .[39m[8D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39mc[39m [39m [39m [39m [38;2;153;153;153mommit -m "criado a rota para adicionar novos projetos"[39m[54D[39mo[39mm[39mm[39mi[39mt[39m [39m0[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [47D [38;2;153;153;153m-m "criado a rota para adicionar novos projetos"[39m[48D[32m-[39m[32m-[32mm[39m[39m [33m"[39m[33m"[33m"[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [43D[33mc[33m"[39m[33mr[33m"[39m[33mi[33m"[39m[33ma[33m"[39m[33md[33m"[39m[33ma[33m"[39m[33m [33m"[39m[33mp[33m"[39m[33ma[33m"[39m[33ms[33m"[39m[33mt[33m"[39m[33ma[33m"[39m[33m [33m"[39m[33m"[39m[39m [33ms[33m"[39m[33m [33m"[39m[33mf[33m"[39m[33mr[33m"[39m[33mn[33m"[39m[33m"[39m[39m [33mo[33m"[39m[33mt[33m"[39m[33m"[39m[39m [33mn[33m"[39m[33mt[33m"[39m[33m [33m"[39m[33me[33m"[39m[33mn[33m"[39m[33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33mt[33m"[39m[33me[33m"[39m[33mn[33m"[39m[33md[33m"[39m[33m,[33m"[39m[33m [33m"[39m[33mb[33m"[39m[33ma[33m"[39m[33mc[33m"[39m[33mk[33m"[39m[33me[33m"[39m[33mn[33m"[39m[33md[33m"[39m[33m [33m"[39m[33me[33m"[39m[33m [33m"[39m[33mn[33m"[39m[33mp[33m"[39m[33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m [33m"[39m[33mi[33m"[39m[33mn[33m"[39m[33mi[33m"[39m[33mc[33m"[39m[33ma[33m"[39m[33m"[39m[39m [33mi[33m"[39m[33ma[33m"[39m[33m [33m"[39m[33md[33m"[39m[33m"[39m[39m [33m"[39m[39m [33md[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33mo[33m"[39m[33m [33m"[39m[33m'[33m"[39m[33m'[33m"[39m[33mn[33m'[33m"[39m[33mm[33m'[33m"[39m[33mp[33m'[33m"[39m[33m'[33m"[39m[39m [33m'[33m"[39m[39m [33mp[33m'[33m"[39m[33mm[33m'[33m"[39m[33m [33m'[33m"[39m[33mi[33m'[33m"[39m[33mn[33m'[33m"[39m[33mi[33m'[33m"[39m[33mt[33m'[33m"[39m[1C[33m,[33m"[39m[33m [33m"[39m[33mi[33m"[39m[33mn[33m"[39m[33ms[33m"[39m [K[A[79C[1B[K[A[79C[33mt[33m"[39m[33ma[33m"[39m[33ma[33ml[33m"[39m[33ma[33m"[39m[33md[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33me[33m"[39m[33mx[33m"[39m[33mp[33m"[39m[33mr[33m"[39m[33me[33m"[39m[33ms[33m"[39m[33ms[33m"[39m[33m,[33m"[39m[33m [33m"[39m[33mm[33m"[39m[33mo[33m"[39m[33mn[33m"[39m[33mg[33m"[39m[33mo[33m"[39m[33mo[33m"[39m[33ms[33m"[39m[33me[33m"[39m[33m,[33m"[39m[33m [33m"[39m[33md[33m"[39m[33mo[33m"[39m[33mt[33m"[39m[33me[33m"[39m[33mn[33m"[39m[33mv[33m"[39m[?1l>[?2004l
-[main 3779c7f] criada pastas frontend, backend e iniciado o 'npm init', instalado express, mongoose, dotenv
- 1522 files changed, 333838 insertions(+)
- create mode 100644 backend/app.js
- create mode 100644 backend/server.js
- create mode 120000 node_modules/.bin/mime
- create mode 100644 node_modules/.package-lock.json
- create mode 100644 node_modules/@mongodb-js/saslprep/LICENSE
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/.esm-wrapper.mjs
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-data.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-data.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-data.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-data.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-src.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-src.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-src.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/code-points-src.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/generate-code-points.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/generate-code-points.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/generate-code-points.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/generate-code-points.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/index.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/index.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/index.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/index.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/memory-code-points.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/memory-code-points.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/memory-code-points.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/memory-code-points.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/util.d.ts
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/util.d.ts.map
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/util.js
- create mode 100644 node_modules/@mongodb-js/saslprep/dist/util.js.map
- create mode 100644 node_modules/@mongodb-js/saslprep/package.json
- create mode 100644 node_modules/@mongodb-js/saslprep/readme.md
- create mode 100644 node_modules/@types/node/LICENSE
- create mode 100644 node_modules/@types/node/README.md
- create mode 100644 node_modules/@types/node/assert.d.ts
- create mode 100644 node_modules/@types/node/assert/strict.d.ts
- create mode 100644 node_modules/@types/node/async_hooks.d.ts
- create mode 100644 node_modules/@types/node/buffer.d.ts
- create mode 100644 node_modules/@types/node/child_process.d.ts
- create mode 100644 node_modules/@types/node/cluster.d.ts
- create mode 100644 node_modules/@types/node/console.d.ts
- create mode 100644 node_modules/@types/node/constants.d.ts
- create mode 100644 node_modules/@types/node/crypto.d.ts
- create mode 100644 node_modules/@types/node/dgram.d.ts
- create mode 100644 node_modules/@types/node/diagnostics_channel.d.ts
- create mode 100644 node_modules/@types/node/dns.d.ts
- create mode 100644 node_modules/@types/node/dns/promises.d.ts
- create mode 100644 node_modules/@types/node/dom-events.d.ts
- create mode 100644 node_modules/@types/node/domain.d.ts
- create mode 100644 node_modules/@types/node/events.d.ts
- create mode 100644 node_modules/@types/node/fs.d.ts
- create mode 100644 node_modules/@types/node/fs/promises.d.ts
- create mode 100644 node_modules/@types/node/globals.d.ts
- create mode 100644 node_modules/@types/node/globals.global.d.ts
- create mode 100644 node_modules/@types/node/http.d.ts
- create mode 100644 node_modules/@types/node/http2.d.ts
- create mode 100644 node_modules/@types/node/https.d.ts
- create mode 100644 node_modules/@types/node/index.d.ts
- create mode 100644 node_modules/@types/node/inspector.d.ts
- create mode 100644 node_modules/@types/node/module.d.ts
- create mode 100644 node_modules/@types/node/net.d.ts
- create mode 100644 node_modules/@types/node/os.d.ts
- create mode 100644 node_modules/@types/node/package.json
- create mode 100644 node_modules/@types/node/path.d.ts
- create mode 100644 node_modules/@types/node/perf_hooks.d.ts
- create mode 100644 node_modules/@types/node/process.d.ts
- create mode 100644 node_modules/@types/node/punycode.d.ts
- create mode 100644 node_modules/@types/node/querystring.d.ts
- create mode 100644 node_modules/@types/node/readline.d.ts
- create mode 100644 node_modules/@types/node/readline/promises.d.ts
- create mode 100644 node_modules/@types/node/repl.d.ts
- create mode 100644 node_modules/@types/node/stream.d.ts
- create mode 100644 node_modules/@types/node/stream/consumers.d.ts
- create mode 100644 node_modules/@types/node/stream/promises.d.ts
- create mode 100644 node_modules/@types/node/stream/web.d.ts
- create mode 100644 node_modules/@types/node/string_decoder.d.ts
- create mode 100644 node_modules/@types/node/test.d.ts
- create mode 100644 node_modules/@types/node/timers.d.ts
- create mode 100644 node_modules/@types/node/timers/promises.d.ts
- create mode 100644 node_modules/@types/node/tls.d.ts
- create mode 100644 node_modules/@types/node/trace_events.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/assert.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/assert/strict.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/async_hooks.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/buffer.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/child_process.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/cluster.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/console.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/constants.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/crypto.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/dgram.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/diagnostics_channel.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/dns.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/dns/promises.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/dom-events.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/domain.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/events.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/fs.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/fs/promises.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/globals.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/globals.global.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/http.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/http2.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/https.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/index.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/inspector.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/module.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/net.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/os.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/path.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/perf_hooks.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/process.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/punycode.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/querystring.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/readline.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/readline/promises.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/repl.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/stream.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/stream/consumers.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/stream/promises.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/stream/web.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/string_decoder.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/test.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/timers.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/timers/promises.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/tls.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/trace_events.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/tty.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/url.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/util.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/v8.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/vm.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/wasi.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/worker_threads.d.ts
- create mode 100644 node_modules/@types/node/ts4.8/zlib.d.ts
- create mode 100644 node_modules/@types/node/tty.d.ts
- create mode 100644 node_modules/@types/node/url.d.ts
- create mode 100644 node_modules/@types/node/util.d.ts
- create mode 100644 node_modules/@types/node/v8.d.ts
- create mode 100644 node_modules/@types/node/vm.d.ts
- create mode 100644 node_modules/@types/node/wasi.d.ts
- create mode 100644 node_modules/@types/node/worker_threads.d.ts
- create mode 100644 node_modules/@types/node/zlib.d.ts
- create mode 100644 node_modules/@types/webidl-conversions/LICENSE
- create mode 100644 node_modules/@types/webidl-conversions/README.md
- create mode 100644 node_modules/@types/webidl-conversions/index.d.ts
- create mode 100644 node_modules/@types/webidl-conversions/package.json
- create mode 100755 node_modules/@types/whatwg-url/LICENSE
- create mode 100755 node_modules/@types/whatwg-url/README.md
- create mode 100755 node_modules/@types/whatwg-url/dist/URL-impl.d.ts
- create mode 100755 node_modules/@types/whatwg-url/dist/URL.d.ts
- create mode 100755 node_modules/@types/whatwg-url/dist/URLSearchParams-impl.d.ts
- create mode 100755 node_modules/@types/whatwg-url/dist/URLSearchParams.d.ts
- create mode 100755 node_modules/@types/whatwg-url/index.d.ts
- create mode 100755 node_modules/@types/whatwg-url/package.json
- create mode 100755 node_modules/@types/whatwg-url/webidl2js-wrapper.d.ts
- create mode 100644 node_modules/accepts/HISTORY.md
- create mode 100644 node_modules/accepts/LICENSE
- create mode 100644 node_modules/accepts/README.md
- create mode 100644 node_modules/accepts/index.js
- create mode 100644 node_modules/accepts/package.json
- create mode 100644 node_modules/array-flatten/LICENSE
- create mode 100644 node_modules/array-flatten/README.md
- create mode 100644 node_modules/array-flatten/array-flatten.js
- create mode 100644 node_modules/array-flatten/package.json
- create mode 100644 node_modules/body-parser/HISTORY.md
- create mode 100644 node_modules/body-parser/LICENSE
- create mode 100644 node_modules/body-parser/README.md
- create mode 100644 node_modules/body-parser/SECURITY.md
- create mode 100644 node_modules/body-parser/index.js
- create mode 100644 node_modules/body-parser/lib/read.js
- create mode 100644 node_modules/body-parser/lib/types/json.js
- create mode 100644 node_modules/body-parser/lib/types/raw.js
- create mode 100644 node_modules/body-parser/lib/types/text.js
- create mode 100644 node_modules/body-parser/lib/types/urlencoded.js
- create mode 100644 node_modules/body-parser/package.json
- create mode 100644 node_modules/bson/LICENSE.md
- create mode 100644 node_modules/bson/README.md
- create mode 100644 node_modules/bson/bson.d.ts
- create mode 100755 node_modules/bson/etc/prepare.js
- create mode 100644 node_modules/bson/lib/bson.bundle.js
- create mode 100644 node_modules/bson/lib/bson.bundle.js.map
- create mode 100644 node_modules/bson/lib/bson.cjs
- create mode 100644 node_modules/bson/lib/bson.cjs.map
- create mode 100644 node_modules/bson/lib/bson.mjs
- create mode 100644 node_modules/bson/lib/bson.mjs.map
- create mode 100644 node_modules/bson/lib/bson.rn.cjs
- create mode 100644 node_modules/bson/lib/bson.rn.cjs.map
- create mode 100644 node_modules/bson/package.json
- create mode 100644 node_modules/bson/src/binary.ts
- create mode 100644 node_modules/bson/src/bson.ts
- create mode 100644 node_modules/bson/src/bson_value.ts
- create mode 100644 node_modules/bson/src/code.ts
- create mode 100644 node_modules/bson/src/constants.ts
- create mode 100644 node_modules/bson/src/db_ref.ts
- create mode 100644 node_modules/bson/src/decimal128.ts
- create mode 100644 node_modules/bson/src/double.ts
- create mode 100644 node_modules/bson/src/error.ts
- create mode 100644 node_modules/bson/src/extended_json.ts
- create mode 100644 node_modules/bson/src/index.ts
- create mode 100644 node_modules/bson/src/int_32.ts
- create mode 100644 node_modules/bson/src/long.ts
- create mode 100644 node_modules/bson/src/max_key.ts
- create mode 100644 node_modules/bson/src/min_key.ts
- create mode 100644 node_modules/bson/src/objectid.ts
- create mode 100644 node_modules/bson/src/parser/calculate_size.ts
- create mode 100644 node_modules/bson/src/parser/deserializer.ts
- create mode 100644 node_modules/bson/src/parser/serializer.ts
- create mode 100644 node_modules/bson/src/parser/utils.ts
- create mode 100644 node_modules/bson/src/regexp.ts
- create mode 100644 node_modules/bson/src/symbol.ts
- create mode 100644 node_modules/bson/src/timestamp.ts
- create mode 100644 node_modules/bson/src/utils/byte_utils.ts
- create mode 100644 node_modules/bson/src/utils/node_byte_utils.ts
- create mode 100644 node_modules/bson/src/utils/web_byte_utils.ts
- create mode 100644 node_modules/bson/src/validate_utf8.ts
- create mode 100644 node_modules/bson/vendor/base64/LICENSE-MIT.txt
- create mode 100644 node_modules/bson/vendor/base64/README.md
- create mode 100644 node_modules/bson/vendor/base64/base64.js
- create mode 100644 node_modules/bson/vendor/base64/package.json
- create mode 100644 node_modules/bson/vendor/text-encoding/LICENSE.md
- create mode 100644 node_modules/bson/vendor/text-encoding/README.md
- create mode 100644 node_modules/bson/vendor/text-encoding/index.js
- create mode 100644 node_modules/bson/vendor/text-encoding/lib/encoding-indexes.js
- create mode 100644 node_modules/bson/vendor/text-encoding/lib/encoding.js
- create mode 100644 node_modules/bson/vendor/text-encoding/package.json
- create mode 100644 node_modules/bytes/History.md
- create mode 100644 node_modules/bytes/LICENSE
- create mode 100644 node_modules/bytes/Readme.md
- create mode 100644 node_modules/bytes/index.js
- create mode 100644 node_modules/bytes/package.json
- create mode 100644 node_modules/call-bind/.eslintignore
- create mode 100644 node_modules/call-bind/.eslintrc
- create mode 100644 node_modules/call-bind/.github/FUNDING.yml
- create mode 100644 node_modules/call-bind/.nycrc
- create mode 100644 node_modules/call-bind/CHANGELOG.md
- create mode 100644 node_modules/call-bind/LICENSE
- create mode 100644 node_modules/call-bind/README.md
- create mode 100644 node_modules/call-bind/callBound.js
- create mode 100644 node_modules/call-bind/index.js
- create mode 100644 node_modules/call-bind/package.json
- create mode 100644 node_modules/call-bind/test/callBound.js
- create mode 100644 node_modules/call-bind/test/index.js
- create mode 100644 node_modules/content-disposition/HISTORY.md
- create mode 100644 node_modules/content-disposition/LICENSE
- create mode 100644 node_modules/content-disposition/README.md
- create mode 100644 node_modules/content-disposition/index.js
- create mode 100644 node_modules/content-disposition/package.json
- create mode 100644 node_modules/content-type/HISTORY.md
- create mode 100644 node_modules/content-type/LICENSE
- create mode 100644 node_modules/content-type/README.md
- create mode 100644 node_modules/content-type/index.js
- create mode 100644 node_modules/content-type/package.json
- create mode 100644 node_modules/cookie-signature/.npmignore
- create mode 100644 node_modules/cookie-signature/History.md
- create mode 100644 node_modules/cookie-signature/Readme.md
- create mode 100644 node_modules/cookie-signature/index.js
- create mode 100644 node_modules/cookie-signature/package.json
- create mode 100644 node_modules/cookie/HISTORY.md
- create mode 100644 node_modules/cookie/LICENSE
- create mode 100644 node_modules/cookie/README.md
- create mode 100644 node_modules/cookie/SECURITY.md
- create mode 100644 node_modules/cookie/index.js
- create mode 100644 node_modules/cookie/package.json
- create mode 100644 node_modules/debug/.coveralls.yml
- create mode 100644 node_modules/debug/.eslintrc
- create mode 100644 node_modules/debug/.npmignore
- create mode 100644 node_modules/debug/.travis.yml
- create mode 100644 node_modules/debug/CHANGELOG.md
- create mode 100644 node_modules/debug/LICENSE
- create mode 100644 node_modules/debug/Makefile
- create mode 100644 node_modules/debug/README.md
- create mode 100644 node_modules/debug/component.json
- create mode 100644 node_modules/debug/karma.conf.js
- create mode 100644 node_modules/debug/node.js
- create mode 100644 node_modules/debug/package.json
- create mode 100644 node_modules/debug/src/browser.js
- create mode 100644 node_modules/debug/src/debug.js
- create mode 100644 node_modules/debug/src/index.js
- create mode 100644 node_modules/debug/src/inspector-log.js
- create mode 100644 node_modules/debug/src/node.js
- create mode 100644 node_modules/define-data-property/.eslintrc
- create mode 100644 node_modules/define-data-property/.github/FUNDING.yml
- create mode 100644 node_modules/define-data-property/.nycrc
- create mode 100644 node_modules/define-data-property/CHANGELOG.md
- create mode 100644 node_modules/define-data-property/LICENSE
- create mode 100644 node_modules/define-data-property/README.md
- create mode 100644 node_modules/define-data-property/index.d.ts
- create mode 100644 node_modules/define-data-property/index.d.ts.map
- create mode 100644 node_modules/define-data-property/index.js
- create mode 100644 node_modules/define-data-property/package.json
- create mode 100644 node_modules/define-data-property/test/index.js
- create mode 100644 node_modules/define-data-property/tsconfig.json
- create mode 100644 node_modules/depd/History.md
- create mode 100644 node_modules/depd/LICENSE
- create mode 100644 node_modules/depd/Readme.md
- create mode 100644 node_modules/depd/index.js
- create mode 100644 node_modules/depd/lib/browser/index.js
- create mode 100644 node_modules/depd/package.json
- create mode 100644 node_modules/destroy/LICENSE
- create mode 100644 node_modules/destroy/README.md
- create mode 100644 node_modules/destroy/index.js
- create mode 100644 node_modules/destroy/package.json
- create mode 100644 node_modules/dotenv/CHANGELOG.md
- create mode 100644 node_modules/dotenv/LICENSE
- create mode 100644 node_modules/dotenv/README-es.md
- create mode 100644 node_modules/dotenv/README.md
- create mode 100644 node_modules/dotenv/config.d.ts
- create mode 100644 node_modules/dotenv/config.js
- create mode 100644 node_modules/dotenv/lib/cli-options.js
- create mode 100644 node_modules/dotenv/lib/env-options.js
- create mode 100644 node_modules/dotenv/lib/main.d.ts
- create mode 100644 node_modules/dotenv/lib/main.js
- create mode 100644 node_modules/dotenv/package.json
- create mode 100644 node_modules/ee-first/LICENSE
- create mode 100644 node_modules/ee-first/README.md
- create mode 100644 node_modules/ee-first/index.js
- create mode 100644 node_modules/ee-first/package.json
- create mode 100644 node_modules/encodeurl/HISTORY.md
- create mode 100644 node_modules/encodeurl/LICENSE
- create mode 100644 node_modules/encodeurl/README.md
- create mode 100644 node_modules/encodeurl/index.js
- create mode 100644 node_modules/encodeurl/package.json
- create mode 100644 node_modules/escape-html/LICENSE
- create mode 100644 node_modules/escape-html/Readme.md
- create mode 100644 node_modules/escape-html/index.js
- create mode 100644 node_modules/escape-html/package.json
- create mode 100644 node_modules/etag/HISTORY.md
- create mode 100644 node_modules/etag/LICENSE
- create mode 100644 node_modules/etag/README.md
- create mode 100644 node_modules/etag/index.js
- create mode 100644 node_modules/etag/package.json
- create mode 100644 node_modules/express/History.md
- create mode 100644 node_modules/express/LICENSE
- create mode 100644 node_modules/express/Readme.md
- create mode 100644 node_modules/express/index.js
- create mode 100644 node_modules/express/lib/application.js
- create mode 100644 node_modules/express/lib/express.js
- create mode 100644 node_modules/express/lib/middleware/init.js
- create mode 100644 node_modules/express/lib/middleware/query.js
- create mode 100644 node_modules/express/lib/request.js
- create mode 100644 node_modules/express/lib/response.js
- create mode 100644 node_modules/express/lib/router/index.js
- create mode 100644 node_modules/express/lib/router/layer.js
- create mode 100644 node_modules/express/lib/router/route.js
- create mode 100644 node_modules/express/lib/utils.js
- create mode 100644 node_modules/express/lib/view.js
- create mode 100644 node_modules/express/package.json
- create mode 100644 node_modules/finalhandler/HISTORY.md
- create mode 100644 node_modules/finalhandler/LICENSE
- create mode 100644 node_modules/finalhandler/README.md
- create mode 100644 node_modules/finalhandler/SECURITY.md
- create mode 100644 node_modules/finalhandler/index.js
- create mode 100644 node_modules/finalhandler/package.json
- create mode 100644 node_modules/forwarded/HISTORY.md
- create mode 100644 node_modules/forwarded/LICENSE
- create mode 100644 node_modules/forwarded/README.md
- create mode 100644 node_modules/forwarded/index.js
- create mode 100644 node_modules/forwarded/package.json
- create mode 100644 node_modules/fresh/HISTORY.md
- create mode 100644 node_modules/fresh/LICENSE
- create mode 100644 node_modules/fresh/README.md
- create mode 100644 node_modules/fresh/index.js
- create mode 100644 node_modules/fresh/package.json
- create mode 100644 node_modules/function-bind/.eslintrc
- create mode 100644 node_modules/function-bind/.github/FUNDING.yml
- create mode 100644 node_modules/function-bind/.github/SECURITY.md
- create mode 100644 node_modules/function-bind/.nycrc
- create mode 100644 node_modules/function-bind/CHANGELOG.md
- create mode 100644 node_modules/function-bind/LICENSE
- create mode 100644 node_modules/function-bind/README.md
- create mode 100644 node_modules/function-bind/implementation.js
- create mode 100644 node_modules/function-bind/index.js
- create mode 100644 node_modules/function-bind/package.json
- create mode 100644 node_modules/function-bind/test/.eslintrc
- create mode 100644 node_modules/function-bind/test/index.js
- create mode 100644 node_modules/get-intrinsic/.eslintrc
- create mode 100644 node_modules/get-intrinsic/.github/FUNDING.yml
- create mode 100644 node_modules/get-intrinsic/.nycrc
- create mode 100644 node_modules/get-intrinsic/CHANGELOG.md
- create mode 100644 node_modules/get-intrinsic/LICENSE
- create mode 100644 node_modules/get-intrinsic/README.md
- create mode 100644 node_modules/get-intrinsic/index.js
- create mode 100644 node_modules/get-intrinsic/package.json
- create mode 100644 node_modules/get-intrinsic/test/GetIntrinsic.js
- create mode 100644 node_modules/gopd/.eslintrc
- create mode 100644 node_modules/gopd/.github/FUNDING.yml
- create mode 100644 node_modules/gopd/CHANGELOG.md
- create mode 100644 node_modules/gopd/LICENSE
- create mode 100644 node_modules/gopd/README.md
- create mode 100644 node_modules/gopd/index.js
- create mode 100644 node_modules/gopd/package.json
- create mode 100644 node_modules/gopd/test/index.js
- create mode 100644 node_modules/has-property-descriptors/.eslintrc
- create mode 100644 node_modules/has-property-descriptors/.github/FUNDING.yml
- create mode 100644 node_modules/has-property-descriptors/.nycrc
- create mode 100644 node_modules/has-property-descriptors/CHANGELOG.md
- create mode 100644 node_modules/has-property-descriptors/LICENSE
- create mode 100644 node_modules/has-property-descriptors/README.md
- create mode 100644 node_modules/has-property-descriptors/index.js
- create mode 100644 node_modules/has-property-descriptors/package.json
- create mode 100644 node_modules/has-property-descriptors/test/index.js
- create mode 100644 node_modules/has-proto/.eslintrc
- create mode 100644 node_modules/has-proto/.github/FUNDING.yml
- create mode 100644 node_modules/has-proto/CHANGELOG.md
- create mode 100644 node_modules/has-proto/LICENSE
- create mode 100644 node_modules/has-proto/README.md
- create mode 100644 node_modules/has-proto/index.js
- create mode 100644 node_modules/has-proto/package.json
- create mode 100644 node_modules/has-proto/test/index.js
- create mode 100644 node_modules/has-symbols/.eslintrc
- create mode 100644 node_modules/has-symbols/.github/FUNDING.yml
- create mode 100644 node_modules/has-symbols/.nycrc
- create mode 100644 node_modules/has-symbols/CHANGELOG.md
- create mode 100644 node_modules/has-symbols/LICENSE
- create mode 100644 node_modules/has-symbols/README.md
- create mode 100644 node_modules/has-symbols/index.js
- create mode 100644 node_modules/has-symbols/package.json
- create mode 100644 node_modules/has-symbols/shams.js
- create mode 100644 node_modules/has-symbols/test/index.js
- create mode 100644 node_modules/has-symbols/test/shams/core-js.js
- create mode 100644 node_modules/has-symbols/test/shams/get-own-property-symbols.js
- create mode 100644 node_modules/has-symbols/test/tests.js
- create mode 100644 node_modules/hasown/.eslintrc
- create mode 100644 node_modules/hasown/.github/FUNDING.yml
- create mode 100644 node_modules/hasown/.nycrc
- create mode 100644 node_modules/hasown/CHANGELOG.md
- create mode 100644 node_modules/hasown/LICENSE
- create mode 100644 node_modules/hasown/README.md
- create mode 100644 node_modules/hasown/index.d.ts
- create mode 100644 node_modules/hasown/index.d.ts.map
- create mode 100644 node_modules/hasown/index.js
- create mode 100644 node_modules/hasown/package.json
- create mode 100644 node_modules/hasown/tsconfig.json
- create mode 100644 node_modules/http-errors/HISTORY.md
- create mode 100644 node_modules/http-errors/LICENSE
- create mode 100644 node_modules/http-errors/README.md
- create mode 100644 node_modules/http-errors/index.js
- create mode 100644 node_modules/http-errors/package.json
- create mode 100644 node_modules/iconv-lite/Changelog.md
- create mode 100644 node_modules/iconv-lite/LICENSE
- create mode 100644 node_modules/iconv-lite/README.md
- create mode 100644 node_modules/iconv-lite/encodings/dbcs-codec.js
- create mode 100644 node_modules/iconv-lite/encodings/dbcs-data.js
- create mode 100644 node_modules/iconv-lite/encodings/index.js
- create mode 100644 node_modules/iconv-lite/encodings/internal.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-codec.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-data-generated.js
- create mode 100644 node_modules/iconv-lite/encodings/sbcs-data.js
- create mode 100644 node_modules/iconv-lite/encodings/tables/big5-added.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp936.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp949.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/cp950.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/eucjp.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/gb18030-ranges.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/gbk-added.json
- create mode 100644 node_modules/iconv-lite/encodings/tables/shiftjis.json
- create mode 100644 node_modules/iconv-lite/encodings/utf16.js
- create mode 100644 node_modules/iconv-lite/encodings/utf7.js
- create mode 100644 node_modules/iconv-lite/lib/bom-handling.js
- create mode 100644 node_modules/iconv-lite/lib/extend-node.js
- create mode 100644 node_modules/iconv-lite/lib/index.d.ts
- create mode 100644 node_modules/iconv-lite/lib/index.js
- create mode 100644 node_modules/iconv-lite/lib/streams.js
- create mode 100644 node_modules/iconv-lite/package.json
- create mode 100644 node_modules/inherits/LICENSE
- create mode 100644 node_modules/inherits/README.md
- create mode 100644 node_modules/inherits/inherits.js
- create mode 100644 node_modules/inherits/inherits_browser.js
- create mode 100644 node_modules/inherits/package.json
- create mode 100644 node_modules/ipaddr.js/LICENSE
- create mode 100644 node_modules/ipaddr.js/README.md
- create mode 100644 node_modules/ipaddr.js/ipaddr.min.js
- create mode 100644 node_modules/ipaddr.js/lib/ipaddr.js
- create mode 100644 node_modules/ipaddr.js/lib/ipaddr.js.d.ts
- create mode 100644 node_modules/ipaddr.js/package.json
- create mode 100644 node_modules/kareem/LICENSE
- create mode 100644 node_modules/kareem/README.md
- create mode 100644 node_modules/kareem/index.js
- create mode 100644 node_modules/kareem/package.json
- create mode 100644 node_modules/media-typer/HISTORY.md
- create mode 100644 node_modules/media-typer/LICENSE
- create mode 100644 node_modules/media-typer/README.md
- create mode 100644 node_modules/media-typer/index.js
- create mode 100644 node_modules/media-typer/package.json
- create mode 100644 node_modules/memory-pager/.travis.yml
- create mode 100644 node_modules/memory-pager/LICENSE
- create mode 100644 node_modules/memory-pager/README.md
- create mode 100644 node_modules/memory-pager/index.js
- create mode 100644 node_modules/memory-pager/package.json
- create mode 100644 node_modules/memory-pager/test.js
- create mode 100644 node_modules/merge-descriptors/HISTORY.md
- create mode 100644 node_modules/merge-descriptors/LICENSE
- create mode 100644 node_modules/merge-descriptors/README.md
- create mode 100644 node_modules/merge-descriptors/index.js
- create mode 100644 node_modules/merge-descriptors/package.json
- create mode 100644 node_modules/methods/HISTORY.md
- create mode 100644 node_modules/methods/LICENSE
- create mode 100644 node_modules/methods/README.md
- create mode 100644 node_modules/methods/index.js
- create mode 100644 node_modules/methods/package.json
- create mode 100644 node_modules/mime-db/HISTORY.md
- create mode 100644 node_modules/mime-db/LICENSE
- create mode 100644 node_modules/mime-db/README.md
- create mode 100644 node_modules/mime-db/db.json
- create mode 100644 node_modules/mime-db/index.js
- create mode 100644 node_modules/mime-db/package.json
- create mode 100644 node_modules/mime-types/HISTORY.md
- create mode 100644 node_modules/mime-types/LICENSE
- create mode 100644 node_modules/mime-types/README.md
- create mode 100644 node_modules/mime-types/index.js
- create mode 100644 node_modules/mime-types/package.json
- create mode 100644 node_modules/mime/.npmignore
- create mode 100644 node_modules/mime/CHANGELOG.md
- create mode 100644 node_modules/mime/LICENSE
- create mode 100644 node_modules/mime/README.md
- create mode 100755 node_modules/mime/cli.js
- create mode 100644 node_modules/mime/mime.js
- create mode 100644 node_modules/mime/package.json
- create mode 100755 node_modules/mime/src/build.js
- create mode 100644 node_modules/mime/src/test.js
- create mode 100644 node_modules/mime/types.json
- create mode 100644 node_modules/mongodb-connection-string-url/.esm-wrapper.mjs
- create mode 100644 node_modules/mongodb-connection-string-url/LICENSE
- create mode 100644 node_modules/mongodb-connection-string-url/README.md
- create mode 100644 node_modules/mongodb-connection-string-url/lib/index.d.ts
- create mode 100644 node_modules/mongodb-connection-string-url/lib/index.js
- create mode 100644 node_modules/mongodb-connection-string-url/lib/index.js.map
- create mode 100644 node_modules/mongodb-connection-string-url/lib/redact.d.ts
- create mode 100644 node_modules/mongodb-connection-string-url/lib/redact.js
- create mode 100644 node_modules/mongodb-connection-string-url/lib/redact.js.map
- create mode 100644 node_modules/mongodb-connection-string-url/package.json
- create mode 100644 node_modules/mongodb/LICENSE.md
- create mode 100644 node_modules/mongodb/README.md
- create mode 100755 node_modules/mongodb/etc/prepare.js
- create mode 100644 node_modules/mongodb/lib/admin.js
- create mode 100644 node_modules/mongodb/lib/admin.js.map
- create mode 100644 node_modules/mongodb/lib/bson.js
- create mode 100644 node_modules/mongodb/lib/bson.js.map
- create mode 100644 node_modules/mongodb/lib/bulk/common.js
- create mode 100644 node_modules/mongodb/lib/bulk/common.js.map
- create mode 100644 node_modules/mongodb/lib/bulk/ordered.js
- create mode 100644 node_modules/mongodb/lib/bulk/ordered.js.map
- create mode 100644 node_modules/mongodb/lib/bulk/unordered.js
- create mode 100644 node_modules/mongodb/lib/bulk/unordered.js.map
- create mode 100644 node_modules/mongodb/lib/change_stream.js
- create mode 100644 node_modules/mongodb/lib/change_stream.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/auto_encrypter.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/client_encryption.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/client_encryption.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/crypto_callbacks.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/crypto_callbacks.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/errors.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/errors.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/mongocryptd_manager.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/mongocryptd_manager.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/aws.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/aws.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/azure.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/azure.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/gcp.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/gcp.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/index.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/index.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/utils.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/providers/utils.js.map
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/state_machine.js
- create mode 100644 node_modules/mongodb/lib/client-side-encryption/state_machine.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/auth_provider.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/auth_provider.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/gssapi.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/gssapi.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongo_credentials.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongo_credentials.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongocr.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongocr.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_aws.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_aws.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/aws_service_workflow.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/aws_service_workflow.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/azure_service_workflow.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/azure_service_workflow.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/azure_token_cache.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/azure_token_cache.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/cache.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/cache.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_lock_cache.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_lock_cache.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_workflow.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/callback_workflow.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/service_workflow.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/service_workflow.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_entry_cache.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/mongodb_oidc/token_entry_cache.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/plain.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/plain.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/providers.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/providers.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/scram.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/scram.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/auth/x509.js
- create mode 100644 node_modules/mongodb/lib/cmap/auth/x509.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/command_monitoring_events.js
- create mode 100644 node_modules/mongodb/lib/cmap/command_monitoring_events.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/commands.js
- create mode 100644 node_modules/mongodb/lib/cmap/commands.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/connect.js
- create mode 100644 node_modules/mongodb/lib/cmap/connect.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/connection.js
- create mode 100644 node_modules/mongodb/lib/cmap/connection.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/connection_pool.js
- create mode 100644 node_modules/mongodb/lib/cmap/connection_pool.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/connection_pool_events.js
- create mode 100644 node_modules/mongodb/lib/cmap/connection_pool_events.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/errors.js
- create mode 100644 node_modules/mongodb/lib/cmap/errors.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/handshake/client_metadata.js
- create mode 100644 node_modules/mongodb/lib/cmap/handshake/client_metadata.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/message_stream.js
- create mode 100644 node_modules/mongodb/lib/cmap/message_stream.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/metrics.js
- create mode 100644 node_modules/mongodb/lib/cmap/metrics.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/stream_description.js
- create mode 100644 node_modules/mongodb/lib/cmap/stream_description.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/compression.js
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/compression.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/constants.js
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/constants.js.map
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/shared.js
- create mode 100644 node_modules/mongodb/lib/cmap/wire_protocol/shared.js.map
- create mode 100644 node_modules/mongodb/lib/collection.js
- create mode 100644 node_modules/mongodb/lib/collection.js.map
- create mode 100644 node_modules/mongodb/lib/connection_string.js
- create mode 100644 node_modules/mongodb/lib/connection_string.js.map
- create mode 100644 node_modules/mongodb/lib/constants.js
- create mode 100644 node_modules/mongodb/lib/constants.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/abstract_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/abstract_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/aggregation_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/aggregation_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/change_stream_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/change_stream_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/find_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/find_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/list_collections_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/list_collections_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/list_indexes_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/list_indexes_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/list_search_indexes_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/list_search_indexes_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/cursor/run_command_cursor.js
- create mode 100644 node_modules/mongodb/lib/cursor/run_command_cursor.js.map
- create mode 100644 node_modules/mongodb/lib/db.js
- create mode 100644 node_modules/mongodb/lib/db.js.map
- create mode 100644 node_modules/mongodb/lib/deps.js
- create mode 100644 node_modules/mongodb/lib/deps.js.map
- create mode 100644 node_modules/mongodb/lib/encrypter.js
- create mode 100644 node_modules/mongodb/lib/encrypter.js.map
- create mode 100644 node_modules/mongodb/lib/error.js
- create mode 100644 node_modules/mongodb/lib/error.js.map
- create mode 100644 node_modules/mongodb/lib/explain.js
- create mode 100644 node_modules/mongodb/lib/explain.js.map
- create mode 100644 node_modules/mongodb/lib/gridfs/download.js
- create mode 100644 node_modules/mongodb/lib/gridfs/download.js.map
- create mode 100644 node_modules/mongodb/lib/gridfs/index.js
- create mode 100644 node_modules/mongodb/lib/gridfs/index.js.map
- create mode 100644 node_modules/mongodb/lib/gridfs/upload.js
- create mode 100644 node_modules/mongodb/lib/gridfs/upload.js.map
- create mode 100644 node_modules/mongodb/lib/index.js
- create mode 100644 node_modules/mongodb/lib/index.js.map
- create mode 100644 node_modules/mongodb/lib/mongo_client.js
- create mode 100644 node_modules/mongodb/lib/mongo_client.js.map
- create mode 100644 node_modules/mongodb/lib/mongo_logger.js
- create mode 100644 node_modules/mongodb/lib/mongo_logger.js.map
- create mode 100644 node_modules/mongodb/lib/mongo_types.js
- create mode 100644 node_modules/mongodb/lib/mongo_types.js.map
- create mode 100644 node_modules/mongodb/lib/operations/aggregate.js
- create mode 100644 node_modules/mongodb/lib/operations/aggregate.js.map
- create mode 100644 node_modules/mongodb/lib/operations/bulk_write.js
- create mode 100644 node_modules/mongodb/lib/operations/bulk_write.js.map
- create mode 100644 node_modules/mongodb/lib/operations/collections.js
- create mode 100644 node_modules/mongodb/lib/operations/collections.js.map
- create mode 100644 node_modules/mongodb/lib/operations/command.js
- create mode 100644 node_modules/mongodb/lib/operations/command.js.map
- create mode 100644 node_modules/mongodb/lib/operations/common_functions.js
- create mode 100644 node_modules/mongodb/lib/operations/common_functions.js.map
- create mode 100644 node_modules/mongodb/lib/operations/count.js
- create mode 100644 node_modules/mongodb/lib/operations/count.js.map
- create mode 100644 node_modules/mongodb/lib/operations/count_documents.js
- create mode 100644 node_modules/mongodb/lib/operations/count_documents.js.map
- create mode 100644 node_modules/mongodb/lib/operations/create_collection.js
- create mode 100644 node_modules/mongodb/lib/operations/create_collection.js.map
- create mode 100644 node_modules/mongodb/lib/operations/delete.js
- create mode 100644 node_modules/mongodb/lib/operations/delete.js.map
- create mode 100644 node_modules/mongodb/lib/operations/distinct.js
- create mode 100644 node_modules/mongodb/lib/operations/distinct.js.map
- create mode 100644 node_modules/mongodb/lib/operations/drop.js
- create mode 100644 node_modules/mongodb/lib/operations/drop.js.map
- create mode 100644 node_modules/mongodb/lib/operations/estimated_document_count.js
- create mode 100644 node_modules/mongodb/lib/operations/estimated_document_count.js.map
- create mode 100644 node_modules/mongodb/lib/operations/execute_operation.js
- create mode 100644 node_modules/mongodb/lib/operations/execute_operation.js.map
- create mode 100644 node_modules/mongodb/lib/operations/find.js
- create mode 100644 node_modules/mongodb/lib/operations/find.js.map
- create mode 100644 node_modules/mongodb/lib/operations/find_and_modify.js
- create mode 100644 node_modules/mongodb/lib/operations/find_and_modify.js.map
- create mode 100644 node_modules/mongodb/lib/operations/get_more.js
- create mode 100644 node_modules/mongodb/lib/operations/get_more.js.map
- create mode 100644 node_modules/mongodb/lib/operations/indexes.js
- create mode 100644 node_modules/mongodb/lib/operations/indexes.js.map
- create mode 100644 node_modules/mongodb/lib/operations/insert.js
- create mode 100644 node_modules/mongodb/lib/operations/insert.js.map
- create mode 100644 node_modules/mongodb/lib/operations/is_capped.js
- create mode 100644 node_modules/mongodb/lib/operations/is_capped.js.map
- create mode 100644 node_modules/mongodb/lib/operations/kill_cursors.js
- create mode 100644 node_modules/mongodb/lib/operations/kill_cursors.js.map
- create mode 100644 node_modules/mongodb/lib/operations/list_collections.js
- create mode 100644 node_modules/mongodb/lib/operations/list_collections.js.map
- create mode 100644 node_modules/mongodb/lib/operations/list_databases.js
- create mode 100644 node_modules/mongodb/lib/operations/list_databases.js.map
- create mode 100644 node_modules/mongodb/lib/operations/operation.js
- create mode 100644 node_modules/mongodb/lib/operations/operation.js.map
- create mode 100644 node_modules/mongodb/lib/operations/options_operation.js
- create mode 100644 node_modules/mongodb/lib/operations/options_operation.js.map
- create mode 100644 node_modules/mongodb/lib/operations/profiling_level.js
- create mode 100644 node_modules/mongodb/lib/operations/profiling_level.js.map
- create mode 100644 node_modules/mongodb/lib/operations/remove_user.js
- create mode 100644 node_modules/mongodb/lib/operations/remove_user.js.map
- create mode 100644 node_modules/mongodb/lib/operations/rename.js
- create mode 100644 node_modules/mongodb/lib/operations/rename.js.map
- create mode 100644 node_modules/mongodb/lib/operations/run_command.js
- create mode 100644 node_modules/mongodb/lib/operations/run_command.js.map
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/create.js
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/create.js.map
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/drop.js
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/drop.js.map
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/update.js
- create mode 100644 node_modules/mongodb/lib/operations/search_indexes/update.js.map
- create mode 100644 node_modules/mongodb/lib/operations/set_profiling_level.js
- create mode 100644 node_modules/mongodb/lib/operations/set_profiling_level.js.map
- create mode 100644 node_modules/mongodb/lib/operations/stats.js
- create mode 100644 node_modules/mongodb/lib/operations/stats.js.map
- create mode 100644 node_modules/mongodb/lib/operations/update.js
- create mode 100644 node_modules/mongodb/lib/operations/update.js.map
- create mode 100644 node_modules/mongodb/lib/operations/validate_collection.js
- create mode 100644 node_modules/mongodb/lib/operations/validate_collection.js.map
- create mode 100644 node_modules/mongodb/lib/read_concern.js
- create mode 100644 node_modules/mongodb/lib/read_concern.js.map
- create mode 100644 node_modules/mongodb/lib/read_preference.js
- create mode 100644 node_modules/mongodb/lib/read_preference.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/common.js
- create mode 100644 node_modules/mongodb/lib/sdam/common.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/events.js
- create mode 100644 node_modules/mongodb/lib/sdam/events.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/monitor.js
- create mode 100644 node_modules/mongodb/lib/sdam/monitor.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/server.js
- create mode 100644 node_modules/mongodb/lib/sdam/server.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/server_description.js
- create mode 100644 node_modules/mongodb/lib/sdam/server_description.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/server_selection.js
- create mode 100644 node_modules/mongodb/lib/sdam/server_selection.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/srv_polling.js
- create mode 100644 node_modules/mongodb/lib/sdam/srv_polling.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/topology.js
- create mode 100644 node_modules/mongodb/lib/sdam/topology.js.map
- create mode 100644 node_modules/mongodb/lib/sdam/topology_description.js
- create mode 100644 node_modules/mongodb/lib/sdam/topology_description.js.map
- create mode 100644 node_modules/mongodb/lib/sessions.js
- create mode 100644 node_modules/mongodb/lib/sessions.js.map
- create mode 100644 node_modules/mongodb/lib/sort.js
- create mode 100644 node_modules/mongodb/lib/sort.js.map
- create mode 100644 node_modules/mongodb/lib/transactions.js
- create mode 100644 node_modules/mongodb/lib/transactions.js.map
- create mode 100644 node_modules/mongodb/lib/utils.js
- create mode 100644 node_modules/mongodb/lib/utils.js.map
- create mode 100644 node_modules/mongodb/lib/write_concern.js
- create mode 100644 node_modules/mongodb/lib/write_concern.js.map
- create mode 100644 node_modules/mongodb/mongodb.d.ts
- create mode 100644 node_modules/mongodb/package.json
- create mode 100644 node_modules/mongodb/src/admin.ts
- create mode 100644 node_modules/mongodb/src/bson.ts
- create mode 100644 node_modules/mongodb/src/bulk/common.ts
- create mode 100644 node_modules/mongodb/src/bulk/ordered.ts
- create mode 100644 node_modules/mongodb/src/bulk/unordered.ts
- create mode 100644 node_modules/mongodb/src/change_stream.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/auto_encrypter.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/client_encryption.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/crypto_callbacks.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/errors.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/mongocryptd_manager.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/providers/aws.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/providers/azure.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/providers/gcp.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/providers/index.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/providers/utils.ts
- create mode 100644 node_modules/mongodb/src/client-side-encryption/state_machine.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/auth_provider.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/gssapi.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongo_credentials.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongocr.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_aws.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/aws_service_workflow.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/azure_service_workflow.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/azure_token_cache.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/cache.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/callback_lock_cache.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/callback_workflow.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/service_workflow.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/mongodb_oidc/token_entry_cache.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/plain.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/providers.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/scram.ts
- create mode 100644 node_modules/mongodb/src/cmap/auth/x509.ts
- create mode 100644 node_modules/mongodb/src/cmap/command_monitoring_events.ts
- create mode 100644 node_modules/mongodb/src/cmap/commands.ts
- create mode 100644 node_modules/mongodb/src/cmap/connect.ts
- create mode 100644 node_modules/mongodb/src/cmap/connection.ts
- create mode 100644 node_modules/mongodb/src/cmap/connection_pool.ts
- create mode 100644 node_modules/mongodb/src/cmap/connection_pool_events.ts
- create mode 100644 node_modules/mongodb/src/cmap/errors.ts
- create mode 100644 node_modules/mongodb/src/cmap/handshake/client_metadata.ts
- create mode 100644 node_modules/mongodb/src/cmap/message_stream.ts
- create mode 100644 node_modules/mongodb/src/cmap/metrics.ts
- create mode 100644 node_modules/mongodb/src/cmap/stream_description.ts
- create mode 100644 node_modules/mongodb/src/cmap/wire_protocol/compression.ts
- create mode 100644 node_modules/mongodb/src/cmap/wire_protocol/constants.ts
- create mode 100644 node_modules/mongodb/src/cmap/wire_protocol/shared.ts
- create mode 100644 node_modules/mongodb/src/collection.ts
- create mode 100644 node_modules/mongodb/src/connection_string.ts
- create mode 100644 node_modules/mongodb/src/constants.ts
- create mode 100644 node_modules/mongodb/src/cursor/abstract_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/aggregation_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/change_stream_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/find_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/list_collections_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/list_indexes_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/list_search_indexes_cursor.ts
- create mode 100644 node_modules/mongodb/src/cursor/run_command_cursor.ts
- create mode 100644 node_modules/mongodb/src/db.ts
- create mode 100644 node_modules/mongodb/src/deps.ts
- create mode 100644 node_modules/mongodb/src/encrypter.ts
- create mode 100644 node_modules/mongodb/src/error.ts
- create mode 100644 node_modules/mongodb/src/explain.ts
- create mode 100644 node_modules/mongodb/src/gridfs/download.ts
- create mode 100644 node_modules/mongodb/src/gridfs/index.ts
- create mode 100644 node_modules/mongodb/src/gridfs/upload.ts
- create mode 100644 node_modules/mongodb/src/index.ts
- create mode 100644 node_modules/mongodb/src/mongo_client.ts
- create mode 100644 node_modules/mongodb/src/mongo_logger.ts
- create mode 100644 node_modules/mongodb/src/mongo_types.ts
- create mode 100644 node_modules/mongodb/src/operations/aggregate.ts
- create mode 100644 node_modules/mongodb/src/operations/bulk_write.ts
- create mode 100644 node_modules/mongodb/src/operations/collections.ts
- create mode 100644 node_modules/mongodb/src/operations/command.ts
- create mode 100644 node_modules/mongodb/src/operations/common_functions.ts
- create mode 100644 node_modules/mongodb/src/operations/count.ts
- create mode 100644 node_modules/mongodb/src/operations/count_documents.ts
- create mode 100644 node_modules/mongodb/src/operations/create_collection.ts
- create mode 100644 node_modules/mongodb/src/operations/delete.ts
- create mode 100644 node_modules/mongodb/src/operations/distinct.ts
- create mode 100644 node_modules/mongodb/src/operations/drop.ts
- create mode 100644 node_modules/mongodb/src/operations/estimated_document_count.ts
- create mode 100644 node_modules/mongodb/src/operations/execute_operation.ts
- create mode 100644 node_modules/mongodb/src/operations/find.ts
- create mode 100644 node_modules/mongodb/src/operations/find_and_modify.ts
- create mode 100644 node_modules/mongodb/src/operations/get_more.ts
- create mode 100644 node_modules/mongodb/src/operations/indexes.ts
- create mode 100644 node_modules/mongodb/src/operations/insert.ts
- create mode 100644 node_modules/mongodb/src/operations/is_capped.ts
- create mode 100644 node_modules/mongodb/src/operations/kill_cursors.ts
- create mode 100644 node_modules/mongodb/src/operations/list_collections.ts
- create mode 100644 node_modules/mongodb/src/operations/list_databases.ts
- create mode 100644 node_modules/mongodb/src/operations/operation.ts
- create mode 100644 node_modules/mongodb/src/operations/options_operation.ts
- create mode 100644 node_modules/mongodb/src/operations/profiling_level.ts
- create mode 100644 node_modules/mongodb/src/operations/remove_user.ts
- create mode 100644 node_modules/mongodb/src/operations/rename.ts
- create mode 100644 node_modules/mongodb/src/operations/run_command.ts
- create mode 100644 node_modules/mongodb/src/operations/search_indexes/create.ts
- create mode 100644 node_modules/mongodb/src/operations/search_indexes/drop.ts
- create mode 100644 node_modules/mongodb/src/operations/search_indexes/update.ts
- create mode 100644 node_modules/mongodb/src/operations/set_profiling_level.ts
- create mode 100644 node_modules/mongodb/src/operations/stats.ts
- create mode 100644 node_modules/mongodb/src/operations/update.ts
- create mode 100644 node_modules/mongodb/src/operations/validate_collection.ts
- create mode 100644 node_modules/mongodb/src/read_concern.ts
- create mode 100644 node_modules/mongodb/src/read_preference.ts
- create mode 100644 node_modules/mongodb/src/sdam/common.ts
- create mode 100644 node_modules/mongodb/src/sdam/events.ts
- create mode 100644 node_modules/mongodb/src/sdam/monitor.ts
- create mode 100644 node_modules/mongodb/src/sdam/server.ts
- create mode 100644 node_modules/mongodb/src/sdam/server_description.ts
- create mode 100644 node_modules/mongodb/src/sdam/server_selection.ts
- create mode 100644 node_modules/mongodb/src/sdam/srv_polling.ts
- create mode 100644 node_modules/mongodb/src/sdam/topology.ts
- create mode 100644 node_modules/mongodb/src/sdam/topology_description.ts
- create mode 100644 node_modules/mongodb/src/sessions.ts
- create mode 100644 node_modules/mongodb/src/sort.ts
- create mode 100644 node_modules/mongodb/src/transactions.ts
- create mode 100644 node_modules/mongodb/src/utils.ts
- create mode 100644 node_modules/mongodb/src/write_concern.ts
- create mode 100644 node_modules/mongodb/tsconfig.json
- create mode 100644 node_modules/mongoose/LICENSE.md
- create mode 100644 node_modules/mongoose/README.md
- create mode 100644 node_modules/mongoose/SECURITY.md
- create mode 100644 node_modules/mongoose/browser.js
- create mode 100644 node_modules/mongoose/dist/browser.umd.js
- create mode 100644 node_modules/mongoose/index.js
- create mode 100644 node_modules/mongoose/lib/aggregate.js
- create mode 100644 node_modules/mongoose/lib/browser.js
- create mode 100644 node_modules/mongoose/lib/browserDocument.js
- create mode 100644 node_modules/mongoose/lib/cast.js
- create mode 100644 node_modules/mongoose/lib/cast/bigint.js
- create mode 100644 node_modules/mongoose/lib/cast/boolean.js
- create mode 100644 node_modules/mongoose/lib/cast/date.js
- create mode 100644 node_modules/mongoose/lib/cast/decimal128.js
- create mode 100644 node_modules/mongoose/lib/cast/number.js
- create mode 100644 node_modules/mongoose/lib/cast/objectid.js
- create mode 100644 node_modules/mongoose/lib/cast/string.js
- create mode 100644 node_modules/mongoose/lib/collection.js
- create mode 100644 node_modules/mongoose/lib/connection.js
- create mode 100644 node_modules/mongoose/lib/connectionState.js
- create mode 100644 node_modules/mongoose/lib/cursor/aggregationCursor.js
- create mode 100644 node_modules/mongoose/lib/cursor/changeStream.js
- create mode 100644 node_modules/mongoose/lib/cursor/queryCursor.js
- create mode 100644 node_modules/mongoose/lib/document.js
- create mode 100644 node_modules/mongoose/lib/documentProvider.js
- create mode 100644 node_modules/mongoose/lib/driver.js
- create mode 100644 node_modules/mongoose/lib/drivers/SPEC.md
- create mode 100644 node_modules/mongoose/lib/drivers/browser/binary.js
- create mode 100644 node_modules/mongoose/lib/drivers/browser/decimal128.js
- create mode 100644 node_modules/mongoose/lib/drivers/browser/index.js
- create mode 100644 node_modules/mongoose/lib/drivers/browser/objectid.js
- create mode 100644 node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js
- create mode 100644 node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js
- create mode 100644 node_modules/mongoose/lib/drivers/node-mongodb-native/index.js
- create mode 100644 node_modules/mongoose/lib/error/browserMissingSchema.js
- create mode 100644 node_modules/mongoose/lib/error/bulkWriteError.js
- create mode 100644 node_modules/mongoose/lib/error/cast.js
- create mode 100644 node_modules/mongoose/lib/error/createCollectionsError.js
- create mode 100644 node_modules/mongoose/lib/error/divergentArray.js
- create mode 100644 node_modules/mongoose/lib/error/eachAsyncMultiError.js
- create mode 100644 node_modules/mongoose/lib/error/index.js
- create mode 100644 node_modules/mongoose/lib/error/invalidSchemaOption.js
- create mode 100644 node_modules/mongoose/lib/error/messages.js
- create mode 100644 node_modules/mongoose/lib/error/missingSchema.js
- create mode 100644 node_modules/mongoose/lib/error/mongooseError.js
- create mode 100644 node_modules/mongoose/lib/error/notFound.js
- create mode 100644 node_modules/mongoose/lib/error/objectExpected.js
- create mode 100644 node_modules/mongoose/lib/error/objectParameter.js
- create mode 100644 node_modules/mongoose/lib/error/overwriteModel.js
- create mode 100644 node_modules/mongoose/lib/error/parallelSave.js
- create mode 100644 node_modules/mongoose/lib/error/parallelValidate.js
- create mode 100644 node_modules/mongoose/lib/error/serverSelection.js
- create mode 100644 node_modules/mongoose/lib/error/setOptionError.js
- create mode 100644 node_modules/mongoose/lib/error/strict.js
- create mode 100644 node_modules/mongoose/lib/error/strictPopulate.js
- create mode 100644 node_modules/mongoose/lib/error/syncIndexes.js
- create mode 100644 node_modules/mongoose/lib/error/validation.js
- create mode 100644 node_modules/mongoose/lib/error/validator.js
- create mode 100644 node_modules/mongoose/lib/error/version.js
- create mode 100644 node_modules/mongoose/lib/helpers/aggregate/prepareDiscriminatorPipeline.js
- create mode 100644 node_modules/mongoose/lib/helpers/aggregate/stringifyFunctionOperators.js
- create mode 100644 node_modules/mongoose/lib/helpers/arrayDepth.js
- create mode 100644 node_modules/mongoose/lib/helpers/clone.js
- create mode 100644 node_modules/mongoose/lib/helpers/common.js
- create mode 100644 node_modules/mongoose/lib/helpers/cursor/eachAsync.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/applyEmbeddedDiscriminators.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/areDiscriminatorValuesEqual.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/checkEmbeddedDiscriminatorKeyProjection.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/getConstructor.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/getDiscriminatorByValue.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/getSchemaDiscriminatorByValue.js
- create mode 100644 node_modules/mongoose/lib/helpers/discriminator/mergeDiscriminatorSchema.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/applyDefaults.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/cleanModifiedSubpaths.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/compile.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/getDeepestSubdocumentForPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/getEmbeddedDiscriminatorPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/document/handleSpreadDoc.js
- create mode 100644 node_modules/mongoose/lib/helpers/each.js
- create mode 100644 node_modules/mongoose/lib/helpers/error/combinePathErrors.js
- create mode 100644 node_modules/mongoose/lib/helpers/firstKey.js
- create mode 100644 node_modules/mongoose/lib/helpers/get.js
- create mode 100644 node_modules/mongoose/lib/helpers/getConstructorName.js
- create mode 100644 node_modules/mongoose/lib/helpers/getDefaultBulkwriteResult.js
- create mode 100644 node_modules/mongoose/lib/helpers/getFunctionName.js
- create mode 100644 node_modules/mongoose/lib/helpers/immediate.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/applySchemaCollation.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/decorateDiscriminatorIndexOptions.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/getRelatedIndexes.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/isDefaultIdIndex.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/isIndexEqual.js
- create mode 100644 node_modules/mongoose/lib/helpers/indexes/isTextIndex.js
- create mode 100644 node_modules/mongoose/lib/helpers/isAsyncFunction.js
- create mode 100644 node_modules/mongoose/lib/helpers/isBsonType.js
- create mode 100644 node_modules/mongoose/lib/helpers/isMongooseObject.js
- create mode 100644 node_modules/mongoose/lib/helpers/isObject.js
- create mode 100644 node_modules/mongoose/lib/helpers/isPOJO.js
- create mode 100644 node_modules/mongoose/lib/helpers/isPromise.js
- create mode 100644 node_modules/mongoose/lib/helpers/isSimpleValidator.js
- create mode 100644 node_modules/mongoose/lib/helpers/minimize.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/applyDefaultsToPOJO.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/applyHooks.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/applyMethods.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/applyStaticHooks.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/applyStatics.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/castBulkWrite.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/discriminator.js
- create mode 100644 node_modules/mongoose/lib/helpers/model/pushNestedArrayPaths.js
- create mode 100644 node_modules/mongoose/lib/helpers/once.js
- create mode 100644 node_modules/mongoose/lib/helpers/parallelLimit.js
- create mode 100644 node_modules/mongoose/lib/helpers/path/parentPaths.js
- create mode 100644 node_modules/mongoose/lib/helpers/path/setDottedPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/pluralize.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/assignRawDocsToIdStructure.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/assignVals.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/createPopulateQueryFilter.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/getSchemaTypes.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/getVirtual.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/leanPopulateMap.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/lookupLocalFields.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/markArraySubdocsPopulated.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/modelNamesFromRefPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/removeDeselectedForeignField.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/skipPopulateValue.js
- create mode 100644 node_modules/mongoose/lib/helpers/populate/validateRef.js
- create mode 100644 node_modules/mongoose/lib/helpers/printJestWarning.js
- create mode 100644 node_modules/mongoose/lib/helpers/processConnectionOptions.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/applyProjection.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/hasIncludedChildren.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isDefiningProjection.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isExclusive.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isInclusive.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isPathExcluded.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isPathSelectedInclusive.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/isSubpath.js
- create mode 100644 node_modules/mongoose/lib/helpers/projection/parseProjection.js
- create mode 100644 node_modules/mongoose/lib/helpers/promiseOrCallback.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/applyGlobalOption.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/applyQueryMiddleware.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/cast$expr.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/castFilterPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/castUpdate.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/completeMany.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/getEmbeddedDiscriminatorPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/handleImmutable.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/handleReadPreferenceAliases.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/hasDollarKeys.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/isOperator.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/sanitizeFilter.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/sanitizeProjection.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/selectPopulatedFields.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/trusted.js
- create mode 100644 node_modules/mongoose/lib/helpers/query/validOps.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/addAutoId.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/applyBuiltinPlugins.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/applyPlugins.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/applyWriteConcern.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/cleanPositionalOperators.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/getIndexes.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/getKeysInSchemaOrder.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/getPath.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/getSubdocumentStrictValue.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/handleIdOption.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/handleTimestampOption.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/idGetter.js
- create mode 100644 node_modules/mongoose/lib/helpers/schema/merge.js
- create mode 100644 node_modules/mongoose/lib/helpers/schematype/handleImmutable.js
- create mode 100644 node_modules/mongoose/lib/helpers/setDefaultsOnInsert.js
- create mode 100644 node_modules/mongoose/lib/helpers/specialProperties.js
- create mode 100644 node_modules/mongoose/lib/helpers/symbols.js
- create mode 100644 node_modules/mongoose/lib/helpers/timers.js
- create mode 100644 node_modules/mongoose/lib/helpers/timestamps/setDocumentTimestamps.js
- create mode 100644 node_modules/mongoose/lib/helpers/timestamps/setupTimestamps.js
- create mode 100644 node_modules/mongoose/lib/helpers/topology/allServersUnknown.js
- create mode 100644 node_modules/mongoose/lib/helpers/topology/isAtlas.js
- create mode 100644 node_modules/mongoose/lib/helpers/topology/isSSLError.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/applyTimestampsToChildren.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/applyTimestampsToUpdate.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/castArrayFilters.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/decorateUpdateWithVersionKey.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/modifiedPaths.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/moveImmutableProperties.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/removeUnusedArrayFilters.js
- create mode 100644 node_modules/mongoose/lib/helpers/update/updatedPathsByArrayFilter.js
- create mode 100644 node_modules/mongoose/lib/helpers/updateValidators.js
- create mode 100644 node_modules/mongoose/lib/index.js
- create mode 100644 node_modules/mongoose/lib/internal.js
- create mode 100644 node_modules/mongoose/lib/model.js
- create mode 100644 node_modules/mongoose/lib/mongoose.js
- create mode 100644 node_modules/mongoose/lib/options.js
- create mode 100644 node_modules/mongoose/lib/options/populateOptions.js
- create mode 100644 node_modules/mongoose/lib/options/propertyOptions.js
- create mode 100644 node_modules/mongoose/lib/options/saveOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaArrayOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaBufferOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaDateOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaDocumentArrayOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaMapOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaNumberOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaObjectIdOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaStringOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaSubdocumentOptions.js
- create mode 100644 node_modules/mongoose/lib/options/schemaTypeOptions.js
- create mode 100644 node_modules/mongoose/lib/options/virtualOptions.js
- create mode 100644 node_modules/mongoose/lib/plugins/index.js
- create mode 100644 node_modules/mongoose/lib/plugins/saveSubdocs.js
- create mode 100644 node_modules/mongoose/lib/plugins/sharding.js
- create mode 100644 node_modules/mongoose/lib/plugins/trackTransaction.js
- create mode 100644 node_modules/mongoose/lib/plugins/validateBeforeSave.js
- create mode 100644 node_modules/mongoose/lib/query.js
- create mode 100644 node_modules/mongoose/lib/queryHelpers.js
- create mode 100644 node_modules/mongoose/lib/schema.js
- create mode 100644 node_modules/mongoose/lib/schema/array.js
- create mode 100644 node_modules/mongoose/lib/schema/bigint.js
- create mode 100644 node_modules/mongoose/lib/schema/boolean.js
- create mode 100644 node_modules/mongoose/lib/schema/buffer.js
- create mode 100644 node_modules/mongoose/lib/schema/date.js
- create mode 100644 node_modules/mongoose/lib/schema/decimal128.js
- create mode 100644 node_modules/mongoose/lib/schema/documentArray.js
- create mode 100644 node_modules/mongoose/lib/schema/documentArrayElement.js
- create mode 100644 node_modules/mongoose/lib/schema/index.js
- create mode 100644 node_modules/mongoose/lib/schema/map.js
- create mode 100644 node_modules/mongoose/lib/schema/mixed.js
- create mode 100644 node_modules/mongoose/lib/schema/number.js
- create mode 100644 node_modules/mongoose/lib/schema/objectId.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/bitwise.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/exists.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/geospatial.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/helpers.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/text.js
- create mode 100644 node_modules/mongoose/lib/schema/operators/type.js
- create mode 100644 node_modules/mongoose/lib/schema/string.js
- create mode 100644 node_modules/mongoose/lib/schema/subdocument.js
- create mode 100644 node_modules/mongoose/lib/schema/symbols.js
- create mode 100644 node_modules/mongoose/lib/schema/uuid.js
- create mode 100644 node_modules/mongoose/lib/schemaType.js
- create mode 100644 node_modules/mongoose/lib/stateMachine.js
- create mode 100644 node_modules/mongoose/lib/types/array/index.js
- create mode 100644 node_modules/mongoose/lib/types/array/isMongooseArray.js
- create mode 100644 node_modules/mongoose/lib/types/array/methods/index.js
- create mode 100644 node_modules/mongoose/lib/types/arraySubdocument.js
- create mode 100644 node_modules/mongoose/lib/types/buffer.js
- create mode 100644 node_modules/mongoose/lib/types/decimal128.js
- create mode 100644 node_modules/mongoose/lib/types/documentArray/index.js
- create mode 100644 node_modules/mongoose/lib/types/documentArray/isMongooseDocumentArray.js
- create mode 100644 node_modules/mongoose/lib/types/documentArray/methods/index.js
- create mode 100644 node_modules/mongoose/lib/types/index.js
- create mode 100644 node_modules/mongoose/lib/types/map.js
- create mode 100644 node_modules/mongoose/lib/types/objectid.js
- create mode 100644 node_modules/mongoose/lib/types/subdocument.js
- create mode 100644 node_modules/mongoose/lib/types/uuid.js
- create mode 100644 node_modules/mongoose/lib/utils.js
- create mode 100644 node_modules/mongoose/lib/validOptions.js
- create mode 100644 node_modules/mongoose/lib/virtualType.js
- create mode 100644 node_modules/mongoose/node_modules/ms/index.js
- create mode 100644 node_modules/mongoose/node_modules/ms/license.md
- create mode 100644 node_modules/mongoose/node_modules/ms/package.json
- create mode 100644 node_modules/mongoose/node_modules/ms/readme.md
- create mode 100644 node_modules/mongoose/package.json
- create mode 100644 node_modules/mongoose/types/aggregate.d.ts
- create mode 100644 node_modules/mongoose/types/augmentations.d.ts
- create mode 100644 node_modules/mongoose/types/callback.d.ts
- create mode 100644 node_modules/mongoose/types/collection.d.ts
- create mode 100644 node_modules/mongoose/types/connection.d.ts
- create mode 100644 node_modules/mongoose/types/cursor.d.ts
- create mode 100644 node_modules/mongoose/types/document.d.ts
- create mode 100644 node_modules/mongoose/types/error.d.ts
- create mode 100644 node_modules/mongoose/types/expressions.d.ts
- create mode 100644 node_modules/mongoose/types/helpers.d.ts
- create mode 100644 node_modules/mongoose/types/index.d.ts
- create mode 100644 node_modules/mongoose/types/indexes.d.ts
- create mode 100644 node_modules/mongoose/types/inferschematype.d.ts
- create mode 100644 node_modules/mongoose/types/middlewares.d.ts
- create mode 100644 node_modules/mongoose/types/models.d.ts
- create mode 100644 node_modules/mongoose/types/mongooseoptions.d.ts
- create mode 100644 node_modules/mongoose/types/pipelinestage.d.ts
- create mode 100644 node_modules/mongoose/types/populate.d.ts
- create mode 100644 node_modules/mongoose/types/query.d.ts
- create mode 100644 node_modules/mongoose/types/schemaoptions.d.ts
- create mode 100644 node_modules/mongoose/types/schematypes.d.ts
- create mode 100644 node_modules/mongoose/types/session.d.ts
- create mode 100644 node_modules/mongoose/types/types.d.ts
- create mode 100644 node_modules/mongoose/types/utility.d.ts
- create mode 100644 node_modules/mongoose/types/validation.d.ts
- create mode 100644 node_modules/mongoose/types/virtuals.d.ts
- create mode 100644 node_modules/mpath/.travis.yml
- create mode 100644 node_modules/mpath/History.md
- create mode 100644 node_modules/mpath/LICENSE
- create mode 100644 node_modules/mpath/README.md
- create mode 100644 node_modules/mpath/SECURITY.md
- create mode 100644 node_modules/mpath/index.js
- create mode 100644 node_modules/mpath/lib/index.js
- create mode 100644 node_modules/mpath/lib/stringToParts.js
- create mode 100644 node_modules/mpath/package.json
- create mode 100644 node_modules/mpath/test/.eslintrc.yml
- create mode 100644 node_modules/mpath/test/index.js
- create mode 100644 node_modules/mpath/test/stringToParts.js
- create mode 100644 node_modules/mquery/.github/ISSUE_TEMPLATE.md
- create mode 100644 node_modules/mquery/.github/PULL_REQUEST_TEMPLATE.md
- create mode 100644 node_modules/mquery/History.md
- create mode 100644 node_modules/mquery/LICENSE
- create mode 100644 node_modules/mquery/README.md
- create mode 100644 node_modules/mquery/SECURITY.md
- create mode 100644 node_modules/mquery/lib/collection/collection.js
- create mode 100644 node_modules/mquery/lib/collection/index.js
- create mode 100644 node_modules/mquery/lib/collection/node.js
- create mode 100644 node_modules/mquery/lib/env.js
- create mode 100644 node_modules/mquery/lib/mquery.js
- create mode 100644 node_modules/mquery/lib/permissions.js
- create mode 100644 node_modules/mquery/lib/utils.js
- create mode 100644 node_modules/mquery/node_modules/debug/LICENSE
- create mode 100644 node_modules/mquery/node_modules/debug/README.md
- create mode 100644 node_modules/mquery/node_modules/debug/package.json
- create mode 100644 node_modules/mquery/node_modules/debug/src/browser.js
- create mode 100644 node_modules/mquery/node_modules/debug/src/common.js
- create mode 100644 node_modules/mquery/node_modules/debug/src/index.js
- create mode 100644 node_modules/mquery/node_modules/debug/src/node.js
- create mode 100644 node_modules/mquery/node_modules/ms/index.js
- create mode 100644 node_modules/mquery/node_modules/ms/license.md
- create mode 100644 node_modules/mquery/node_modules/ms/package.json
- create mode 100644 node_modules/mquery/node_modules/ms/readme.md
- create mode 100644 node_modules/mquery/package.json
- create mode 100644 node_modules/ms/index.js
- create mode 100644 node_modules/ms/license.md
- create mode 100644 node_modules/ms/package.json
- create mode 100644 node_modules/ms/readme.md
- create mode 100644 node_modules/negotiator/HISTORY.md
- create mode 100644 node_modules/negotiator/LICENSE
- create mode 100644 node_modules/negotiator/README.md
- create mode 100644 node_modules/negotiator/index.js
- create mode 100644 node_modules/negotiator/lib/charset.js
- create mode 100644 node_modules/negotiator/lib/encoding.js
- create mode 100644 node_modules/negotiator/lib/language.js
- create mode 100644 node_modules/negotiator/lib/mediaType.js
- create mode 100644 node_modules/negotiator/package.json
- create mode 100644 node_modules/object-inspect/.eslintrc
- create mode 100644 node_modules/object-inspect/.github/FUNDING.yml
- create mode 100644 node_modules/object-inspect/.nycrc
- create mode 100644 node_modules/object-inspect/CHANGELOG.md
- create mode 100644 node_modules/object-inspect/LICENSE
- create mode 100644 node_modules/object-inspect/example/all.js
- create mode 100644 node_modules/object-inspect/example/circular.js
- create mode 100644 node_modules/object-inspect/example/fn.js
- create mode 100644 node_modules/object-inspect/example/inspect.js
- create mode 100644 node_modules/object-inspect/index.js
- create mode 100644 node_modules/object-inspect/package-support.json
- create mode 100644 node_modules/object-inspect/package.json
- create mode 100644 node_modules/object-inspect/readme.markdown
- create mode 100644 node_modules/object-inspect/test-core-js.js
- create mode 100644 node_modules/object-inspect/test/bigint.js
- create mode 100644 node_modules/object-inspect/test/browser/dom.js
- create mode 100644 node_modules/object-inspect/test/circular.js
- create mode 100644 node_modules/object-inspect/test/deep.js
- create mode 100644 node_modules/object-inspect/test/element.js
- create mode 100644 node_modules/object-inspect/test/err.js
- create mode 100644 node_modules/object-inspect/test/fakes.js
- create mode 100644 node_modules/object-inspect/test/fn.js
- create mode 100644 node_modules/object-inspect/test/global.js
- create mode 100644 node_modules/object-inspect/test/has.js
- create mode 100644 node_modules/object-inspect/test/holes.js
- create mode 100644 node_modules/object-inspect/test/indent-option.js
- create mode 100644 node_modules/object-inspect/test/inspect.js
- create mode 100644 node_modules/object-inspect/test/lowbyte.js
- create mode 100644 node_modules/object-inspect/test/number.js
- create mode 100644 node_modules/object-inspect/test/quoteStyle.js
- create mode 100644 node_modules/object-inspect/test/toStringTag.js
- create mode 100644 node_modules/object-inspect/test/undef.js
- create mode 100644 node_modules/object-inspect/test/values.js
- create mode 100644 node_modules/object-inspect/util.inspect.js
- create mode 100644 node_modules/on-finished/HISTORY.md
- create mode 100644 node_modules/on-finished/LICENSE
- create mode 100644 node_modules/on-finished/README.md
- create mode 100644 node_modules/on-finished/index.js
- create mode 100644 node_modules/on-finished/package.json
- create mode 100644 node_modules/parseurl/HISTORY.md
- create mode 100644 node_modules/parseurl/LICENSE
- create mode 100644 node_modules/parseurl/README.md
- create mode 100644 node_modules/parseurl/index.js
- create mode 100644 node_modules/parseurl/package.json
- create mode 100644 node_modules/path-to-regexp/History.md
- create mode 100644 node_modules/path-to-regexp/LICENSE
- create mode 100644 node_modules/path-to-regexp/Readme.md
- create mode 100644 node_modules/path-to-regexp/index.js
- create mode 100644 node_modules/path-to-regexp/package.json
- create mode 100644 node_modules/proxy-addr/HISTORY.md
- create mode 100644 node_modules/proxy-addr/LICENSE
- create mode 100644 node_modules/proxy-addr/README.md
- create mode 100644 node_modules/proxy-addr/index.js
- create mode 100644 node_modules/proxy-addr/package.json
- create mode 100644 node_modules/punycode/LICENSE-MIT.txt
- create mode 100644 node_modules/punycode/README.md
- create mode 100644 node_modules/punycode/package.json
- create mode 100644 node_modules/punycode/punycode.es6.js
- create mode 100644 node_modules/punycode/punycode.js
- create mode 100644 node_modules/qs/.editorconfig
- create mode 100644 node_modules/qs/.eslintrc
- create mode 100644 node_modules/qs/.github/FUNDING.yml
- create mode 100644 node_modules/qs/.nycrc
- create mode 100644 node_modules/qs/CHANGELOG.md
- create mode 100644 node_modules/qs/LICENSE.md
- create mode 100644 node_modules/qs/README.md
- create mode 100644 node_modules/qs/dist/qs.js
- create mode 100644 node_modules/qs/lib/formats.js
- create mode 100644 node_modules/qs/lib/index.js
- create mode 100644 node_modules/qs/lib/parse.js
- create mode 100644 node_modules/qs/lib/stringify.js
- create mode 100644 node_modules/qs/lib/utils.js
- create mode 100644 node_modules/qs/package.json
- create mode 100644 node_modules/qs/test/parse.js
- create mode 100644 node_modules/qs/test/stringify.js
- create mode 100644 node_modules/qs/test/utils.js
- create mode 100644 node_modules/range-parser/HISTORY.md
- create mode 100644 node_modules/range-parser/LICENSE
- create mode 100644 node_modules/range-parser/README.md
- create mode 100644 node_modules/range-parser/index.js
- create mode 100644 node_modules/range-parser/package.json
- create mode 100644 node_modules/raw-body/HISTORY.md
- create mode 100644 node_modules/raw-body/LICENSE
- create mode 100644 node_modules/raw-body/README.md
- create mode 100644 node_modules/raw-body/SECURITY.md
- create mode 100644 node_modules/raw-body/index.d.ts
- create mode 100644 node_modules/raw-body/index.js
- create mode 100644 node_modules/raw-body/package.json
- create mode 100644 node_modules/safe-buffer/LICENSE
- create mode 100644 node_modules/safe-buffer/README.md
- create mode 100644 node_modules/safe-buffer/index.d.ts
- create mode 100644 node_modules/safe-buffer/index.js
- create mode 100644 node_modules/safe-buffer/package.json
- create mode 100644 node_modules/safer-buffer/LICENSE
- create mode 100644 node_modules/safer-buffer/Porting-Buffer.md
- create mode 100644 node_modules/safer-buffer/Readme.md
- create mode 100644 node_modules/safer-buffer/dangerous.js
- create mode 100644 node_modules/safer-buffer/package.json
- create mode 100644 node_modules/safer-buffer/safer.js
- create mode 100644 node_modules/safer-buffer/tests.js
- create mode 100644 node_modules/send/HISTORY.md
- create mode 100644 node_modules/send/LICENSE
- create mode 100644 node_modules/send/README.md
- create mode 100644 node_modules/send/SECURITY.md
- create mode 100644 node_modules/send/index.js
- create mode 100644 node_modules/send/node_modules/ms/index.js
- create mode 100644 node_modules/send/node_modules/ms/license.md
- create mode 100644 node_modules/send/node_modules/ms/package.json
- create mode 100644 node_modules/send/node_modules/ms/readme.md
- create mode 100644 node_modules/send/package.json
- create mode 100644 node_modules/serve-static/HISTORY.md
- create mode 100644 node_modules/serve-static/LICENSE
- create mode 100644 node_modules/serve-static/README.md
- create mode 100644 node_modules/serve-static/index.js
- create mode 100644 node_modules/serve-static/package.json
- create mode 100644 node_modules/set-function-length/.eslintrc
- create mode 100644 node_modules/set-function-length/.github/FUNDING.yml
- create mode 100644 node_modules/set-function-length/.nycrc
- create mode 100644 node_modules/set-function-length/CHANGELOG.md
- create mode 100644 node_modules/set-function-length/LICENSE
- create mode 100644 node_modules/set-function-length/README.md
- create mode 100644 node_modules/set-function-length/env.js
- create mode 100644 node_modules/set-function-length/index.js
- create mode 100644 node_modules/set-function-length/package.json
- create mode 100644 node_modules/setprototypeof/LICENSE
- create mode 100644 node_modules/setprototypeof/README.md
- create mode 100644 node_modules/setprototypeof/index.d.ts
- create mode 100644 node_modules/setprototypeof/index.js
- create mode 100644 node_modules/setprototypeof/package.json
- create mode 100644 node_modules/setprototypeof/test/index.js
- create mode 100644 node_modules/side-channel/.eslintignore
- create mode 100644 node_modules/side-channel/.eslintrc
- create mode 100644 node_modules/side-channel/.github/FUNDING.yml
- create mode 100644 node_modules/side-channel/.nycrc
- create mode 100644 node_modules/side-channel/CHANGELOG.md
- create mode 100644 node_modules/side-channel/LICENSE
- create mode 100644 node_modules/side-channel/README.md
- create mode 100644 node_modules/side-channel/index.js
- create mode 100644 node_modules/side-channel/package.json
- create mode 100644 node_modules/side-channel/test/index.js
- create mode 100644 node_modules/sift/MIT-LICENSE.txt
- create mode 100755 node_modules/sift/README.md
- create mode 100644 node_modules/sift/es/index.js
- create mode 100644 node_modules/sift/es/index.js.map
- create mode 100644 node_modules/sift/es5m/index.js
- create mode 100644 node_modules/sift/es5m/index.js.map
- create mode 100644 node_modules/sift/index.d.ts
- create mode 100644 node_modules/sift/index.js
- create mode 100644 node_modules/sift/lib/core.d.ts
- create mode 100644 node_modules/sift/lib/index.d.ts
- create mode 100644 node_modules/sift/lib/index.js
- create mode 100644 node_modules/sift/lib/index.js.map
- create mode 100644 node_modules/sift/lib/operations.d.ts
- create mode 100644 node_modules/sift/lib/utils.d.ts
- create mode 100644 node_modules/sift/package.json
- create mode 100644 node_modules/sift/sift.csp.min.js
- create mode 100644 node_modules/sift/sift.csp.min.js.map
- create mode 100644 node_modules/sift/sift.min.js
- create mode 100644 node_modules/sift/sift.min.js.map
- create mode 100644 node_modules/sift/src/core.d.ts
- create mode 100644 node_modules/sift/src/core.js
- create mode 100644 node_modules/sift/src/core.js.map
- create mode 100644 node_modules/sift/src/core.ts
- create mode 100644 node_modules/sift/src/index.d.ts
- create mode 100644 node_modules/sift/src/index.js
- create mode 100644 node_modules/sift/src/index.js.map
- create mode 100644 node_modules/sift/src/index.ts
- create mode 100644 node_modules/sift/src/operations.d.ts
- create mode 100644 node_modules/sift/src/operations.js
- create mode 100644 node_modules/sift/src/operations.js.map
- create mode 100644 node_modules/sift/src/operations.ts
- create mode 100644 node_modules/sift/src/utils.d.ts
- create mode 100644 node_modules/sift/src/utils.js
- create mode 100644 node_modules/sift/src/utils.js.map
- create mode 100644 node_modules/sift/src/utils.ts
- create mode 100644 node_modules/sparse-bitfield/.npmignore
- create mode 100644 node_modules/sparse-bitfield/.travis.yml
- create mode 100644 node_modules/sparse-bitfield/LICENSE
- create mode 100644 node_modules/sparse-bitfield/README.md
- create mode 100644 node_modules/sparse-bitfield/index.js
- create mode 100644 node_modules/sparse-bitfield/package.json
- create mode 100644 node_modules/sparse-bitfield/test.js
- create mode 100644 node_modules/statuses/HISTORY.md
- create mode 100644 node_modules/statuses/LICENSE
- create mode 100644 node_modules/statuses/README.md
- create mode 100644 node_modules/statuses/codes.json
- create mode 100644 node_modules/statuses/index.js
- create mode 100644 node_modules/statuses/package.json
- create mode 100644 node_modules/toidentifier/HISTORY.md
- create mode 100644 node_modules/toidentifier/LICENSE
- create mode 100644 node_modules/toidentifier/README.md
- create mode 100644 node_modules/toidentifier/index.js
- create mode 100644 node_modules/toidentifier/package.json
- create mode 100644 node_modules/tr46/LICENSE.md
- create mode 100644 node_modules/tr46/README.md
- create mode 100644 node_modules/tr46/index.js
- create mode 100644 node_modules/tr46/lib/mappingTable.json
- create mode 100644 node_modules/tr46/lib/regexes.js
- create mode 100644 node_modules/tr46/lib/statusMapping.js
- create mode 100644 node_modules/tr46/package.json
- create mode 100644 node_modules/type-is/HISTORY.md
- create mode 100644 node_modules/type-is/LICENSE
- create mode 100644 node_modules/type-is/README.md
- create mode 100644 node_modules/type-is/index.js
- create mode 100644 node_modules/type-is/package.json
- create mode 100644 node_modules/undici-types/README.md
- create mode 100644 node_modules/undici-types/agent.d.ts
- create mode 100644 node_modules/undici-types/api.d.ts
- create mode 100644 node_modules/undici-types/balanced-pool.d.ts
- create mode 100644 node_modules/undici-types/cache.d.ts
- create mode 100644 node_modules/undici-types/client.d.ts
- create mode 100644 node_modules/undici-types/connector.d.ts
- create mode 100644 node_modules/undici-types/content-type.d.ts
- create mode 100644 node_modules/undici-types/cookies.d.ts
- create mode 100644 node_modules/undici-types/diagnostics-channel.d.ts
- create mode 100644 node_modules/undici-types/dispatcher.d.ts
- create mode 100644 node_modules/undici-types/errors.d.ts
- create mode 100644 node_modules/undici-types/fetch.d.ts
- create mode 100644 node_modules/undici-types/file.d.ts
- create mode 100644 node_modules/undici-types/filereader.d.ts
- create mode 100644 node_modules/undici-types/formdata.d.ts
- create mode 100644 node_modules/undici-types/global-dispatcher.d.ts
- create mode 100644 node_modules/undici-types/global-origin.d.ts
- create mode 100644 node_modules/undici-types/handlers.d.ts
- create mode 100644 node_modules/undici-types/header.d.ts
- create mode 100644 node_modules/undici-types/index.d.ts
- create mode 100644 node_modules/undici-types/interceptors.d.ts
- create mode 100644 node_modules/undici-types/mock-agent.d.ts
- create mode 100644 node_modules/undici-types/mock-client.d.ts
- create mode 100644 node_modules/undici-types/mock-errors.d.ts
- create mode 100644 node_modules/undici-types/mock-interceptor.d.ts
- create mode 100644 node_modules/undici-types/mock-pool.d.ts
- create mode 100644 node_modules/undici-types/package.json
- create mode 100644 node_modules/undici-types/patch.d.ts
- create mode 100644 node_modules/undici-types/pool-stats.d.ts
- create mode 100644 node_modules/undici-types/pool.d.ts
- create mode 100644 node_modules/undici-types/proxy-agent.d.ts
- create mode 100644 node_modules/undici-types/readable.d.ts
- create mode 100644 node_modules/undici-types/webidl.d.ts
- create mode 100644 node_modules/undici-types/websocket.d.ts
- create mode 100644 node_modules/unpipe/HISTORY.md
- create mode 100644 node_modules/unpipe/LICENSE
- create mode 100644 node_modules/unpipe/README.md
- create mode 100644 node_modules/unpipe/index.js
- create mode 100644 node_modules/unpipe/package.json
- create mode 100644 node_modules/utils-merge/.npmignore
- create mode 100644 node_modules/utils-merge/LICENSE
- create mode 100644 node_modules/utils-merge/README.md
- create mode 100644 node_modules/utils-merge/index.js
- create mode 100644 node_modules/utils-merge/package.json
- create mode 100644 node_modules/vary/HISTORY.md
- create mode 100644 node_modules/vary/LICENSE
- create mode 100644 node_modules/vary/README.md
- create mode 100644 node_modules/vary/index.js
- create mode 100644 node_modules/vary/package.json
- create mode 100644 node_modules/webidl-conversions/LICENSE.md
- create mode 100644 node_modules/webidl-conversions/README.md
- create mode 100644 node_modules/webidl-conversions/lib/index.js
- create mode 100644 node_modules/webidl-conversions/package.json
- create mode 100644 node_modules/whatwg-url/LICENSE.txt
- create mode 100644 node_modules/whatwg-url/README.md
- create mode 100644 node_modules/whatwg-url/index.js
- create mode 100644 node_modules/whatwg-url/lib/Function.js
- create mode 100644 node_modules/whatwg-url/lib/URL-impl.js
- create mode 100644 node_modules/whatwg-url/lib/URL.js
- create mode 100644 node_modules/whatwg-url/lib/URLSearchParams-impl.js
- create mode 100644 node_modules/whatwg-url/lib/URLSearchParams.js
- create mode 100644 node_modules/whatwg-url/lib/VoidFunction.js
- create mode 100644 node_modules/whatwg-url/lib/encoding.js
- create mode 100644 node_modules/whatwg-url/lib/infra.js
- create mode 100644 node_modules/whatwg-url/lib/percent-encoding.js
- create mode 100644 node_modules/whatwg-url/lib/url-state-machine.js
- create mode 100644 node_modules/whatwg-url/lib/urlencoded.js
- create mode 100644 node_modules/whatwg-url/lib/utils.js
- create mode 100644 node_modules/whatwg-url/package.json
- create mode 100644 node_modules/whatwg-url/webidl2js-wrapper.js
- create mode 100644 package-lock.json
- create mode 100644 package.json
- create mode 100644 terminal.txt
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit commit -m "criada pastas frontend, backend e iniciado o 'npm init', inst[38;2;153;153;153ma[38;2;153;153;153mlado express, mongoose, dotenv"[39m[K[A[27D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39m[1mp[0m[K[1B[K[A[9C[38;2;153;153;153mush[39m[0mp[39mu[39ms[39ml [38;2;153;153;153mh[39m[39mh [38;2;153;153;153morigin master[39m[13D[39mo[39mr[39mi[39mg[39mi[39mn[39m [39mm[39ma[39ms[39mt[39me[39mr [38;2;153;153;153mr[39m [39m [38;2;153;153;153mer[39m [39m [39m [38;2;153;153;153mter[39m [39m [39m [39m [38;2;153;153;153mster[39m [39m [39m [39m [39m [38;2;153;153;153master[39m [39m [39m [39m [39m [39m [38;2;153;153;153mmaster[39m[39mm[39ma[39mi[39m [39m [39m nd [?1l>[?2004l[1BEnumerating objects: 1675, done.
-Counting objects:   0% (1/1675)Counting objects:   1% (17/1675)Counting objects:   2% (34/1675)Counting objects:   3% (51/1675)Counting objects:   4% (67/1675)Counting objects:   5% (84/1675)Counting objects:   6% (101/1675)Counting objects:   7% (118/1675)Counting objects:   8% (134/1675)Counting objects:   9% (151/1675)Counting objects:  10% (168/1675)Counting objects:  11% (185/1675)Counting objects:  12% (201/1675)Counting objects:  13% (218/1675)Counting objects:  14% (235/1675)Counting objects:  15% (252/1675)Counting objects:  16% (268/1675)Counting objects:  17% (285/1675)Counting objects:  18% (302/1675)Counting objects:  19% (319/1675)Counting objects:  20% (335/1675)Counting objects:  21% (352/1675)Counting objects:  22% (369/1675)Counting objects:  23% (386/1675)Counting objects:  24% (402/1675)Counting objects:  25% (419/1675)Counting objects:  26% (436/1675)Counting objects:  27% (453/1675)Counting objects:  28% (469/1675)Counting objects:  29% (486/1675)Counting objects:  30% (503/1675)Counting objects:  31% (520/1675)Counting objects:  32% (536/1675)Counting objects:  33% (553/1675)Counting objects:  34% (570/1675)Counting objects:  35% (587/1675)Counting objects:  36% (603/1675)Counting objects:  37% (620/1675)Counting objects:  38% (637/1675)Counting objects:  39% (654/1675)Counting objects:  40% (670/1675)Counting objects:  41% (687/1675)Counting objects:  42% (704/1675)Counting objects:  43% (721/1675)Counting objects:  44% (737/1675)Counting objects:  45% (754/1675)Counting objects:  46% (771/1675)Counting objects:  47% (788/1675)Counting objects:  48% (804/1675)Counting objects:  49% (821/1675)Counting objects:  50% (838/1675)Counting objects:  51% (855/1675)Counting objects:  52% (871/1675)Counting objects:  53% (888/1675)Counting objects:  54% (905/1675)Counting objects:  55% (922/1675)Counting objects:  56% (938/1675)Counting objects:  57% (955/1675)Counting objects:  58% (972/1675)Counting objects:  59% (989/1675)Counting objects:  60% (1005/1675)Counting objects:  61% (1022/1675)Counting objects:  62% (1039/1675)Counting objects:  63% (1056/1675)Counting objects:  64% (1072/1675)Counting objects:  65% (1089/1675)Counting objects:  66% (1106/1675)Counting objects:  67% (1123/1675)Counting objects:  68% (1139/1675)Counting objects:  69% (1156/1675)Counting objects:  70% (1173/1675)Counting objects:  71% (1190/1675)Counting objects:  72% (1206/1675)Counting objects:  73% (1223/1675)Counting objects:  74% (1240/1675)Counting objects:  75% (1257/1675)Counting objects:  76% (1273/1675)Counting objects:  77% (1290/1675)Counting objects:  78% (1307/1675)Counting objects:  79% (1324/1675)Counting objects:  80% (1340/1675)Counting objects:  81% (1357/1675)Counting objects:  82% (1374/1675)Counting objects:  83% (1391/1675)Counting objects:  84% (1407/1675)Counting objects:  85% (1424/1675)Counting objects:  86% (1441/1675)Counting objects:  87% (1458/1675)Counting objects:  88% (1474/1675)Counting objects:  89% (1491/1675)Counting objects:  90% (1508/1675)Counting objects:  91% (1525/1675)Counting objects:  92% (1541/1675)Counting objects:  93% (1558/1675)Counting objects:  94% (1575/1675)Counting objects:  95% (1592/1675)Counting objects:  96% (1608/1675)Counting objects:  97% (1625/1675)Counting objects:  98% (1642/1675)Counting objects:  99% (1659/1675)Counting objects: 100% (1675/1675)Counting objects: 100% (1675/1675), done.
-Delta compression using up to 12 threads
-Compressing objects:   0% (1/1618)Compressing objects:   1% (17/1618)Compressing objects:   2% (33/1618)Compressing objects:   3% (49/1618)Compressing objects:   4% (65/1618)Compressing objects:   5% (81/1618)Compressing objects:   6% (98/1618)Compressing objects:   7% (114/1618)Compressing objects:   8% (130/1618)Compressing objects:   9% (146/1618)Compressing objects:  10% (162/1618)Compressing objects:  11% (178/1618)Compressing objects:  12% (195/1618)Compressing objects:  13% (211/1618)Compressing objects:  14% (227/1618)Compressing objects:  15% (243/1618)Compressing objects:  16% (259/1618)Compressing objects:  17% (276/1618)Compressing objects:  18% (292/1618)Compressing objects:  19% (308/1618)Compressing objects:  20% (324/1618)Compressing objects:  21% (340/1618)Compressing objects:  22% (356/1618)Compressing objects:  23% (373/1618)Compressing objects:  24% (389/1618)Compressing objects:  25% (405/1618)Compressing objects:  26% (421/1618)Compressing objects:  27% (437/1618)Compressing objects:  28% (454/1618)Compressing objects:  29% (470/1618)Compressing objects:  30% (486/1618)Compressing objects:  31% (502/1618)Compressing objects:  32% (518/1618)Compressing objects:  33% (534/1618)Compressing objects:  34% (551/1618)Compressing objects:  35% (567/1618)Compressing objects:  36% (583/1618)Compressing objects:  37% (599/1618)Compressing objects:  38% (615/1618)Compressing objects:  39% (632/1618)Compressing objects:  40% (648/1618)Compressing objects:  41% (664/1618)Compressing objects:  42% (680/1618)Compressing objects:  43% (696/1618)Compressing objects:  44% (712/1618)Compressing objects:  45% (729/1618)Compressing objects:  46% (745/1618)Compressing objects:  47% (761/1618)Compressing objects:  48% (777/1618)Compressing objects:  49% (793/1618)Compressing objects:  50% (809/1618)Compressing objects:  51% (826/1618)Compressing objects:  52% (842/1618)Compressing objects:  53% (858/1618)Compressing objects:  54% (874/1618)Compressing objects:  55% (890/1618)Compressing objects:  56% (907/1618)Compressing objects:  57% (923/1618)Compressing objects:  58% (939/1618)Compressing objects:  59% (955/1618)Compressing objects:  60% (971/1618)Compressing objects:  61% (987/1618)Compressing objects:  62% (1004/1618)Compressing objects:  63% (1020/1618)Compressing objects:  64% (1036/1618)Compressing objects:  65% (1052/1618)Compressing objects:  66% (1068/1618)Compressing objects:  67% (1085/1618)Compressing objects:  68% (1101/1618)Compressing objects:  69% (1117/1618)Compressing objects:  70% (1133/1618)Compressing objects:  71% (1149/1618)Compressing objects:  72% (1165/1618)Compressing objects:  73% (1182/1618)Compressing objects:  74% (1198/1618)Compressing objects:  75% (1214/1618)Compressing objects:  76% (1230/1618)Compressing objects:  77% (1246/1618)Compressing objects:  78% (1263/1618)Compressing objects:  79% (1279/1618)Compressing objects:  80% (1295/1618)Compressing objects:  81% (1311/1618)Compressing objects:  82% (1327/1618)Compressing objects:  83% (1343/1618)Compressing objects:  84% (1360/1618)Compressing objects:  85% (1376/1618)Compressing objects:  86% (1392/1618)Compressing objects:  87% (1408/1618)Compressing objects:  88% (1424/1618)Compressing objects:  89% (1441/1618)Compressing objects:  90% (1457/1618)Compressing objects:  91% (1473/1618)Compressing objects:  92% (1489/1618)Compressing objects:  93% (1505/1618)Compressing objects:  94% (1521/1618)Compressing objects:  95% (1538/1618)Compressing objects:  96% (1554/1618)Compressing objects:  97% (1570/1618)Compressing objects:  98% (1586/1618)Compressing objects:  99% (1602/1618)Compressing objects: 100% (1618/1618)Compressing objects: 100% (1618/1618), done.
-Writing objects:   0% (1/1674)Writing objects:   1% (18/1674)Writing objects:   2% (34/1674)Writing objects:   3% (51/1674)Writing objects:   4% (67/1674)Writing objects:   5% (84/1674)Writing objects:   6% (101/1674)Writing objects:   7% (118/1674)Writing objects:   8% (135/1674)Writing objects:   9% (151/1674)Writing objects:  10% (168/1674)Writing objects:  11% (185/1674)Writing objects:  12% (201/1674)Writing objects:  13% (218/1674)Writing objects:  14% (235/1674)Writing objects:  15% (252/1674)Writing objects:  16% (268/1674)Writing objects:  17% (285/1674)Writing objects:  18% (302/1674)Writing objects:  19% (319/1674)Writing objects:  20% (335/1674)Writing objects:  21% (352/1674)Writing objects:  22% (369/1674)Writing objects:  23% (386/1674)Writing objects:  24% (402/1674)Writing objects:  25% (419/1674)Writing objects:  26% (436/1674)Writing objects:  27% (452/1674)Writing objects:  28% (469/1674)Writing objects:  29% (486/1674)Writing objects:  30% (503/1674)Writing objects:  31% (519/1674)Writing objects:  32% (536/1674)Writing objects:  33% (554/1674)Writing objects:  34% (570/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  35% (586/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  36% (603/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  37% (620/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  38% (637/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  39% (653/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  40% (670/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  41% (687/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  42% (704/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  43% (720/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  44% (737/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  45% (754/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  46% (771/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  47% (787/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  48% (804/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  49% (821/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  50% (837/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  51% (854/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  52% (871/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  53% (888/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  54% (904/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  55% (921/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  56% (938/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  57% (955/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  58% (971/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  59% (988/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  60% (1005/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  61% (1022/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  62% (1038/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  63% (1055/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  64% (1072/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  65% (1089/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  66% (1105/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  67% (1122/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  68% (1139/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  69% (1156/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  69% (1171/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  70% (1172/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  71% (1189/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  72% (1206/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  73% (1223/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  74% (1239/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  75% (1256/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  76% (1273/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  77% (1289/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  78% (1306/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  79% (1323/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  80% (1340/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  81% (1356/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  82% (1373/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  83% (1390/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  84% (1407/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  85% (1423/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  86% (1440/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  87% (1457/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  88% (1474/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  89% (1490/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  90% (1507/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  91% (1524/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  92% (1541/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  93% (1557/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  94% (1574/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  95% (1591/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  96% (1608/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  97% (1624/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  98% (1641/1674), 1.29 MiB | 1.73 MiB/sWriting objects:  99% (1658/1674), 1.29 MiB | 1.73 MiB/sWriting objects: 100% (1674/1674), 1.29 MiB | 1.73 MiB/sWriting objects: 100% (1674/1674), 3.12 MiB | 2.63 MiB/s, done.
-Total 1674 (delta 163), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas:   0% (0/163)[Kremote: Resolving deltas:   1% (2/163)[Kremote: Resolving deltas:   2% (4/163)[Kremote: Resolving deltas:   3% (5/163)[Kremote: Resolving deltas:   4% (7/163)[Kremote: Resolving deltas:   5% (9/163)[Kremote: Resolving deltas:   6% (10/163)[Kremote: Resolving deltas:   7% (12/163)[Kremote: Resolving deltas:   8% (14/163)[Kremote: Resolving deltas:   9% (15/163)[Kremote: Resolving deltas:  10% (17/163)[Kremote: Resolving deltas:  11% (18/163)[Kremote: Resolving deltas:  12% (20/163)[Kremote: Resolving deltas:  13% (22/163)[Kremote: Resolving deltas:  14% (23/163)[Kremote: Resolving deltas:  15% (25/163)[Kremote: Resolving deltas:  16% (27/163)[Kremote: Resolving deltas:  17% (28/163)[Kremote: Resolving deltas:  18% (30/163)[Kremote: Resolving deltas:  19% (31/163)[Kremote: Resolving deltas:  20% (33/163)[Kremote: Resolving deltas:  21% (35/163)[Kremote: Resolving deltas:  22% (36/163)[Kremote: Resolving deltas:  23% (38/163)[Kremote: Resolving deltas:  24% (40/163)[Kremote: Resolving deltas:  25% (41/163)[Kremote: Resolving deltas:  26% (43/163)[Kremote: Resolving deltas:  27% (45/163)[Kremote: Resolving deltas:  28% (46/163)[Kremote: Resolving deltas:  29% (48/163)[Kremote: Resolving deltas:  30% (49/163)[Kremote: Resolving deltas:  31% (51/163)[Kremote: Resolving deltas:  32% (53/163)[Kremote: Resolving deltas:  33% (54/163)[Kremote: Resolving deltas:  34% (56/163)[Kremote: Resolving deltas:  35% (58/163)[Kremote: Resolving deltas:  36% (59/163)[Kremote: Resolving deltas:  37% (61/163)[Kremote: Resolving deltas:  38% (62/163)[Kremote: Resolving deltas:  39% (64/163)[Kremote: Resolving deltas:  40% (66/163)[Kremote: Resolving deltas:  41% (67/163)[Kremote: Resolving deltas:  42% (69/163)[Kremote: Resolving deltas:  43% (71/163)[Kremote: Resolving deltas:  44% (72/163)[Kremote: Resolving deltas:  45% (74/163)[Kremote: Resolving deltas:  46% (75/163)[Kremote: Resolving deltas:  47% (77/163)[Kremote: Resolving deltas:  48% (79/163)[Kremote: Resolving deltas:  49% (80/163)[Kremote: Resolving deltas:  50% (82/163)[Kremote: Resolving deltas:  51% (84/163)[Kremote: Resolving deltas:  52% (85/163)[Kremote: Resolving deltas:  53% (87/163)[Kremote: Resolving deltas:  54% (89/163)[Kremote: Resolving deltas:  55% (90/163)[Kremote: Resolving deltas:  56% (92/163)[Kremote: Resolving deltas:  57% (93/163)[Kremote: Resolving deltas:  58% (95/163)[Kremote: Resolving deltas:  59% (97/163)[Kremote: Resolving deltas:  60% (98/163)[Kremote: Resolving deltas:  61% (100/163)[Kremote: Resolving deltas:  62% (102/163)[Kremote: Resolving deltas:  63% (103/163)[Kremote: Resolving deltas:  64% (105/163)[Kremote: Resolving deltas:  65% (106/163)[Kremote: Resolving deltas:  66% (108/163)[Kremote: Resolving deltas:  67% (110/163)[Kremote: Resolving deltas:  68% (111/163)[Kremote: Resolving deltas:  69% (113/163)[Kremote: Resolving deltas:  70% (115/163)[Kremote: Resolving deltas:  71% (116/163)[Kremote: Resolving deltas:  72% (118/163)[Kremote: Resolving deltas:  73% (119/163)[Kremote: Resolving deltas:  74% (121/163)[Kremote: Resolving deltas:  75% (123/163)[Kremote: Resolving deltas:  76% (124/163)[Kremote: Resolving deltas:  77% (126/163)[Kremote: Resolving deltas:  78% (128/163)[Kremote: Resolving deltas:  79% (129/163)[Kremote: Resolving deltas:  80% (131/163)[Kremote: Resolving deltas:  81% (133/163)[Kremote: Resolving deltas:  82% (134/163)[Kremote: Resolving deltas:  83% (136/163)[Kremote: Resolving deltas:  84% (137/163)[Kremote: Resolving deltas:  85% (139/163)[Kremote: Resolving deltas:  86% (141/163)[Kremote: Resolving deltas:  87% (142/163)[Kremote: Resolving deltas:  88% (144/163)[Kremote: Resolving deltas:  89% (146/163)[Kremote: Resolving deltas:  90% (147/163)[Kremote: Resolving deltas:  91% (149/163)[Kremote: Resolving deltas:  92% (150/163)[Kremote: Resolving deltas:  93% (152/163)[Kremote: Resolving deltas:  94% (154/163)[Kremote: Resolving deltas:  95% (155/163)[Kremote: Resolving deltas:  96% (157/163)[Kremote: Resolving deltas:  97% (159/163)[Kremote: Resolving deltas:  98% (160/163)[Kremote: Resolving deltas:  99% (162/163)[Kremote: Resolving deltas: 100% (163/163)[Kremote: Resolving deltas: 100% (163/163), done.[K
-To github.com:DiSerafim/bigbanca.git
-   52322cb..3779c7f  main -> main
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit push origin main[39m[19D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153mdd .[39m[39md[39md[39m [39m[1m.[0m[?1l>[?2004l
-                                                                                ]0;diserafim@kali: ~/Github/bigbanca
-[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
-└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit add .[39m[8D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39mc[39m [39m [39m [39m [38;2;153;153;153mommit -m "criada pastas frontend, backend e iniciado o 'npm init', inst[38;2;153;153;153ma[38;2;153;153;153mlado express, mongoose, dotenv"[39m[K[A[23D[39mo[39mm[39mm[39mi[39mt[39m [32m-[39m[32m-[32mm[39m[39m [33m"[39m[33m"[33m"[39m[K[1B[K[A[20C[33mc[33m"[39m[33mr[33m"[39m[33mi[33m"[39m[33ma[33m"[39m[33md[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33mo[33m"[39m[33m [33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33mq[33m"[39m[33mu[33m"[39m[33mi[33m"[39m[33mv[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33ma[33m"[39m[33mp[33m"[39m[33mp[33m"[39m[33m.[33m"[39m[33m"[39m[39m [33m [33m"[39m[33mp[33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33ma[33m"[39m[33m [33m"[39m[33mi[33m"[39m[33mn[33m"[39m[33mi[33m"[39m[33mc[33m"[39m[33mi[33m"[39m[33ma[33m"[39m[33ml[33m"[39m[33mi[33m"[39m[33mz[33m"[39m[33ma[33m"[39m[33mr[33m
