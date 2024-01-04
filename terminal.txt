@@ -66,4 +66,30 @@ no changes added to commit (use "git add" and/or "git commit -a")
                                                                                 ]0;diserafim@kali: ~/Github/bigbanca
 [0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
 └─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit status[39m[9D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39ma[39m [39m [39m [39m [39m [38;2;153;153;153mdd .[39m[39md[39md[39m [39m[1m.[0m[1m.[1mg[0m[1mg[1mi[0m[1mi[1mt[0m s [1mi[0m[0m [1mg[0m[0m [1m.[0m[0m [0m [38;2;153;153;153m.[39m[39m [38;2;153;153;153m .[39m [39m [39m [38;2;153;153;153md .[39m [39m [39m [39m [38;2;153;153;153mdd .[39m [39m [39m [39m [39m [38;2;153;153;153mstatus[39m[39ms[39mt[39ma[39mt[39mu[39ms[?1l>[?2004l
-On branch main
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   backend/app.js[m
+	[31mdeleted:    backend/controllers/ProductControle.js[m
+	[31mmodified:   node_modules/.package-lock.json[m
+	[31mmodified:   package-lock.json[m
+	[31mmodified:   package.json[m
+	[31mmodified:   terminal.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31m.gitignore[m
+	[31mbackend/controllers/ProductController.js[m
+	[31mbackend/routes/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+                                                                                ]0;diserafim@kali: ~/Github/bigbanca
+[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit status[39m[9D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39ma[39m [39m [39m [39m [39m [38;2;153;153;153mdd .[39m[39md[39md[39m [39m[1m.[0m[?1l>[?2004l
+                                                                                ]0;diserafim@kali: ~/Github/bigbanca
+[0m[27m[24m[J[32m┌──([1m[32m[34mdiserafim㉿kali[0m[34m[32m)-[[1m[32m[39m~/Github/bigbanca[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mg[24m[4mg[24m[38;2;153;153;153mit add .[39m[8D[4mg[39m[4mi[24m[24m[36mg[24m[36mi[36mt[39m[39m [39mc[39m [39m [39m [39m [38;2;153;153;153mommit -m "criado a pasta Controllers e o arquivo ProductControle.js par[38;2;153;153;153ma[38;2;153;153;153m pegar todos produtos do site"[39m[K[A[22D[39mo[39mm[39mm[39mi[39mt[39m [32m-[39m[32m-[32mm[39m[39m [33m"[39m[33m"[33m"[39m[K[1B[K[A[20C[33mc[33m"[39m[33mr[33m"[39m[33mi[33m"[39m[33ma[33m"[39m[33md[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33mp[33m"[39m[33ma[33m"[39m[33ms[33m"[39m[33mt[33m"[39m[33ma[33m"[39m[33m [33m"[39m[33mp[33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33m [33m"[39m[33mg[33m"[39m[33mu[33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33md[33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33m [33m"[39m[33ma[33m"[39m[33ms[33m"[39m[33m [33m"[39m[33mr[33m"[39m[33mo[33m"[39m[33mt[33m"[39m[33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33m [33m"[39m[33mr[33m"[39m[33mo[33m"[39m[33mu[33m"[39m[33mt[33m"[39m[33me[33m"[39m[33ms[33m"[39m[33m [33m"[39m[33me[33m"[39m[33m [33m"[39m[33ma[33m"[39m[33mr[33m"[39m[33mq[33m"[39m[33mu[33m"[39m[33mv[33m"[39m[33mo[33m"[39m[33mi[33mv[33mo[33m"[39m[1C[1C[33m [33m"[39m[33mp[33m"[39m[33mr[33m"[39m[33mo[33m"[39m[33md[33m"[39m[33mu[33m"[39m[33mc[33m"[39m[33mt[33m"[39m[33mR[33m"[39m[33mo[33m"[39m[33mu[33m"[39m[33mt[33m"[39m[33me[33m"[39m[33m,[33m"[39m[33m [33m"[39m[33mi[33m"[39m[33mn[33m"[39m[33ms[33m"[39m[33mt[33m"[39m[33ma[33m"[39m[33ml[33m"[39m[33ma[33m"[39m[33mn[33m"[39m[33md[33m"[39m[33m [33m"[39m[33m"[39m[39m [33m"[39m[39m [33m"[39m[39m [33md[33m"[39m[33mo[33m"[39m[33m [33m"[39m[33me[33m"[39m[33ms[33m"[39m[33ml[33m"[39m[33mi[33m"[39m[33mn[33m"[39m[33mt[33m"[39m [K[A[79C[1B[K[A[79C[33m [33m"[39m[33me[33m"[39m[33me[33m
