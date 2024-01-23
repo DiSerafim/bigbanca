@@ -13,20 +13,22 @@ const productSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: [true, "Por favor, insira o valor do produto"],
-        maxLength: [8, "O preço não pode exceder 8 caracteres"]
+        max: [88888888, "O preço não pode exceder 8 caracteres"]
     },
     rating: {
         type: Number,
         default: 0
     },
     images: [
-        public_id: {
-            type: String,
-            required: true
-        },
-        url: {
-            type: String,
-            required: true
+        {
+            public_id: {
+                type: String,
+                required: true
+            },
+            url: {
+                type: String,
+                required: true
+            }
         }
     ],
     category: {
@@ -36,7 +38,7 @@ const productSchema = new mongoose.Schema({
     Stock: {
         type: Number,
         required: [true, "Por favor, insira o estoque do produto"],
-        maxLength: [4, "O estoque não pode exceder 4 caracteres"],
+        max: [9999, "O estoque não pode exceder 4 caracteres"],
         default: 1
     },
     numOfReviews:{
