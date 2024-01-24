@@ -19,6 +19,21 @@ exports.getAllProducts = async (rec, res) => {
     })
 };
 
+// Mostra detalhes do produto
+exports.getProductDetails = async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    if (!product) {
+        return res.status(500).json({
+            success: false,
+            message: "Produto não encontrado"
+        })
+    }
+    res.status(200).json({
+        success: true,
+        product
+    })
+}
+
 // Atualiza um produto pelo seu id
 exports.updateProduct = async (req, res, next) => {
     let product = await Product.findById(req.params.id);
