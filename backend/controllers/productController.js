@@ -19,7 +19,7 @@ exports.getAllProducts = async (rec, res) => {
     })
 };
 
-// Atualiza um produto
+// Atualiza um produto pelo seu id
 exports.updateProduct = async (req, res, next) => {
     let product = await Product.findById(req.params.id);
     if(!product){
@@ -38,5 +38,23 @@ exports.updateProduct = async (req, res, next) => {
     res.status(200).json({
         success: true,
         product
+    })
+}
+
+// Deleta um produto pelo seu id
+exports.deleteProduct = async (req, res, next) => {
+    const product = await Product.findById(req.params.id);
+    if(!product){
+        return res.status(500).json({
+            success: false,
+            message: "Produto não encontrado"
+        })
+    }
+    
+    await product.deleteOne();
+
+    res.status(200).json({
+        success: true,
+        message: "Produto excluído com sucesso!"
     })
 }
