@@ -1,4 +1,5 @@
 const Product = require("../models/productModel");
+const errorHandler = require("../utils/errorHandler")
 
 // Cria um produto
 exports.createProduct = async (req, res, next) => {
@@ -23,10 +24,7 @@ exports.getAllProducts = async (rec, res) => {
 exports.getProductDetails = async (req, res, next) => {
     const product = await Product.findById(req.params.id);
     if (!product) {
-        return res.status(500).json({
-            success: false,
-            message: "Produto não encontrado"
-        })
+        return next(new errorHandler("Produto não encontrado", 404));
     }
     res.status(200).json({
         success: true,
@@ -37,11 +35,8 @@ exports.getProductDetails = async (req, res, next) => {
 // Atualiza um produto pelo seu id
 exports.updateProduct = async (req, res, next) => {
     let product = await Product.findById(req.params.id);
-    if(!product){
-        return res.status(500).json({
-            success: false,
-            message: "Produto não encontrado"
-        })
+    if (!product) {
+        return next(new errorHandler("Produto não encontrado", 404));
     }
 
     product = await Product.findByIdAndUpdate(req.params.id, req.body, {
@@ -59,11 +54,8 @@ exports.updateProduct = async (req, res, next) => {
 // Deleta um produto pelo seu id
 exports.deleteProduct = async (req, res, next) => {
     const product = await Product.findById(req.params.id);
-    if(!product){
-        return res.status(500).json({
-            success: false,
-            message: "Produto não encontrado"
-        })
+    if (!product) {
+        return next(new errorHandler("Produto não encontrado", 404));
     }
     
     await product.deleteOne();
