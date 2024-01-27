@@ -1,6 +1,7 @@
 const Product = require("../models/productModel");
 const errorHandler = require("../utils/errorHandler")
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
+const ApiFeatures = require("../utils/apifeatures");
 
 // Cria um produto
 exports.createProduct = catchAsyncErrors(
@@ -14,11 +15,10 @@ exports.createProduct = catchAsyncErrors(
 );
 
 // Mostra todos os produtos
-exports.getAllProducts = catchAsyncErrors(
-    async (rec, res) => {
-        const products = await Product.find();
+exports.getAllProducts = catchAsyncErrors(async (req, res) => {
+    const apiFeature = new ApiFeatures(Product.find(), req.query).search();
+        const products = await apiFeature.query;
         res.status(200).json({
-            message: "A rota está funcionando bem",
             success: true,
             products
         })
