@@ -23,3 +23,30 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
         token,
     });
 });
+
+// Login de usuário
+exports.loginUser = catchAsyncErrors(async (req, res, next) => {
+    const { email, password } = req.body;
+    // Verifica se o usuário forneceu senha e e-mail
+    if (!email || !password) {
+        return next(new ErrorHandler("Por favor, digite Email & Senha", 400));
+    }
+    
+    const user = await User.findOne({ email }).select("+password");
+
+    if (!user) {
+        return next(new ErrorHandler("Email ou senha Inválido", 401));
+    }
+
+    const isPasswordMatched = await user.comparePassword(password);
+
+    if (!isPasswordMatched) {
+        return next(new ErrorHandler("Email ou senha Inválido", 401));
+    }
+
+    const token = await user.getJWTToken();
+    res.status(200).json({
+        success: true,
+        token,
+    });
+});
