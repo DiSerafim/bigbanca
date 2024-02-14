@@ -3,6 +3,7 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const User = require("../models/userModel");
 const sendToken = require("../utils/jwtToken");
 const sendEmail = require("../utils/sendEmail");
+const crypto = require("crypto");
 
 // Cria um novo usuário
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
@@ -63,11 +64,10 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 
     // Obtém o Token de Redefinição de Senha
     const resetToken = user.getResetPasswordToken();
-
     await user.save({ validateBeforeSave: false });
-
     const resetPasswordUrl = `${req.protocol}://${req.get("host")}/api/v1/password/reset/${resetToken}`;
-
+    console.log(resetToken);
+    console.log(resetPasswordUrl);
     const message = `Clique no link para alterar sua senha :- \n\n ${resetPasswordUrl} \n\nSe você não pediu para atualizar sua senha, desconsidere esta mensagem.`;
 
     try {
@@ -76,18 +76,43 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
             subject: `Recuperação de Senha do E-commerce`,
             message,
         });
-
         res.status(200).json({
             success: true,
             message: `Um e-mail para atualização de senha foi enviado para ${user.email}`,
         })
     } catch (error) {
-        console.log("Erro ao enviar e-mail: ", error);
         user.resetPasswordToken = undefined;
         user.resetPasswordExpire = undefined;
 
         await user.save({ validateBeforeSave: false });
-
-        return next(new ErrorHandler("não foi possível enviar o e-mail", 500));
+        return next(new ErrorHandler(error.message, 500));
     }
+});
+
+// Redefine senha
+exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
+    // Gera um código hash para um token
+    const resetPasswordToken = crypto
+        .createHash("sha256")
+        .update(req.params.token)
+        .digest("hex")
+
+    const user = await User.findOne({
+        resetPasswordToken,
+        resetPasswordExpire: { $gt: Date.now() },
+    });
+
+    if (!user) {
+        return next(new ErrorHandler("Redefinição de token inválida ou hash expirou", 400));
+    }
+    if (req.body.password !== req.body.confirmPassword) {
+        return next(new ErrorHandler("Senha não coincide", 400));
+    }
+
+    user.password = req.body.password;
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+
+    await user.save();
+    sendToken(user, 200, res);
 })
