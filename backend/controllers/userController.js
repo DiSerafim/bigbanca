@@ -55,7 +55,7 @@ exports.logoutUser = catchAsyncErrors(async (req, res, next) => {
     });
 });
 
-// Atualiza senha do usuário
+// Pedido para atualizar senha perdida do usuário
 exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findOne({ email: req.body.email });
     if (!user) {
@@ -89,7 +89,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     }
 });
 
-// Redefine senha
+// Redefine senha perdida
 exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
     // Gera um código hash para um token
     const resetPasswordToken = crypto
@@ -125,4 +125,21 @@ exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
         success: true,
         user,
     });
+});
+
+// Atualiza senha através do seu perfil
+exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
+    const user = await User.findById(req.user.id).select("+password");
+    const isPasswordMatched = await user.comparePassword(req.body.oldPassword);
+    
+    if (!isPasswordMatched) {
+        return next(new ErrorHandler("Esta não é sua senha atual", 400));
+    }
+    if (req.body.newPassword !== req.body.confirmPassword) {
+        return next(new ErrorHandler("Senhas não correspondem", 400));
+    }
+
+    user.password = req.body.newPassword;
+    await user.save();
+    sendToken(user, 200, res);
 });
