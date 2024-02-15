@@ -185,3 +185,35 @@ exports.getSingleUser = catchAsyncErrors(async (req, res, next) => {
         user,
     });
 });
+
+// Atualiza função de Usuário comum ou Admin
+exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
+    const newUserRole = {
+        name: req.body.name,
+        email: req.body.email,
+        role: req.body.role,
+    }
+    const user = await User.findByIdAndUpdate(req.params.id, newUserRole, {
+        new: true,
+        runValidators: true,
+        useFindAndModify: false,
+    });
+    res.status(200).json({
+        success: true,
+    });
+});
+
+// Deleta usuário (Admin)
+exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
+    const user = await User.findByIdAndDelete(req.params.id);
+    // remove a foto do cloudinary posteriormente
+
+    if (!user) {
+        return next(new ErrorHandler(`Usuário não encontrado com ID: ${req.params.id}`, 400))
+    }
+
+    res.status(200).json({
+        success: true,
+        message: "Usuário foi removido",
+    });
+});
