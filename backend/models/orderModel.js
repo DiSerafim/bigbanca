@@ -90,7 +90,7 @@ const orderSchema = new mongoose.Schema({
     orderStatus: {
         type: String,
         required: true,
-        default: "Processando",
+        default: "Preparando seu pedido",
     },
     deliveredAt: Date,
     createdAt: {

@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 
 const userSchema = new mongoose.Schema({
+    // Sub-esquema de usuário com autenticação e gerenciamento de senha
     name: {
         type: String,
         required: [true, "Por favor, digite o seu nome"],

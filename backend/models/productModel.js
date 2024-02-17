@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
+    // Sub-esquema para informações de Produto
     name: {
         type: String,
         required: [true, "Por favor, digite o nome do produto"],
