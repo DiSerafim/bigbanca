@@ -75,3 +75,58 @@ exports.getAllOrders = catchAsyncErrors(async (rec, res, next) => {
         orders,
     });
 });
+
+// Atualiza Status do pedido - Admin
+exports.updateOrder = catchAsyncErrors(async (req, res, next) => {
+    const order = await Order.findById(req.params.id);
+
+    if (!order) {
+        return next(new ErrorHandler("Pedido não encontrado, não existe.", 404));
+      }
+
+    if (order.orderStatus === "Entregue") {
+        return next(new ErrorHandler("Produto já foi entregue", 400));
+    }
+
+    if (req.body.status === "Enviado para entrega") {
+        order.orderItems.forEach(async (o) => {
+            await updateStock(o.product, o.quantity);
+        });
+    }
+
+    order.orderStatus = req.body.status;
+
+    if (req.body.status === "Entregue") {
+        order.deliveredAt = Date.now();
+    }
+
+    await order.save({ validateBeforeSave: false });
+
+    res.status(200).json({
+        success: true,
+        message: "Entrega confirmada."
+    });
+});
+
+// Atualiza estoque
+async function updateStock(id, quantity) {
+    const product = await Product.findById(id);
+
+    product.Stock -= quantity;
+
+    await product.save({ validateBeforeSave: false });
+}
+
+// Deleta pedido - Admin
+exports.deleteOrder = catchAsyncErrors(async (req, res, next) => {
+    const order = await Order.findByIdAndDelete(req.params.id);
+
+    if (!order) {
+        return next (new ErrorHandler("Pedido não encontrado com este Id", 404));
+    }
+
+    res.status(200).json({
+        success: true,
+        message: "Pedido Excluído",
+    });
+});
