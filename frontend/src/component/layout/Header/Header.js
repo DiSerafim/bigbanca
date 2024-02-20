@@ -6,11 +6,11 @@ import logo from "../../../img/logo-banca-do-vovo.png";
 const Header = () => {
     return <ReactNavbar
         burgerColor = "#000"
-        burgerColorHover = "#a62d24"
+        burgerColorHover = "#eb4034"
         logo = {logo}
         logoWidth = "20vmax"
         logoHoverSize = "10px"
-        logoHoverColor = "#eb4034"
+        logoHoverColor = "crimson"
         navColor1 = "white"
         navColor2 = "#245"
         link1Text = "Home"
@@ -27,14 +27,14 @@ const Header = () => {
         nav2justifyContent = "flex-end"
         nav3justifyContent = "flex-start"
         nav4justifyContent = "flex-start"
-        link1ColorHover = "#eb4034"
+        link1ColorHover = "crimson"
         link1Margin = "1vmax"
         profileIconColor = "rgba(35, 35, 35, 0.8)"
         searchIconColor = "rgba(35, 35, 35, 0.8)"
         cartIconColor = "rgba(35, 35, 35, 0.8)"
-        profileIconColorHover = "eb4034"
-        searchIconColorHover = "eb4034"
-        cartIconColorHover = "eb4034"
+        profileIconColorHover = "crimson"
+        searchIconColorHover = "crimson"
+        cartIconColorHover = "crimson"
         cartIconMargin = "1vmax"
     />;
 }
