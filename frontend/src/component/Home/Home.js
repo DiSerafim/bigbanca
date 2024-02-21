@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { CgMouse } from "react-icons/cg";
-import "./Home.css";
 import Product from "./Product.js";
+import MetaData from "../layout/MetaData.js";
+import "./Home.css";
 
 const product = {
     name: "Blue Tshirt",
@@ -13,6 +14,8 @@ const product = {
 const Home = () => {
     return (
         <Fragment>
+            <MetaData title="BancaDoVovô - Início" />
+
             <div className="banner">
                 <p>Bem-vindo a BANCA ON-LINE.</p>
                 <h1>ENCONTRE PRODUTOS INCRÍVEIS</h1>
