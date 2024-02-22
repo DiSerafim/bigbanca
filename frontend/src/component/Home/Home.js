@@ -6,15 +6,10 @@ import "./Home.css";
 import { getProduct } from "../../actions/productAction";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../layout/Loader/Loader";
-
-const product = {
-    name: "Blue Tshirt",
-    images: [{ url: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRW1-Fu4baINkJ6XPPCD2okRQmI0313bGJGE0WNYvqzDecWwdyJJ_s8qtPDFyCNnlbTd6JBJYcn0-wZ4lOWuygSrdwLEnvuAeshmZUOcpng5aLHKqy1TLGlkyEXvG7SqT3mAGKpi4M&usqp=CAc" }],
-    price: "R$ 3.000,00",
-    _id: "Diego",
-}
+import { useAlert } from "react-alert";
 
 const Home = () => {
+    const alert = useAlert();
     const dispatch = useDispatch();
 
     const { loading, error, products, productsCount } = useSelector(
@@ -22,8 +17,11 @@ const Home = () => {
     );
 
     useEffect(() => {
+        if (error) {
+            return alert.error(error);
+        }
         dispatch(getProduct());
-    }, [dispatch]);
+    }, [dispatch, error]);
 
     return (
         <Fragment>
