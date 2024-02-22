@@ -26,26 +26,30 @@ const Home = () => {
 
     return (
         <Fragment>
-            <MetaData title="BancaDoVovô - Início" />
+            {loading ? ("Abrindo...") : (
+                <Fragment>
+                    <MetaData title="BancaDoVovô - Início" />
 
-            <div className="banner">
-                <p>Bem-vindo a BANCA ON-LINE.</p>
-                <h1>ENCONTRE PRODUTOS INCRÍVEIS</h1>
+                    <div className="banner">
+                        <p>Bem-vindo a BANCA ON-LINE.</p>
+                        <h1>ENCONTRE PRODUTOS INCRÍVEIS</h1>
 
-                <a href="#container">
-                    <button>
-                    Ver <CgMouse />
-                    </button>
-                </a>
-            </div>
+                        <a href="#container">
+                            <button>
+                            Ver <CgMouse />
+                            </button>
+                        </a>
+                    </div>
 
-            <h2 className="homeHeading">Produtos em Destaque</h2>
+                    <h2 className="homeHeading">Produtos em Destaque</h2>
 
-            <div className="container" id="container">
-                <Product product={product} />
-                
-                {products && products.map((product) => <Product product={product} />)}
-            </div>
+                    <div className="container" id="container">
+                        <Product product={product} />
+                        
+                        {products && products.map((product) => <Product product={product} />)}
+                    </div>
+                </Fragment>
+            )}
         </Fragment>
     );
 };
