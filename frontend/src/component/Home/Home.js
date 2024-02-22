@@ -5,6 +5,7 @@ import MetaData from "../layout/MetaData.js";
 import "./Home.css";
 import { getProduct } from "../../actions/productAction";
 import { useDispatch, useSelector } from "react-redux";
+import Loader from "../layout/Loader/Loader";
 
 const product = {
     name: "Blue Tshirt",
@@ -26,7 +27,7 @@ const Home = () => {
 
     return (
         <Fragment>
-            {loading ? ("Abrindo...") : (
+            {loading ? (<Loader />) : (
                 <Fragment>
                     <MetaData title="BancaDoVovô - Início" />
 
@@ -44,8 +45,6 @@ const Home = () => {
                     <h2 className="homeHeading">Produtos em Destaque</h2>
 
                     <div className="container" id="container">
-                        <Product product={product} />
-                        
                         {products && products.map((product) => <Product product={product} />)}
                     </div>
                 </Fragment>
