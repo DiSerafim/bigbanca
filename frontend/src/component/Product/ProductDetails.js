@@ -5,6 +5,7 @@ import { getProductDetails } from "../../actions/productAction";
 import { useParams } from "react-router-dom";
 import "./ProductDetails.css";
 import ReactStars from "react-rating-stars-component";
+import ReviewCard from "./ReviewCard.js";
 
 
 const ProductDetails = ({ match }) => {
@@ -45,6 +46,7 @@ const ProductDetails = ({ match }) => {
                         ))}
                     </Carousel>
                 </div>
+
                 {/* Descrição */}
                 <div>
                     <div className="detailsBlock-1">
@@ -89,7 +91,18 @@ const ProductDetails = ({ match }) => {
                     <button className="submitReview">Avalie Este Produto</button>
                 </div>
             </div>
-            
+
+            {/* Avaliações */}
+            <h3 className="reviewsHeading">Avaliações</h3>
+            {product.reviews && product.reviews[0] ? (
+                <div className="reviews">
+                    {product.reviews && product.reviews.map(
+                        (review => <ReviewCard review={review} />)
+                    )}
+                </div>
+            ) : (
+                <p className="noReviews">Este produto ainda não recebeu avaliações.</p>
+            )}
         </Fragment>
     );
 }
