@@ -46,47 +46,50 @@ const ProductDetails = ({ match }) => {
                     </Carousel>
                 </div>
                 {/* Descrição */}
-                <div className="detailsBlock-1">
-                    <h2>{product.name}</h2>
-                    <p>Item # {product._id}</p>
-                    <p>{product.category}</p>
-                    <p>{product.ratings}</p>
-                    <p>{/* {product.reviews} */}</p>
-                    <p>{product.createdAt}</p>
-                </div>
-                <div className="detailsBlock-2">
-                    <ReactStars {...options} />
-                    <span>Avaliação {product.numOfReviews}</span>
-                </div>
-                <div className="detailsBlock-3">
-                    <h1>{`R$ ${product.price},00`}</h1>
-
-                    <div className="detailsBlock-3-1">
-                        <div className="detailsBlock-3-1-1">
-                            <button>-</button>
-                            <input value="1" />
-                            <button>+</button>
-                        </div>{" "}
+                <div>
+                    <div className="detailsBlock-1">
+                        <h2>{product.name}</h2>
+                        <p>Item # {product._id}</p>
+                        <p>{product.category}</p>
+                        <p>{product.ratings}</p>
+                        <p>{/* {product.reviews} */}</p>
+                        <p>{product.createdAt}</p>
                     </div>
-                    <button>Comprar</button>
+                    <div className="detailsBlock-2">
+                        <ReactStars {...options} />
+                        <span>{product.numOfReviews}</span>
+                    </div>
+                    <div className="detailsBlock-3">
+                        <h1>{`R$ ${product.price},00`}</h1>
+
+                        <div className="detailsBlock-3-1">
+                            <div className="detailsBlock-3-1-1">
+                                <button>-</button>
+                                <input value="1" type="number" />
+                                <button>+</button>
+                            </div>{" "}
+                            <button>Comprar</button>
+                        </div>
+
+                        {/* Estoque */}
+                        <p>
+                            Estoque:{" "}
+                            <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
+                                <p>{product.Stock < 1 ? "Sem estoque": "Disponível"}</p>
+                            </b>
+                        </p>
+                    </div>
+
+                    {/* Descrição */}
+                    <div className="detailsBlock-4">
+                        Descrição:<p>{product.description}</p>
+                    </div>
+
+                    {/* Avalização */}
+                    <button className="submitReview">Avalie Este Produto</button>
                 </div>
-
-                {/* Estoque */}
-                <p>
-                    Estoque: {" "}
-                    <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
-                        <p>{product.Stock < 1 ? "Sem estoque": "Disponível"}</p>
-                    </b>
-                </p>
-
-                {/* Descrição */}
-                <div className="detailsBlock-4">
-                    <span>{product.description}</span>
-                </div>
-
-                {/* Avalização */}
-                <button className="submitReview">Avalie Este Produto</button>
             </div>
+            
         </Fragment>
     );
 }
