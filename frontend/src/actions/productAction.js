@@ -45,7 +45,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     }
 };
 
-// Limpando Erros
+// Limpa Erros
 export const clearErros = () => async (dispatch) => {
     dispatch({ type: CLEAR_ERRORS });
 };
