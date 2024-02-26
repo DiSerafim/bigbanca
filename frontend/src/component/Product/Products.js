@@ -8,7 +8,7 @@ import "./Products.css";
 const Products = () => {
     const dispatch = useDispatch();
 
-    const { products, loading, error, productsCount } = useSelector(
+    const { products, loading } = useSelector(
         (state) => state.products
     );
 
