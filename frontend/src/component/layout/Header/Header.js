@@ -17,7 +17,7 @@ const options = {
     link3Text: "Contato",
     link4Text: "Sobre mim",
     link1Url: "/",
-    link2Url: "/product",
+    link2Url: "/products",
     link3Url: "/contact",
     link4Url: "/about",
     link1Size: "1.3vmax",

@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/cg";
-import Product from "./Product.js";
+import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData.js";
 import "./Home.css";
 import { clearErros, getProduct } from "../../actions/productAction";
@@ -45,7 +45,7 @@ const Home = () => {
                     <h2 className="homeHeading">Produtos em Destaque</h2>
 
                     <div className="container" id="container">
-                        {products && products.map((product) => <Product product={product} />)}
+                        {products && products.map((product) => <ProductCard product={product} />)}
                     </div>
                 </Fragment>
             )}
