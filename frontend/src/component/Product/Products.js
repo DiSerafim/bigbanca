@@ -4,17 +4,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProduct } from "../../actions/productAction";
 import ProductCard from "../Home/ProductCard";
 import "./Products.css";
+import { useParams } from "react-router-dom";
 
-const Products = () => {
+const Products = ({ match }) => {
     const dispatch = useDispatch();
+    const { keyword } = useParams();
 
     const { products, loading } = useSelector(
         (state) => state.products
     );
 
     useEffect(() => {
-        dispatch(getProduct());
-    }, [dispatch]);
+        dispatch(getProduct(keyword));
+    }, [dispatch, keyword]);
+    
+
 
     return <Fragment>
         {loading ? (

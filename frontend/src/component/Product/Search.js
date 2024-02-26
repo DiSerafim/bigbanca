@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom"
 import "./Search.css";
 
-const Search = ({ history }) => {
+const Search = () => {
     const navigate = useNavigate();
     const [keyword, setKeyword] = useState("");
 

@@ -11,22 +11,24 @@ import {
 } from "../constants/productConstants";
 
 // Action Redux Produtos
-export const getProduct = () => async (dispatch) => {
+export const getProduct = (keyword = "") => async (dispatch) => {
     try {
         dispatch({ type: ALL_PRODUCT_REQUEST });
-        const { data } = await axios.get("/api/v1/products");
+        let link = `/api/v1/products?keyword=${keyword}`;
+        const { data } = await axios.get(link);
 
         dispatch({
             type: ALL_PRODUCT_SUCCESS,
             payload: data,
         });
-    } catch(error) {
+    } catch (error) {
         dispatch({
             type: ALL_PRODUCT_FAIL,
             payload: error.response.data.message,
         });
     }
 };
+
 // Action Redux Detalhes do Produto
 export const getProductDetails = (id) => async (dispatch) => {
     try {
