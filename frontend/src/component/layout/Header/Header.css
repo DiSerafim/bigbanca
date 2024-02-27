@@ -1,0 +1,77 @@
+/* https://www.flaticon.com/ */
+.nav4 > a {
+    padding: 1vmax;
+    background-color: rgb(39, 76, 95);
+}
+
+#cartIcon {
+    width: 26px;
+    height: 26px;
+    background-image: url('../../../img/shopping-cart.png');
+    background-size: cover; /* Garante que a imagem cubra todo o espaço */
+    display: inline-block;
+    cursor: pointer;
+}
+
+#cartIcon:hover::before {
+    margin-top: -1.8vmax;
+    margin-left: -2%;
+    content: "Compras";
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 999;
+    font-size: 12px;
+    padding: 0.5vmax;
+    font-family: "Roboto";
+}
+
+.nav4 > a #profileIcon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../img/profile.png');
+    background-size: cover;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+}
+
+#profileIcon:hover::before {
+    margin-top: -1.7vmax;
+    margin-left: 1%;
+    content: "Perfil";
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+    font-size: 12px;
+    padding: 0.5vmax;
+    font-family: "Roboto";
+}
+    
+.nav4 > a #searchIcon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../img/search.png');
+    background-size: cover;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+}
+
+#searchIcon:hover::before {
+    margin-top: -1.7vmax;
+    margin-left: -5%;
+    content: "Pesquisar";
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.9;
+    z-index: 1;
+    font-size: 12px;
+    padding: 0.5vmax;
+    font-family: "Roboto";
+}

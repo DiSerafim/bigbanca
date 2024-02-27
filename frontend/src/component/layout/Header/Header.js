@@ -2,6 +2,7 @@ import React from "react";
 // Menu - npmjs.com/package/overlay-navbar
 import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../img/logo-banca-do-vovo.png";
+import "./Header.css";
 
 const options = {
     burgerColor: "#000",
@@ -31,10 +32,18 @@ const options = {
     profileIconColor: "rgba(35, 35, 35, 0.8)",
     searchIconColor: "rgba(35, 35, 35, 0.8)",
     cartIconColor: "rgba(35, 35, 35, 0.8)",
+    IconColor: "white",
+    profileColor: "white",
     profileIconColorHover: "crimson",
     searchIconColorHover: "crimson",
     cartIconColorHover: "crimson",
     cartIconMargin: "1vmax",
+    profileIcon:true,
+    ProfileIconElement: "MdAccountCircle", 
+    searchIcon:true,
+    SearchIconElement:"MdSearch",
+    cartIcon:true,
+    CartIconElement:"MdAddShoppingCart",
 }
 
 const Header = () => {
