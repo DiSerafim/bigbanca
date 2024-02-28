@@ -1,25 +1,30 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Loader from "../layout/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { getProduct } from "../../actions/productAction";
 import ProductCard from "../Home/ProductCard";
 import "./Products.css";
 import { useParams } from "react-router-dom";
+import Pagination from "react-js-pagination";
 
-const Products = ({ match }) => {
+const Products = () => {
     const dispatch = useDispatch();
     const { keyword } = useParams();
 
-    const { products, loading } = useSelector(
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const { products, loading, productsCount, resultPerPage } = useSelector(
         (state) => state.products
     );
 
+    const setCurrentPageNo = (e) => {
+        setCurrentPage(e);
+    }
+
     useEffect(() => {
-        dispatch(getProduct(keyword));
-    }, [dispatch, keyword]);
+        dispatch(getProduct(keyword, currentPage));
+    }, [dispatch, keyword, currentPage]);
     
-
-
     return <Fragment>
         {loading ? (
             <Loader />
@@ -33,6 +38,26 @@ const Products = ({ match }) => {
                             <ProductCard key={product._id} product={product} />
                         ))}
                 </div>
+
+                {/* Paginação */}
+                {resultPerPage < productsCount && (
+                    <div className="paginationBox">
+                        <Pagination
+                            activePage={currentPage}
+                            itemsCountPerPage={resultPerPage}
+                            totalItemsCount={productsCount}
+                            onChange={setCurrentPageNo}
+                            nextPageText="Próxima"
+                            prevPageText="Anterior"
+                            firstPageText="Início"
+                            lastPageText="Fim"
+                            itemClass="page-item"
+                            linkClass="page-link"
+                            activeClass="pageItemActive"
+                            activeLinkClass="pageLinkActive"
+                        />
+                    </div>
+                )}
             </Fragment>
         )}
     </Fragment>
