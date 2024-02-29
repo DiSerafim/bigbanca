@@ -9,6 +9,7 @@ import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 import { useAlert } from "react-alert";
+import MetaData from "../layout/MetaData";
 
 const categories = [
     "Notebooks",
@@ -63,6 +64,7 @@ const Products = () => {
             <Loader />
         ) : (
             <Fragment>
+                <MetaData title={`Produtos - BancaDoVovô`} />
                 <h2 className="productsHeading">Produtos</h2>
 
                 <div className="products">
