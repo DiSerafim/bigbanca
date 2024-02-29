@@ -26,6 +26,7 @@ const Products = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [price, setPrice] = useState([0, 200]);
     const [category, setCategory] = useState("");
+    const [ratings, setRatings] = useState(0);
 
     const {
         products,
@@ -44,8 +45,8 @@ const Products = () => {
     };
 
     useEffect(() => {
-        dispatch(getProduct(keyword, currentPage, price, category));
-    }, [dispatch, keyword, currentPage, price, category]);
+        dispatch(getProduct(keyword, currentPage, price, category, ratings));
+    }, [dispatch, keyword, currentPage, price, category, ratings]);
 
     let count = filteredProductsCount;
     
@@ -89,6 +90,21 @@ const Products = () => {
                             </li>
                         ))}
                     </ul>
+
+                    {/* Filtra avaliação */}
+                    <fieldset>
+                        <Typography component="legend">Avaliação</Typography>
+                        <Slider
+                            value={ratings}
+                            onChange={(e, newRating) => {
+                                setRatings(newRating);
+                            }}
+                            aria-label="continuos-slider"
+                            valueLabelDisplay="auto"
+                            min={0}
+                            max={5}
+                        />
+                    </fieldset>
                 </div>
 
                 {/* Paginação */}

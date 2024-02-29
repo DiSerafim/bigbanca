@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     padding: 0 5vmax;
     justify-content: center;
+    min-height: 30vh;
 }
 
 .paginationBox {
@@ -91,6 +92,10 @@
     color: crimson;
 }
 
+.filterBox > fieldset {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
 @media screen and (max-width: 600px) {
     .filterBox {
         width: 20vmax;
@@ -100,5 +105,9 @@
 
     .page-link {
         font: 300 1.5vmax "Roboto";
+    }
+
+    .category-link {
+        font: 400 1.8vmax "Roboto";
     }
 }
