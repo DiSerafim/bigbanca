@@ -18,19 +18,36 @@ exports.createProduct = catchAsyncErrors(
 // Exibe todos os produtos
 exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
     const resultPerPage = 5;
-    const productsCount = await Product.countDocuments();
-    const apiFeature = new ApiFeatures(Product.find(), req.query)
-        .search()
-        .filter()
-        .pagination(resultPerPage);
-        const products = await apiFeature.query;
+
+    try {
+        const productsCount = await Product.countDocuments();
+        let apiFeature = new ApiFeatures(Product.find(), req.query)
+            .search()
+            .filter();
+        let products = await apiFeature.query;
+        let filteredProductsCount = products.length;
+
+        apiFeature = new ApiFeatures(Product.find(), req.query)
+            .search()
+            .filter()
+            .pagination(resultPerPage);
+
+        products = await apiFeature.query;
+    
         res.status(200).json({
             success: true,
             products,
             productsCount,
             resultPerPage,
+            filteredProductsCount,
         });
-    });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            error: "Erro interno do servidor"
+        });
+    }
+});
 
 // Exibe detalhes do produto
 exports.getProductDetails = catchAsyncErrors(
