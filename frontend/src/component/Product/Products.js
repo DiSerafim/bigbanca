@@ -1,13 +1,14 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Loader from "../layout/Loader/Loader";
 import { useDispatch, useSelector } from "react-redux";
-import { getProduct } from "../../actions/productAction";
+import { clearErros, getProduct } from "../../actions/productAction";
 import ProductCard from "../Home/ProductCard";
 import "./Products.css";
 import { useParams } from "react-router-dom";
 import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
+import { useAlert } from "react-alert";
 
 const categories = [
     "Notebooks",
@@ -21,6 +22,8 @@ const categories = [
 
 const Products = () => {
     const dispatch = useDispatch();
+    const alert = useAlert();
+
     const { keyword } = useParams();
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -34,6 +37,7 @@ const Products = () => {
         productsCount,
         resultPerPage,
         filteredProductsCount,
+        error,
     } = useSelector((state) => state.products);
 
     const setCurrentPageNo = (e) => {
@@ -45,8 +49,12 @@ const Products = () => {
     };
 
     useEffect(() => {
+        if (error) {
+            alert.error(error);
+            dispatch(clearErros());
+        }
         dispatch(getProduct(keyword, currentPage, price, category, ratings));
-    }, [dispatch, keyword, currentPage, price, category, ratings]);
+    }, [dispatch, keyword, currentPage, price, category, ratings, alert, error]);
 
     let count = filteredProductsCount;
     
