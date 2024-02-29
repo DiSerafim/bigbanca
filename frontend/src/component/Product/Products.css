@@ -66,3 +66,22 @@
 .pageLinkActive {
     color: white;
 }
+
+.filterBox {
+    left: 4vmax;
+    position: absolute;
+    top: 10vmax;
+    width: 10vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .filterBox {
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link {
+        font: 300 1.5vmax "Roboto";
+    }
+}
