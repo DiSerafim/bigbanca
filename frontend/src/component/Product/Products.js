@@ -9,12 +9,23 @@ import Pagination from "react-js-pagination";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 
+const categories = [
+    "Notebooks",
+    "Calçados",
+    "Calças",
+    "Camisas",
+    "Vestuário",
+    "Câmeras",
+    "Celulares"
+];
+
 const Products = () => {
     const dispatch = useDispatch();
     const { keyword } = useParams();
 
     const [currentPage, setCurrentPage] = useState(1);
     const [price, setPrice] = useState([0, 200]);
+    const [category, setCategory] = useState("");
 
     const {
         products,
@@ -33,8 +44,8 @@ const Products = () => {
     };
 
     useEffect(() => {
-        dispatch(getProduct(keyword, currentPage, price));
-    }, [dispatch, keyword, currentPage, price]);
+        dispatch(getProduct(keyword, currentPage, price, category));
+    }, [dispatch, keyword, currentPage, price, category]);
 
     let count = filteredProductsCount;
     
@@ -52,7 +63,9 @@ const Products = () => {
                         ))}
                 </div>
 
+                {/* Filtra Produtos */}
                 <div className="filterBox">
+                    {/* Filtra preço */}
                     <Typography>Preço</Typography>
                     <Slider
                         value={price}
@@ -62,6 +75,20 @@ const Products = () => {
                         min={0}
                         max={200}
                     />
+
+                    {/* Filtra categoria */}
+                    <Typography>Categoria</Typography>
+                    <ul className="categoryBox">
+                        {categories.map((category) => (
+                            <li
+                                className="category-link"
+                                key={category}
+                                onClick={() => setCategory(category)}
+                            >
+                                {category}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
 
                 {/* Paginação */}
