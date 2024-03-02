@@ -1,7 +1,9 @@
 import React, { Fragment, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+// https://mui.com/material-ui/material-icons/
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+import FaceIcon from '@mui/icons-material/Face';
 import "./LoginSignUp.css";
 
 const LoginSignUp = () => {
@@ -11,9 +13,47 @@ const LoginSignUp = () => {
 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
+    const [user, setUser] = useState({
+        name: "",
+        email: "",
+        password: "",
+    });
+    const [avatar, setAvatar] = useState();
+    const [avatarPreview, setAvatarPreview] = useState("/frontend/src/img/profile.png");
+
+    const { name, email, password } = user;
 
     const loginSubmit = () => {
-        console.log("Formulário Enviado")
+        console.log("Login Formulário Enviado");
+    }
+
+    const registerSubmit = (e) => {
+        e.preventDefault();
+        const myForm = new FormData();
+
+        myForm.set("name", name);
+        myForm.set("email", email);
+        myForm.set("password", password);
+        myForm.set("avatar", avatar);
+        console.log("Registro Formulário Enviado");
+    }
+
+    const registerDataChange = (e) => {
+        // e.preventDefault();
+        if (e.target.name === "avatar") {
+            const reader = new FileReader();
+            reader.onload = () => {
+                if (reader.readyState === 2) {
+                    setAvatarPreview(reader.result);
+                    setAvatar(reader.result);
+                }
+            };
+
+            reader.readAsDataURL(e.target.files[0]);
+        } else {
+            setUser({ ...user, [e.target.name]: e.target.value });
+        }
+
     }
 
     const switchTabs = (e, tab) => {
@@ -45,6 +85,7 @@ const LoginSignUp = () => {
                         <button ref={switcherTab}></button>
                     </div>
 
+                    {/* Formulário de Login */}
                     <form className="loginForm" ref={loginTab} onSubmit={loginSubmit}>
                         <div className="loginEmail">
                             <MailOutlineIcon />
@@ -71,10 +112,60 @@ const LoginSignUp = () => {
                         <Link to="/password/forgot">Esqueci minha senha..</Link>
                         <input type="submit" value="Entrar" className="loginBtn" />
                     </form>
+
+                    {/* Formulário de Cadastro */}
+                    <form
+                        className="signUpForm"
+                        ref={registerTab}
+                        encType="multipart/form-data"
+                        onSubmit={registerSubmit}
+                    >
+                        <div className="signUpName">
+                            <FaceIcon />
+                            <input
+                                type="text"
+                                placeholder="Nome"
+                                required
+                                name="name"
+                                value={name}
+                                onChange={registerDataChange}
+                            />
+                        </div>
+                        <div className="signUpName">
+                            <MailOutlineIcon />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                required
+                                name="email"
+                                value={email}
+                                onChange={registerDataChange}
+                            />
+                        </div>
+                        <div className="signUpPassword">
+                            <LockOpenIcon />
+                            <input
+                                type="password"
+                                placeholder="Senha"
+                                required
+                                name="password"
+                                value={password}
+                                onChange={registerDataChange}
+                            />
+                        </div>
+                        <div id="registerImage">
+                            <img src={avatarPreview} alt="Avatar Preview" />
+                            <input
+                                type="file"
+                                name="avatar"
+                                accept="image/*"
+                                onChange={registerDataChange}
+                            />
+                        </div>
+                        <input type="submit" value="Criar Conta" className="signUpBtn" />
+                    </form>
                 </div>
             </div>
-            Olá mundo!
-            Deus seja louvado!
         </Fragment>
     );
 };
