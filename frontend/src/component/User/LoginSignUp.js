@@ -9,10 +9,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login } from "../../actions/userAction";
 import { useAlert } from "react-alert";
 import Loader from "../layout/Loader/Loader";
+import { useNavigate } from "react-router-dom";
 
 const LoginSignUp = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
+    const navigate = useNavigate();
 
     const { error, loading, isAuthenticated } = useSelector((state) => state.user);
 
@@ -69,7 +71,10 @@ const LoginSignUp = () => {
             alert.error(error);
             dispatch(clearErrors());
         }
-    }, [dispatch, alert, error]);
+        if (isAuthenticated) {
+            navigate("/account");
+        }
+    }, [dispatch, alert, error, navigate, isAuthenticated]);
 
     const switchTabs = (e, tab) => {
         if (tab === "login") {
