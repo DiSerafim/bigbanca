@@ -11,7 +11,7 @@ import {
     LOAD_USER_SUCCESS,
 } from "../constants/userConstants";
 
-// Redux -- Login Usuário / Cadastro Usuário
+// Redux -- Login Usuário / Cadastro Usuário / Carrega Usuário
 export const userReducer = (state = { user: {} }, action) => {
     switch (action.type) {
         case LOGIN_REQUEST:
