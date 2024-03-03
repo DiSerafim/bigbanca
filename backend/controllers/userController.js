@@ -4,6 +4,7 @@ const User = require("../models/userModel");
 const sendToken = require("../utils/jwtToken");
 const sendEmail = require("../utils/sendEmail");
 const crypto = require("crypto");
+// https://console.cloudinary.com/pm/c-b85b67ec125dec9f0b72c20be0e323/media-explorer/avatars
 const cloudinary = require("cloudinary");
 
 // Cadastro de Usuário
