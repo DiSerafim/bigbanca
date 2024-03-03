@@ -7,11 +7,15 @@ import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert"
+import { logout } from "../../actions/userAction";
+import { useDispatch } from "react-redux";
 
 const UserOptions = ({ user }) => {
     const navigate = useNavigate();
-    const [open, setOpen] = useState(false);
     const alert = useAlert();
+    const dispatch = useDispatch();
+
+    const [open, setOpen] = useState(false);
 
     const options = [
         { icon: <ListAltIcon />, name: "Pedidos", func: orders },
@@ -40,7 +44,7 @@ const UserOptions = ({ user }) => {
     }
 
     function logoutUser() {
-        // dispatch(logout());
+        dispatch(logout());
         alert.success("Desconectado");
     }
     
