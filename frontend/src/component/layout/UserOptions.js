@@ -1,4 +1,6 @@
+// https://mui.com/material-ui/api/backdrop/
 import { SpeedDial, SpeedDialAction } from "@mui/material";
+import Backdrop from '@mui/material/Backdrop';
 import React, { Fragment, useState } from "react";
 import "./Header.css";
 import DashboardIcon from "@material-ui/icons/Dashboard";
@@ -48,30 +50,36 @@ const UserOptions = ({ user }) => {
         alert.success("Desconectado");
     }
     
-    return <Fragment>
-        <SpeedDial
-            ariaLabel="SpeedDial tooltip example"
-            onClose={() => setOpen(false)}
-            onOpen={() => setOpen(true)}
-            open={open}
-            direction="down"
-            icon={
-                <img
-                    className="speedDialIcon"
-                    src={user.avatar.url ? user.avatar.url : "/Profile.png"}
-                    alt="Profile"
-                />
-            }
-        >
-            {options.map((item) => (
-                <SpeedDialAction
-                    icon={item.icon}
-                    tooltipTitle={item.name}
-                    onClick={item.func}
-                />
-            ))}
-        </SpeedDial>
-    </Fragment>;
+    return (
+        <Fragment>
+            <Backdrop open={open} style={{ zIndex: "10" }} />
+            <SpeedDial
+                ariaLabel="SpeedDial tooltip example"
+                onClose={() => setOpen(false)}
+                onOpen={() => setOpen(true)}
+                style={{ zIndex: "11" }}
+                open={open}
+                direction="down"
+                className="speedDial"
+                icon={
+                    <img
+                        className="speedDialIcon"
+                        src={user.avatar.url ? user.avatar.url : "/Profile.png"}
+                        alt="Profile"
+                    />
+                }
+            >
+                {options.map((item) => (
+                    <SpeedDialAction
+                        key={item.nem}
+                        icon={item.icon}
+                        tooltipTitle={item.name}
+                        onClick={item.func}
+                    />
+                ))}
+            </SpeedDial>
+        </Fragment>
+    );
 };
 
 export default UserOptions;
