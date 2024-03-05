@@ -57,5 +57,3 @@ const Profile = () => {
 }
 
 export default Profile;
-
-// 8:37

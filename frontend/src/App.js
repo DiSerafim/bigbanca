@@ -1,5 +1,5 @@
-import React from "react"
-import './App.css';
+import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import webFont from "webfontloader";
 import Header from "./component/layout/Header/Header";
@@ -14,6 +14,7 @@ import { loadUser } from "./actions/userAction";
 import UserOptions from "./component/layout/UserOptions";
 import { useSelector } from "react-redux";
 import Profile from "./component/User/Profile";
+import ProtectedRoute from "./component/Route/ProtectedRoute";
 
 function App() {
     const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -40,7 +41,7 @@ function App() {
                 <Route exact path="/search" element={<Search />} />
 
                 <Route exact path="/login" element={<LoginSignUp />} />
-                <Route exact path="/account" element={<Profile />} />
+                <Route path="/account" element={<ProtectedRoute element={Profile} />} />
             </Routes>
             <Footer />
         </Router>

@@ -71,7 +71,7 @@ const UserOptions = ({ user }) => {
             >
                 {options.map((item) => (
                     <SpeedDialAction
-                        key={item.nem}
+                        key={item.name}
                         icon={item.icon}
                         tooltipTitle={item.name}
                         onClick={item.func}
