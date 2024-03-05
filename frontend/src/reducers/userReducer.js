@@ -11,6 +11,10 @@ import {
     LOAD_USER_SUCCESS,
     LOGOUT_FAIL,
     LOGOUT_SUCCESS,
+    UPDATE_PROFILE_FAIL,
+    UPDATE_PROFILE_REQUEST,
+    UPDATE_PROFILE_RESET,
+    UPDATE_PROFILE_SUCCESS,
 } from "../constants/userConstants";
 
 // Redux -- Login Usuário / Cadastro Usuário / Carrega Usuário
@@ -69,4 +73,39 @@ export const userReducer = (state = { user: {} }, action) => {
         default:
             return state;
     }
-}
+};
+
+// Redux -- Perfil Usuário
+export const profileReducer = (state = {}, action) => {
+    switch (action.type) {
+        case UPDATE_PROFILE_REQUEST:
+            return {
+                ...state,
+                loading: true,
+            };
+        case UPDATE_PROFILE_SUCCESS:
+            return {
+                ...state,
+                loading: false,
+                isUpdated: action.payload,
+            };
+        case UPDATE_PROFILE_FAIL:
+            return {
+                ...state,
+                loading: false,
+                error: action.payload,
+            };
+        case UPDATE_PROFILE_RESET:
+            return {
+                
+            };
+        case CLEAR_ERRORS:
+            return {
+                ...state,
+                error: null,
+            };
+    
+        default:
+            return state;
+    }
+};
