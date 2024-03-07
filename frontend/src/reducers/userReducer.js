@@ -75,7 +75,7 @@ export const userReducer = (state = { user: {} }, action) => {
     }
 };
 
-// Redux -- Perfil Usuário
+// Redux -- Atualiza Perfil Usuário
 export const profileReducer = (state = {}, action) => {
     switch (action.type) {
         case UPDATE_PROFILE_REQUEST:
