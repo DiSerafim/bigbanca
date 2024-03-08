@@ -63,7 +63,6 @@ const UpdatePassword = () => {
                             <h2 className="updatePasswordHeading">Atualizar Senha</h2>
                             <form
                                 className="updatePasswordForm"
-                                encType="multipart/form-data"
                                 onSubmit={updatePasswordSubmit}
                                 >
                                 <div className={`loginPassword ${oldPassword.length >= 8 ? 'valid' : 'invalid'}`}>
