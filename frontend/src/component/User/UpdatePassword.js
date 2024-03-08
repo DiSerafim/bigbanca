@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import LockIcon from '@mui/icons-material/Lock';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 const UpdatePassword = () => {
     const dispatch = useDispatch();
@@ -21,6 +23,9 @@ const UpdatePassword = () => {
     const [oldPassword, setOldPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const [showOldPassword, setShowOldPassword] = useState(false);
+    const [showNewPassword, setShowNewPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
     const updatePasswordSubmit = (e) => {
         e.preventDefault();
@@ -61,35 +66,44 @@ const UpdatePassword = () => {
                                 encType="multipart/form-data"
                                 onSubmit={updatePasswordSubmit}
                                 >
-                                <div className="loginPassword">
+                                <div className={`loginPassword ${oldPassword.length >= 8 ? 'valid' : 'invalid'}`}>
                                     <VpnKeyIcon />
                                     <input
-                                        type="password"
+                                        type={showOldPassword ? "text" : "password"}
                                         placeholder="Senha Antiga"
                                         required
                                         value={oldPassword}
                                         onChange={(e) => setOldPassword(e.target.value)}
                                     />
+                                    <span onClick={() => setShowOldPassword(!showOldPassword)}>
+                                        {showOldPassword ? <VisibilityOffIcon /> : <RemoveRedEyeIcon />}
+                                    </span>
                                 </div>
-                                <div className="loginPassword">
+                                <div className={`loginPassword ${newPassword.length >= 8 ? 'valid' : 'invalid'}`}>
                                     <LockOpenIcon />
                                     <input
-                                        type="password"
+                                        type={showNewPassword ? "text" : "password"}
                                         placeholder="Nova Senha"
                                         required
                                         value={newPassword}
                                         onChange={(e) => setNewPassword(e.target.value)}
                                     />
+                                    <span onClick={() => setShowNewPassword(!showNewPassword)}>
+                                        {showNewPassword ? <VisibilityOffIcon /> : <RemoveRedEyeIcon />}
+                                    </span>
                                 </div>
-                                <div className="loginPassword">
+                                <div className={`loginPassword ${confirmPassword.length >= 8 ? 'valid' : 'invalid'}`}>
                                     <LockIcon />
                                     <input
-                                        type="password"
+                                        type={showConfirmPassword ? "text" : "password"}
                                         placeholder="Confirme a Senha"
                                         required
                                         value={confirmPassword}
                                         onChange={(e) => setConfirmPassword(e.target.value)}
                                     />
+                                    <span onClick={() => setShowConfirmPassword(!showConfirmPassword)}>
+                                        {showConfirmPassword ? <VisibilityOffIcon /> : <RemoveRedEyeIcon />}
+                                    </span>
                                 </div>
                                 <input
                                     type="submit"
