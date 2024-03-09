@@ -47,7 +47,7 @@ function App() {
                 <Route path="/account" element={<ProtectedRoute element={Profile} />} />
                 <Route path="/me/update" element={<ProtectedRoute element={UpdateProfile} />} />
                 <Route path="/password/update" element={<ProtectedRoute element={UpdatePassword} />} />
-                <Route path="/password/forgot" element={<ProtectedRoute element={ForgotPassword} />} />
+                <Route exact path="/password/forgot" element={<ForgotPassword />} />
             </Routes>
             <Footer />
         </Router>
