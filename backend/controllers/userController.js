@@ -72,7 +72,8 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     // Obtém o Token de Redefinição de Senha
     const resetToken = user.getResetPasswordToken();
     await user.save({ validateBeforeSave: false });
-    const resetPasswordUrl = `${req.protocol}://${req.get("host")}/api/v1/password/reset/${resetToken}`;
+    // const resetPasswordUrl = `${req.protocol}://${req.get("host")}/api/v1/password/reset/${resetToken}`;
+    const resetPasswordUrl = `${process.env.FRONTEND_URL}/password/reset/${resetToken}`;
     console.log(resetToken);
     console.log(resetPasswordUrl);
     const message = `Clique no link para alterar sua senha :- \n\n ${resetPasswordUrl} \n\nSe você não pediu para atualizar sua senha, desconsidere esta mensagem.`;
@@ -96,7 +97,7 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     }
 });
 
-// Redefine senha perdida
+// Recuperação de senha perdida
 exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
     // Gera um código hash para um token
     const resetPasswordToken = crypto
