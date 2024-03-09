@@ -21,6 +21,9 @@ import {
     FORGOT_PASSWORD_FAIL,
     FORGOT_PASSWORD_REQUEST,
     FORGOT_PASSWORD_SUCCESS,
+    RESET_PASSWORD_FAIL,
+    RESET_PASSWORD_REQUEST,
+    RESET_PASSWORD_SUCCESS,
 } from "../constants/userConstants";
 
 // Login Usuário
@@ -98,7 +101,7 @@ export const updatePassword = (passwords) => async (dispatch) => {
     }
 };
 
-// Recuperar senha perdida
+// Cria token para Recuperar senha perdida
 export const forgotPassword = (email) => async (dispatch) => {
     try {
         dispatch({ type: FORGOT_PASSWORD_REQUEST });
@@ -107,6 +110,18 @@ export const forgotPassword = (email) => async (dispatch) => {
         dispatch({ type: FORGOT_PASSWORD_SUCCESS, payload: data.message });
     } catch (error) {
         dispatch({ type: FORGOT_PASSWORD_FAIL, payload: error.response.data.message });
+    }
+};
+
+// Reset senha com toke
+export const resetPassword = (token, passwords) => async (dispatch) => {
+    try {
+        dispatch({ tipe: RESET_PASSWORD_REQUEST });
+        const config = { headers: { "Content-Type": "application/json" } };
+        const { data } = await axios.put(`/api/v1/password/reset/${token}`, passwords, config);
+        dispatch({ tipe: RESET_PASSWORD_SUCCESS, payload: data.success });
+    } catch (error) {
+        dispatch({ tipe: RESET_PASSWORD_FAIL, payload: error.response.data.message});
     }
 };
 
