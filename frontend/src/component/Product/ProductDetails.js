@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErros, getProductDetails } from "../../actions/productAction";
@@ -20,14 +20,6 @@ const ProductDetails = ({ match }) => {
         (state) => state.productDetails
     );
 
-    useEffect(() => {
-        if (error) {
-            alert.error(error);
-            dispatch(clearErros());
-        }
-        dispatch(getProductDetails(id));
-    }, [dispatch, id, error, alert]);
-
     const options = {
         edit: false,
         color: "rgba(20, 20, 20, 0.1)",
@@ -36,6 +28,28 @@ const ProductDetails = ({ match }) => {
         value: product.ratings,
         isHalf: true,
     };
+
+    const [quantity, setQuantity] = useState(1);
+    
+    const increaseQuantity = () => {
+        if (product.Stock <= quantity) return;
+        const qty = quantity + 1;
+        setQuantity(qty)
+    }
+
+    const decreaseQuantity = () => {
+        if (1 >= quantity) return;
+        const qty = quantity - 1;
+        setQuantity(qty)
+    }
+
+    useEffect(() => {
+        if (error) {
+            alert.error(error);
+            dispatch(clearErros());
+        }
+        dispatch(getProductDetails(id));
+    }, [dispatch, id, error, alert]);
 
     return (
         <Fragment>
@@ -79,9 +93,9 @@ const ProductDetails = ({ match }) => {
 
                                 <div className="detailsBlock-3-1">
                                     <div className="detailsBlock-3-1-1">
-                                        <button>-</button>
-                                        <input value="1" type="number" />
-                                        <button>+</button>
+                                        <button onClick={decreaseQuantity}>-</button>
+                                        <input readOnly type="number" value={quantity} />
+                                        <button onClick={increaseQuantity}>+</button>
                                     </div>{" "}
                                     <button>Comprar</button>
                                 </div>
@@ -110,7 +124,7 @@ const ProductDetails = ({ match }) => {
                     {product.reviews && product.reviews[0] ? (
                         <div className="reviews">
                             {product.reviews && product.reviews.map(
-                                (review => <ReviewCard review={review} />)
+                                (review) => <ReviewCard review={review} />
                             )}
                         </div>
                     ) : (
