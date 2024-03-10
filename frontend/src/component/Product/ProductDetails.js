@@ -6,10 +6,10 @@ import { useParams } from "react-router-dom";
 import "./ProductDetails.css";
 import ReactStars from "react-rating-stars-component";
 import Loader from "../layout/Loader/Loader";
-import ReviewCard from "./ReviewCard.js";
+import ReviewCard from "./ReviewCard";
 import { useAlert } from "react-alert";
-import MetaData from "../layout/MetaData.js";
-
+import MetaData from "../layout/MetaData";
+import { addItemsToCart } from "../../actions/cartAction";
 
 const ProductDetails = ({ match }) => {
     const dispatch = useDispatch();
@@ -43,6 +43,12 @@ const ProductDetails = ({ match }) => {
         setQuantity(qty)
     }
 
+    // Action - Adicionar items ao carrinho
+    const addToCartHandler = () => {
+        dispatch(addItemsToCart(id, quantity));
+        alert.success("Adicionado ao carrinho de compras");
+    };
+
     useEffect(() => {
         if (error) {
             alert.error(error);
@@ -63,7 +69,7 @@ const ProductDetails = ({ match }) => {
                         <div>
                             <Carousel>
                                 {product.images &&
-                                    product.images.map((item, i) => (
+                                    product.images.length > 0 && product.images.map((item, i) => (
                                         <img
                                             className="CarouselImage"
                                             key={item.url}
@@ -96,13 +102,13 @@ const ProductDetails = ({ match }) => {
                                         <button onClick={decreaseQuantity}>-</button>
                                         <input readOnly type="number" value={quantity} />
                                         <button onClick={increaseQuantity}>+</button>
-                                    </div>{" "}
-                                    <button>Comprar</button>
+                                    </div>
+                                    <button onClick={addToCartHandler}>Comprar</button>
                                 </div>
 
                                 {/* Estoque */}
                                 <p>
-                                    Estoque:{" "}
+                                    Estoque:
                                     <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
                                         <p>{product.Stock < 1 ? "Sem estoque": "Disponível"}</p>
                                     </b>
