@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // https://mui.com/material-ui/material-icons/
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
@@ -15,6 +15,7 @@ const LoginSignUp = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const { error, loading, isAuthenticated } = useSelector((state) => state.user);
 
@@ -66,15 +67,17 @@ const LoginSignUp = () => {
         }
     };
 
+    const redirect = location.search ? location.search.split("=")[1] : "/account";
+
     useEffect(() => {
         if (error) {
             alert.error(error);
             dispatch(clearErrors());
         }
         if (isAuthenticated) {
-            navigate("/account");
+            navigate(redirect);
         }
-    }, [dispatch, alert, error, navigate, isAuthenticated]);
+    }, [dispatch, alert, error, navigate, isAuthenticated, redirect]);
 
     const switchTabs = (e, tab) => {
         if (tab === "login") {
