@@ -7,12 +7,15 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import PersonIcon from "@material-ui/icons/Person";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ListAltIcon from "@material-ui/icons/ListAlt";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert"
 import { logout } from "../../actions/userAction";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const UserOptions = ({ user }) => {
+    const { cartItems } = useSelector((state) => state.cart);
+
     const navigate = useNavigate();
     const alert = useAlert();
     const dispatch = useDispatch();
@@ -20,15 +23,16 @@ const UserOptions = ({ user }) => {
     const [open, setOpen] = useState(false);
 
     const options = [
-        { icon: <ListAltIcon />, name: "Pedidos", func: orders },
-        { icon: <PersonIcon />, name: "Perfil", func: account },
+        { icon: <ListAltIcon />, name: "Ver Pedidos", func: orders },
+        { icon: <PersonIcon />, name: "Ver Perfil", func: account },
+        { icon: <ShoppingCartIcon style={ { color: cartItems.length > 0 ? "green" : "crimson" } } />, name: `Minhas Compras (${cartItems.length})`, func: cart },
         { icon: <ExitToAppIcon />, name: "Sair", func: logoutUser },
     ];
 
     if (user.role === "admin") {
         options.unshift({
             icon: <DashboardIcon />,
-            name: "Painel",
+            name: "Configurações",
             func: dashboard,
         });
     }
@@ -43,6 +47,10 @@ const UserOptions = ({ user }) => {
 
     function account() {
         navigate("/account");
+    }
+
+    function cart() {
+        navigate("/cart");
     }
 
     function logoutUser() {
@@ -75,6 +83,7 @@ const UserOptions = ({ user }) => {
                         icon={item.icon}
                         tooltipTitle={item.name}
                         onClick={item.func}
+                        // tooltipOpen={window.innerWidth <= 500 ? true : false}
                     />
                 ))}
             </SpeedDial>
