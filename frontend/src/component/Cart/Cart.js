@@ -83,7 +83,9 @@ const Cart = () => {
                         <div></div>
                         <div className="cartGrossProfitBox">
                             <p>Valor Total</p>
-                            <p>{`R$6000`}</p>
+                            <p>{`R$ ${cartItems.reduce(
+                                (acc, item) => acc + item.quantity * item.price, 0
+                            )}`}</p>
                         </div>
                         <div></div>
                         <div className="checkOutBtn">
