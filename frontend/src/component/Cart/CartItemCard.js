@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./CartItemCard.css";
 import { Link } from "react-router-dom";
 
-const CartItemCard = ({ item }) => {
+const CartItemCard = ({ item, deleteCartItems }) => {
     return (
         <Fragment>
             <div className="CartItemCard">
@@ -11,7 +11,7 @@ const CartItemCard = ({ item }) => {
                 <div>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                     <span>{`R$${item.price}`}</span>
-                    <p>Excluir</p>
+                    <p onClick={() => deleteCartItems(item.product)}>Remover</p>
                 </div>
             </div>
         </Fragment>
