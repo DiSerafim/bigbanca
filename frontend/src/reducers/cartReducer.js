@@ -1,6 +1,7 @@
 import {
     ADD_TO_CART,
-    REMOVE_CART_ITEM
+    REMOVE_CART_ITEM,
+    SAVE_SHIPPIN_INFO,
 } from "../constants/cartConstants";
 
 // Reducer - Adicionar/Remove Items no Carrinho
@@ -26,7 +27,11 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
                 ...state,
                 cartItems: state.cartItems.filter((i) => i.product !== action.payload),
             };
-    
+        case SAVE_SHIPPIN_INFO:
+            return {
+                ...state,
+                shippingInfo: action.payload,
+            };
         default:
             return state;
     }
