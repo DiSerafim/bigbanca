@@ -10,10 +10,11 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import PublicIcon from '@mui/icons-material/Public';
 import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
 import MetaData from "../layout/MetaData";
+import CheckoutSteps from "../Cart/CheckoutSteps";
 
 const Shipping = () => {
-    // const dispatch = useDispatch();
-    // const alert = useAlert();
+    const dispatch = useDispatch();
+    const alert = useAlert();
 
     const { shippingInfo } = useSelector((state) => state.cart);
 
@@ -24,13 +25,13 @@ const Shipping = () => {
     const [country, setCountry] = useState(shippingInfo.country);
     const [state, setState] = useState(shippingInfo.state);
 
-    const shippingSubmit = () => {
-
-    };
+    const shippingSubmit = () => {};
 
     return (
         <Fragment>
             <MetaData title="Informações de Envio" />
+            <CheckoutSteps activeStep={0} />
+
             <div className="shippingContainer">
                 <div className="shippingBox">
                     <h2 className="shippingHeading">Detalhes de Envio</h2>
