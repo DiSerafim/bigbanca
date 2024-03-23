@@ -11,10 +11,13 @@ import PublicIcon from '@mui/icons-material/Public';
 import TransferWithinAStationIcon from '@mui/icons-material/TransferWithinAStation';
 import MetaData from "../layout/MetaData";
 import CheckoutSteps from "../Cart/CheckoutSteps";
+import { useNavigate } from "react-router-dom";
+import { saveShippingInfo } from "../../actions/cartAction";
 
 const Shipping = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
+    const navigate = useNavigate();
 
     const { shippingInfo } = useSelector((state) => state.cart);
 
@@ -25,7 +28,16 @@ const Shipping = () => {
     const [country, setCountry] = useState(shippingInfo.country);
     const [state, setState] = useState(shippingInfo.state);
 
-    const shippingSubmit = () => {};
+    const shippingSubmit = (e) => {
+        e.preventDefault();
+
+        if (phoneNo.length < 11 || phoneNo.length > 11) {
+            alert.error("O número de telefone deve ter 11 dígitos");
+            return;
+        }
+        dispatch(saveShippingInfo({ address, city, pinCode, phoneNo, country, state }));
+        navigate("/order/confirm");
+    };
 
     return (
         <Fragment>
@@ -74,7 +86,7 @@ const Shipping = () => {
                             <PhoneIcon />
                             <input
                                 type="number"
-                                placeholder="Telefone"
+                                placeholder="DDD + Telefone"
                                 required
                                 value={phoneNo}
                                 onChange={(e) => setPhoneNo(e.target.value)}
