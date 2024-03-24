@@ -130,7 +130,7 @@ const Shipping = () => {
 
                         <input
                             type="submit"
-                            value="Continue"
+                            value="Confirmar"
                             className="shippingBtn"
                             disabled={state ? false : true}
                         />
