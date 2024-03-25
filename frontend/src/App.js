@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import axios from "axios";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import webFont from "webfontloader";
 import Header from "./component/layout/Header/Header";
@@ -22,11 +23,14 @@ import ResetPassword from "./component/User/ResetPassword";
 import Cart from "./component/Cart/Cart";
 import Shipping from "./component/Cart/Shipping";
 import ConfirmOrder from "./component/Cart/ConfirmOrder";
+import Payment from "./component/Cart/Payment";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
 function App() {
     const { isAuthenticated, user } = useSelector((state) => state.user);
 
-    React.useEffect(() => {
+    useEffect(() => {
         webFont.load({
             google: {
                 families: ["Roboto", "Droid Sans", "Montserrat"]
@@ -57,9 +61,30 @@ function App() {
                 <Route exact path="/cart" element={<Cart />} />
                 <Route path="/shipping" element={<ProtectedRoute element={Shipping} />} />
                 <Route path="/order/confirm" element={<ProtectedRoute element={ConfirmOrder} />} />
+                <Route path="/process/payment" element={<ProtectedRoute element={PaymentWithStripe} />} />
             </Routes>
             <Footer />
         </Router>
+    );
+}
+
+function PaymentWithStripe() {
+    const [stripeApiKey, setStripeApiKey] = useState("");
+
+    useEffect(() => {
+        async function getStripeApiKey() {
+            const { data } = await axios.get("/api/v1/stripeapikey");
+            setStripeApiKey(data.stripeApiKey);
+        }
+        getStripeApiKey();
+    }, []);
+
+    const stripePromise = loadStripe(stripeApiKey);
+
+    return (
+        <Elements stripe={stripePromise}>
+            <Payment />
+        </Elements>
     );
 }
 
