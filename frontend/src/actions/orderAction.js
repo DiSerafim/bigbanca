@@ -8,7 +8,7 @@ import {
 import axios from "axios";
 
 // Cria pedido
-export const createOrder = (order) => async (dispatch, getState) => {
+export const createOrder = (order) => async (dispatch) => {
     try {
         dispatch({ type: CREATE_ORDER_REQUEST });
         const config = {
@@ -27,6 +27,6 @@ export const createOrder = (order) => async (dispatch, getState) => {
 };
 
 // Limpa erros
-export const clearErros = () => async (dispatch) => {
+export const clearErrors = () => async (dispatch) => {
     dispatch({ type: CLEAR_ERRORS });
 };

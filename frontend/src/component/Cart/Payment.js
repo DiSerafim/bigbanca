@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from "react";
+import React, { Fragment, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
     CardNumberElement,
@@ -17,6 +17,7 @@ import { Typography } from "@material-ui/core";
 import { useAlert } from "react-alert";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { clearErrors, createOrder } from "../../actions/orderAction";
 
 const Payment = () => {
     const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
@@ -30,9 +31,19 @@ const Payment = () => {
       
     const { shippingInfo, cartItems } = useSelector((state) => state.cart);
     const { user } = useSelector((state) => state.user);
+    const { error } = useSelector((state) => state.newOrder);
 
     const paymentData = {
-        amount: Math.round(orderInfo.totalPrice * 10),
+        amount: Math.round(orderInfo.totalPrice * 100),
+    };
+
+    const order = {
+        shippingInfo,
+        orderItems: cartItems,
+        itemsPrice: orderInfo.subtotal,
+        taxPrice: orderInfo.tax,
+        shippingPrice: orderInfo.shippingCharges,
+        totalPrice: orderInfo.totalPrice,
     };
 
     const submitHandler = async (e) => {
@@ -76,6 +87,12 @@ const Payment = () => {
                 alert.error(result.error.message);
             } else {
                 if (result.paymentIntent.status === "succeeded") {
+                    order.paymentInfo={
+                        id: result.paymentIntent.id,
+                        status:result.paymentIntent.status,
+                    };
+                    dispatch(createOrder(order));
+
                     navigate("/success");
                 } else {
                     alert.error("Problema ao processar o pagamento.");
@@ -86,6 +103,13 @@ const Payment = () => {
             alert.error(error.response.data.message);
         }
     };
+
+    useEffect (() => {
+        if (error) {
+            alert.error(error);
+            dispatch(clearErrors());
+        }
+    }, [dispatch, alert, error]);
 
     return (
         <Fragment>
