@@ -1,11 +1,11 @@
 import React, { Fragment, useRef } from "react";
-// import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
     CardNumberElement,
     CardCvcElement,
     CardExpiryElement,
-    // useStripe,
-    // useElements,
+    useStripe,
+    useElements,
 } from "@stripe/react-stripe-js";
 import CreditCardIcon from "@material-ui/icons/CreditCard";
 import EventIcon from "@material-ui/icons/Event";
@@ -14,22 +14,87 @@ import CheckoutSteps from "../Cart/CheckoutSteps";
 import MetaData from "../layout/MetaData";
 import "./Payment.css";
 import { Typography } from "@material-ui/core";
+import { useAlert } from "react-alert";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Payment = () => {
-    // const dispatch = useDispatch();
     const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
-    const payBtn = useRef(null);
 
-    const submitHandler = {};
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const alert = useAlert();
+    const stripe = useStripe();
+    const elements = useElements();
+    const payBtn = useRef(null);
+      
+    const { shippingInfo, cartItems } = useSelector((state) => state.cart);
+    const { user } = useSelector((state) => state.user);
+
+    const paymentData = {
+        amount: Math.round(orderInfo.totalPrice * 10),
+    };
+
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        payBtn.current.disabled = true;
+
+        try {
+            const config = {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            };
+            const { data } = await axios.post(
+                "/api/v1/payment/process",
+                paymentData,
+                config
+            );
+            const client_secret = data.client_secret;
+
+            if (!stripe || !elements) return;
+
+            const result = await stripe.confirmCardPayment(client_secret, {
+                payment_method: {
+                    card: elements.getElement(CardNumberElement),
+                    billing_details: {
+                        name: user.name,
+                        email: user.email,
+                        address: {
+                            line1: shippingInfo.address,
+                            city: shippingInfo.city,
+                            state: shippingInfo.state,
+                            postal: shippingInfo.pinCode,
+                            country: shippingInfo.country,
+                        },
+                    },
+                },
+            });
+
+            if (result.error) {
+                payBtn.current.disabled = false;
+                alert.error(result.error.message);
+            } else {
+                if (result.paymentIntent.status === "succeeded") {
+                    navigate("/success");
+                } else {
+                    alert.error("Problema ao processar o pagamento.");
+                }
+            };
+        } catch (error) {
+            payBtn.current.disabled = false;
+            alert.error(error.response.data.message);
+        }
+    };
 
     return (
         <Fragment>
             <MetaData title="Pagamento" />
             <CheckoutSteps activeStep={2} />
-            
+
             <div className="paymentContainer">
                 <form className="paymentForm" onSubmit={(e) => submitHandler(e)}>
-                    <Typography>Pagamento no Cartão</Typography>
+                    <Typography>Pagar no Cartão</Typography>
 
                     <div>
                         <CreditCardIcon />
@@ -38,7 +103,7 @@ const Payment = () => {
                     <div>
                         <EventIcon />
                         <CardExpiryElement className="paymentInput" />
-                    </div>
+                    </div> 
                     <div>
                         <VpnKeyIcon />
                         <CardCvcElement className="paymentInput" />
@@ -52,8 +117,6 @@ const Payment = () => {
                     />
                 </form>
             </div>
-            <EventIcon />
-            <VpnKeyIcon />
         </Fragment>
     );
 };
