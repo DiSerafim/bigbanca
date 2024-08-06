@@ -76,7 +76,7 @@ const Payment = () => {
                             line1: shippingInfo.address,
                             city: shippingInfo.city,
                             state: shippingInfo.state,
-                            postal: shippingInfo.pinCode,
+                            postal_code: shippingInfo.pinCode,
                             country: shippingInfo.country,
                         },
                     },
