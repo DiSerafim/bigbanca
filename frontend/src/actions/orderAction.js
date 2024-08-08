@@ -1,4 +1,3 @@
-import { type } from "express/lib/response";
 import {
     CLEAR_ERRORS,
     CREATE_ORDER_FAIL,
@@ -38,7 +37,7 @@ export const myOrders = () => async (dispatch, getState) => {
         const { data } = await axios.get("/api/v1/orders/me");
 
         dispatch({
-            MY_ORDERS_SUCCESS,
+            type: MY_ORDERS_SUCCESS,
             payload: data.orders,
         });
     } catch (error) {
