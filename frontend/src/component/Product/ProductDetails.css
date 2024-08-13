@@ -1,6 +1,5 @@
 /* ProductDetails.css */
 .ProductDetails {
-  background-color: rgb(214, 214, 214);
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -16,7 +15,6 @@
   align-items: center;
   padding: 2vmax;
   box-sizing: border-box;
-  border-left: solid 1px #9f9a9a;
 }
 
 .ProductDetails > div:last-child {
@@ -49,12 +47,17 @@
   border-top: 1px solid rgba(167, 166, 166, 0.582);
   border-bottom: 1px solid rgba(167, 166, 166, 0.582);
   width: 70%;
+  padding: 0.5vmax 0;
 }
 
-.detailsBlock-2 > span {
-  color: rgba(25, 25, 25, 0.582);
+.detailsBlock-2-span {
   font: 200 1vmax cursive;
-  margin: 0 0 0 0.6vmax;
+  padding: 0.6vmax 0 0.5vmax 0.5vmax;
+  color: rgba(0, 0, 0, 0.669);
+}
+
+.detailsBlock-3 {
+  width: 70%;
 }
 
 .detailsBlock-3 > h1 {
@@ -151,6 +154,19 @@
   background-color: rgb(214, 84, 61);
 }
 
+.submitDialog {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitDialogTextArea {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  margin: 1vmax 0;
+  outline: none;
+  padding: 1rem;
+  font: 300 1rem "Roboto";
+}
+
 .reviewsHeading {
   color: #000000be;
   font: 500 1.4vmax "Roboto";
@@ -191,9 +207,9 @@
   padding: 0.5vmax 0 0 0 ;
 }
 
-.reviewCard > span {
+.reviewCardComment {
   color: rgba(0, 0, 0, 0.8);
-  font: 600 0.9vmax "Roboto";
+  font: 300 0.8vmax cursive;
 }
 
 .noReviews {
