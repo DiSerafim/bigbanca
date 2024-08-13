@@ -45,7 +45,7 @@ const Home = () => {
                     <h2 className="homeHeading">Produtos em Destaque</h2>
 
                     <div className="container" id="container">
-                        {products && products.map((product) => <ProductCard product={product} />)}
+                        {products && products.map((product) => <ProductCard key={product._id} product={product} />)}
                     </div>
                 </Fragment>
             )}
