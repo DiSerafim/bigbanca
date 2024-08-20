@@ -85,7 +85,8 @@ function App() {
                 <Route exact path="/order/:id" element={<ProtectedRoute element={OrderDetails} />} />
 
                 {/* Rotas Admin */}
-                <Route exact path="/admin/dashboard" element={<ProtectedRoute element={Dashboard} />} />
+                <Route exact path="/admin/dashboard" element={<ProtectedRoute isAdmin={true} element={Dashboard} />}
+                />
             </Routes>
             <Footer />
         </Router>
