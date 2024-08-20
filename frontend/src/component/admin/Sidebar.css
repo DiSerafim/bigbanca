@@ -32,3 +32,12 @@
     color: crimson;
     transform: scale(0.99);
 }
+
+.sidebar a > p {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a > p > svg {
+    margin-right: 0.5rem;
+}
