@@ -9,13 +9,17 @@ import {
     NEW_REVIEW_REQUEST,
     NEW_REVIEW_SUCCESS,
     NEW_REVIEW_FAIL,
-    NEW_REVIEW_RESET
+    NEW_REVIEW_RESET,
+    ADMIN_PRODUCT_REQUEST,
+    ADMIN_PRODUCT_SUCCESS,
+    ADMIN_PRODUCT_FAIL
 } from "../constants/productConstants";
 
-// Redux Produtos
+// Redux Para Exibir Produtos Usuário Comum e Admin
 export const productReducer = (state = { products: [] }, action) => {
     switch (action.type) {
         case ALL_PRODUCT_REQUEST:
+        case ADMIN_PRODUCT_REQUEST:
             return {
                 loading: true,
                 products: [],
@@ -28,7 +32,13 @@ export const productReducer = (state = { products: [] }, action) => {
                 resultPerPage: action.payload.resultPerPage,
                 filteredProductsCount: action.payload.filteredProductsCount,
             };
+        case ADMIN_PRODUCT_SUCCESS:
+            return {
+                loading: false,
+                products: action.payload,
+            };
         case ALL_PRODUCT_FAIL:
+        case ADMIN_PRODUCT_FAIL:
             return {
                 loading: false,
                 error: action.payload,
@@ -43,7 +53,7 @@ export const productReducer = (state = { products: [] }, action) => {
     }
 };
 
-// Redux Detalhes do Produto
+// Redux Para Exibir Detalhes do Produto
 export const productDetailsReducer = (state = { product: {} }, action) => {
     switch (action.type) {
         case PRODUCT_DETAILS_REQUEST:
@@ -71,8 +81,7 @@ export const productDetailsReducer = (state = { product: {} }, action) => {
     }
 };
 
-// Redux Avaliação do Produto
-    
+// Redux Para Exibir Avaliação do Produto
 export const newReviewReducer = (state = {}, action) => {
     switch (action.type) {
       case NEW_REVIEW_REQUEST:

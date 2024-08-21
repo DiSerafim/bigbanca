@@ -11,9 +11,12 @@ import {
     PRODUCT_DETAILS_REQUEST,
     PRODUCT_DETAILS_SUCCESS,
     CLEAR_ERRORS,
+    ADMIN_PRODUCT_REQUEST,
+    ADMIN_PRODUCT_SUCCESS,
+    ADMIN_PRODUCT_FAIL,
 } from "../constants/productConstants";
 
-// Action Redux Produtos
+// Action Redux Exibir Produtos
 export const getProduct = (
     keyword = "",
     currentPage= 1,
@@ -43,7 +46,24 @@ export const getProduct = (
     }
 };
 
-// Action Redux Detalhes do Produto
+// Action Redux Exibir Produtos
+export const getAdminProduct = () => async (dispatch) => {
+    try {
+        dispatch({ type: ADMIN_PRODUCT_REQUEST });
+        const { data } = await axios.get("/api/v1/admin/products");
+        dispatch({
+            type: ADMIN_PRODUCT_SUCCESS,
+            payload: data.products,
+        });
+    } catch (error) {
+        dispatch({
+            type: ADMIN_PRODUCT_FAIL,
+            payload: error.response.data.message,
+        });
+    }
+}
+
+// Action Redux Exibir Detalhes do Produto
 export const getProductDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_DETAILS_REQUEST });
