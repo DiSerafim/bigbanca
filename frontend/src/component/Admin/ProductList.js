@@ -1,18 +1,18 @@
 import React, { Fragment, useEffect } from "react";
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import { Delete, Edit } from "@material-ui/icons";
 import MetaData from "../layout/MetaData";
 import Sidebar from "./Sidebar";
 import { DataGrid } from "@material-ui/data-grid";
 import { clearErros, getAdminProduct} from "../../actions/productAction";
+import "./ProductList.css";
 
 const ProductList = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
-    const { id } = useParams();
 
     const { error, products } = useSelector((state) => state.products);
 
@@ -21,8 +21,8 @@ const ProductList = () => {
             alert.error(error);
             dispatch(clearErros());
         }
-        dispatch(getAdminProduct(id));
-    }, [dispatch, alert, error, id]);
+        dispatch(getAdminProduct());
+    }, [dispatch, alert, error]);
 
     const columns = [
         {
@@ -58,10 +58,10 @@ const ProductList = () => {
             minWidth: 150,
             type: "number",
             sortable: false,
-            renderCell: () => {
+            renderCell: (params) => {
                 return (
                     <Fragment>
-                        <Link to={`/admin/product/${(id, "id")}`}>
+                        <Link to={`/admin/product/${params.getValue(params.id, "id")}`}>
                             <Edit />
                         </Link>
                         <Button>
