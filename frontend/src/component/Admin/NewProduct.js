@@ -8,6 +8,7 @@ import { useAlert } from "react-alert";
 import { clearErros, createProduct } from "../../actions/productAction";
 import { useNavigate } from "react-router-dom";
 import { NEW_PRODUCT_RESET } from "../../constants/productConstants";
+import "./NewProduct.css";
 
 const NewProduct = () => {
     const dispatch = useDispatch();
@@ -85,10 +86,6 @@ const NewProduct = () => {
 
     return (
         <Fragment>
-            Rota Funcionando
-
-            <p>Aqui será criado novos produtos</p>
-
             <MetaData title="Adicionar Produto" />
 
             <div className="dashboard">
