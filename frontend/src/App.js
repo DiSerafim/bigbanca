@@ -31,6 +31,7 @@ import MyOrders from "./component/Order/MyOrders";
 import OrderDetails from "./component/Order/OrderDetails";
 import Dashboard from "./component/Admin/Dashboard.js";
 import ProductList from "./component/Admin/ProductList.js";
+import NewProduct from "./component/Admin/NewProduct.js";
 
 function App() {
     const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -88,6 +89,7 @@ function App() {
                 {/* Rotas Admin */}
                 <Route exact path="/admin/dashboard" element={<ProtectedRoute isAdmin={true} element={Dashboard} />} />
                 <Route exact path="/admin/products" element={<ProtectedRoute isAdmin={true} element={ProductList} />} />
+                <Route exact path="/admin/product" element={<ProtectedRoute isAdmin={true} element={NewProduct} />} />
             </Routes>
             <Footer />
         </Router>

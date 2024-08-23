@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Sidebar from "./Sidebar.js";
 import { Link } from "react-router-dom";
 import "./Dashboard.css";
@@ -15,10 +15,28 @@ import {
     Legend,
     ArcElement
 } from "chart.js";
+import { getAdminProduct } from "../../actions/productAction.js";
+import { useSelector, useDispatch } from "react-redux";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
 
 const Dashboard = () => {
+    const dispatch = useDispatch();
+
+    const { products } = useSelector((state) => state.products);
+
+    let outOfStock = 0;
+
+    products && products.forEach((item) => {
+        if (item.Stock === 0) {
+            outOfStock += 1;
+        }
+    });
+
+    useEffect(() => {
+        dispatch(getAdminProduct());
+    }, [dispatch]);
+
     const lineState = {
         labels: ["Valor Inicial", "Valor ganho"],
         datasets: [
@@ -26,7 +44,7 @@ const Dashboard = () => {
                 label: "Total",
                 backgroundColor: ["crimson"],
                 hoverBackgroundColor: ["rgb(197, 72, 49)"],
-                data: [0, 400],
+                data: [outOfStock, products.length - outOfStock],
             },
         ],
     };
@@ -37,7 +55,7 @@ const Dashboard = () => {
             {
                 backgroundColor: ["#00A6B4", "#6800B4"],
                 hoverBackgroundColor: ["#4B5000", "#35014F"],
-                data: [2, 10],
+                data: [outOfStock, products.length - outOfStock],
             },
         ],
     };
@@ -56,7 +74,7 @@ const Dashboard = () => {
                     <div className="dashboardSummaryBox2">
                         <Link to="/admin/products">
                             <p>Produtos</p>
-                            <p>40</p>
+                            <p>{products && products.length}</p>
                         </Link>
                         <Link to="/admin/orders">
                             <p>Pedidos</p>
