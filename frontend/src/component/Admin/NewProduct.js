@@ -14,7 +14,7 @@ const NewProduct = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
 
-    const navigate = useNavigate
+    const navigate = useNavigate();
 
     const { loading, error, success } = useSelector((state) => state.newProduct);
 
@@ -46,7 +46,7 @@ const NewProduct = () => {
             navigate("/admin/dashboard");
             dispatch({ type: NEW_PRODUCT_RESET });
         }
-    }, [dispatch, alert, error, success]);
+    }, [dispatch, alert, error, success, navigate]);
 
     const createProductSubmitHandler = (e) => {
         e.preventDefault();
@@ -94,8 +94,9 @@ const NewProduct = () => {
                     <form
                         className="createProductForm"
                         encType="multipart/form-data"
+                        onSubmit={createProductSubmitHandler}
                     >
-                        <h1>Adicionar Produto</h1>
+                        <h1>Criar Produto</h1>
                         <div>
                             <Spellcheck />
                             <input

@@ -24,11 +24,10 @@ const categories = [
 const Products = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
-
-    const { keyword } = useParams();
+    const params = useParams();
 
     const [currentPage, setCurrentPage] = useState(1);
-    const [price, setPrice] = useState([0, 200]);
+    const [price, setPrice] = useState([0, 25000]);
     const [category, setCategory] = useState("");
     const [ratings, setRatings] = useState(0);
 
@@ -40,6 +39,7 @@ const Products = () => {
         filteredProductsCount,
         error,
     } = useSelector((state) => state.products);
+    const keyword = params.keyword;
 
     const setCurrentPageNo = (e) => {
         setCurrentPage(e);
@@ -48,6 +48,7 @@ const Products = () => {
     const priceHandler = (e, newPrice) => {
         setPrice(newPrice);
     };
+    let count = filteredProductsCount;
 
     useEffect(() => {
         if (error) {
@@ -57,9 +58,7 @@ const Products = () => {
         dispatch(getProduct(keyword, currentPage, price, category, ratings));
     }, [dispatch, keyword, currentPage, price, category, ratings, alert, error]);
 
-    let count = filteredProductsCount;
-    
-    return <Fragment>
+    return (<Fragment>
         {loading ? (
             <Loader />
         ) : (
@@ -84,7 +83,7 @@ const Products = () => {
                         valueLabelDisplay="auto"
                         aria-labelledby="range-slider"
                         min={0}
-                        max={200}
+                        max={25000}
                     />
 
                     {/* Filtra categoria */}
@@ -109,7 +108,7 @@ const Products = () => {
                             onChange={(e, newRating) => {
                                 setRatings(newRating);
                             }}
-                            aria-label="continuos-slider"
+                            aria-labelledby="continuous-slider"
                             valueLabelDisplay="auto"
                             min={0}
                             max={5}
@@ -139,6 +138,7 @@ const Products = () => {
             </Fragment>
         )}
     </Fragment>
+    );
 }
 
 export default Products;

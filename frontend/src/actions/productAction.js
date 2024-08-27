@@ -22,9 +22,9 @@ import {
 // Action Redux Exibir Produtos
 export const getProduct = (
     keyword = "",
-    currentPage= 1,
-    price = [0, 200],
-    category,
+    currentPage = 1,
+    price = [0, 25000],
+    category = "",
     ratings = 0,
 ) => async (dispatch) => {
     try {

@@ -15,7 +15,8 @@ import {
     ADMIN_PRODUCT_FAIL,
     NEW_PRODUCT_REQUEST,
     NEW_PRODUCT_SUCCESS,
-    NEW_PRODUCT_RESET
+    NEW_PRODUCT_RESET,
+    NEW_PRODUCT_FAIL
 } from "../constants/productConstants";
 
 // Redux Para Exibir Produtos Usuário Comum e Admin
@@ -24,8 +25,8 @@ export const productReducer = (state = { products: [] }, action) => {
         case ALL_PRODUCT_REQUEST:
         case ADMIN_PRODUCT_REQUEST:
             return {
+                ...state,
                 loading: true,
-                products: [],
             };
         case ALL_PRODUCT_SUCCESS:
             return {
@@ -34,16 +35,19 @@ export const productReducer = (state = { products: [] }, action) => {
                 productsCount: action.payload.productsCount,
                 resultPerPage: action.payload.resultPerPage,
                 filteredProductsCount: action.payload.filteredProductsCount,
+                error: null,
             };
         case ADMIN_PRODUCT_SUCCESS:
             return {
                 loading: false,
                 products: action.payload,
+                error: null,
             };
         case ALL_PRODUCT_FAIL:
         case ADMIN_PRODUCT_FAIL:
             return {
                 loading: false,
+                products: [],
                 error: action.payload,
             };
         case CLEAR_ERRORS:
@@ -70,7 +74,7 @@ export const newProductReducer = (state = { product: {} }, action) => {
                 success: action.payload.success,
                 product: action.payload.product,
             };
-        case NEW_REVIEW_FAIL:
+        case NEW_PRODUCT_FAIL:
             return {
                 ...state,
                 loading: false,
