@@ -7,6 +7,7 @@ import {
     newReviewReducer,
     newProductReducer,
     deleteProductsReducer,
+    updateProductReducer,
 } from "./reducers/productReducer";
 import { profileReducer, userReducer, forgotPasswordReducer } from "./reducers/userReducer";
 import { cartReducer } from "./reducers/cartReducer";
@@ -25,6 +26,7 @@ const reducer = combineReducers({
     newReview: newReviewReducer,
     newProduct: newProductReducer,
     deleteProduct: deleteProductsReducer,
+    updateReducer: updateProductReducer,
 });
 
 let initialState = {

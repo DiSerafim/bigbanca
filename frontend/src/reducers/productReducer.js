@@ -173,7 +173,6 @@ export const updateProductReducer = (state = {}, action) => {
     };
 };
 
-
 // Redux Para Exibir Detalhes do Produto
 export const productDetailsReducer = (state = { product: {} }, action) => {
     switch (action.type) {
