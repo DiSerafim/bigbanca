@@ -33,7 +33,7 @@ const ProductList = () => {
             dispatch(clearErros());
         }
         if (isDeleted) {
-            alert.success("O Produto Deletado.");
+            alert.success("O Produto Foi Deletado.");
             navigate("/admin/dashboard");
             dispatch({ type: DELETE_PRODUCT_RESET });
 
