@@ -9,7 +9,7 @@ import Sidebar from "./Sidebar";
 import { AccountTree, AttachMoney, Description, Spellcheck, Storage } from "@material-ui/icons";
 import { Button } from "@material-ui/core";
 
-const UpdateProduct = () =>{
+const UpdateProduct = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
     const params = useParams();
@@ -38,7 +38,7 @@ const UpdateProduct = () =>{
     ];
 
     const productId = params.id;
-    
+
     useEffect(() => {
         if (product && product._id !== productId) {
             dispatch(getProductDetails(productId));
@@ -51,11 +51,11 @@ const UpdateProduct = () =>{
             setOldImages(product.images);
         };
         if (error) {
-            alert.error(updateError);
+            alert.error(error);
             dispatch(clearErros());
         };
         if (updateError) {
-            alert.error(error);
+            alert.error(updateError);
             dispatch(clearErros());
         };
         if (isUpdated) {
@@ -67,7 +67,7 @@ const UpdateProduct = () =>{
 
     const updateProductSubmitHandler = (e) => {
         e.preventDefault();
-        
+
         const myForm = new FormData();
 
         myForm.set("name", name);
@@ -112,8 +112,8 @@ const UpdateProduct = () =>{
                         encType="multipart/form-data"
                         onSubmit={updateProductSubmitHandler}
                     >
-                        <h1>Atualizar produto {product.name}</h1>
-                        
+                        <h1>Atualizar - {product.name}</h1>
+
                         <div>
                             <Spellcheck />
                             <input
@@ -124,7 +124,7 @@ const UpdateProduct = () =>{
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
-                        
+
                         <div>
                             <AttachMoney />
                             <input
@@ -135,19 +135,18 @@ const UpdateProduct = () =>{
                                 onChange={(e) => setPrice(e.target.value)}
                             />
                         </div>
-                        
+
                         <div>
                             <Description />
                             <textarea
                                 placeholder={product.name}
-                                required
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
                                 cols="30"
                                 rows="1"
                             ></textarea>
                         </div>
-                        
+
                         <div>
                             <AccountTree />
                             <select value={category} onChange={(e) => setCategory(e.target.value)}>
@@ -157,18 +156,18 @@ const UpdateProduct = () =>{
                                 ))}
                             </select>
                         </div>
-                        
+
                         <div>
                             <Storage />
                             <input
                                 type="number"
                                 placeholder={product.name}
                                 required
-                                value={name}
+                                value={Stock}
                                 onChange={(e) => setStock(e.target.value)}
                             />
                         </div>
-                        
+
                         <div id="createProductFormFile">
                             <input
                                 type="file"
@@ -176,21 +175,21 @@ const UpdateProduct = () =>{
                                 accept="image/*"
                                 placeholder={product.name}
                                 onChange={updateProductImagesChange}
+                                multiple
                             />
                         </div>
-                        
+
                         <div id="createProductFormImage">
                             {oldImages && oldImages.map((image, index) => (
                                 <img key={index} src={image.url} alt="Avatar" />
                             ))}
                         </div>
-                        
+
                         <div id="createProductFormImage">
                             {imagesPreview.map((image, index) => (
                                 <img key={index} src={image} alt="Avatar" />
                             ))}
                         </div>
-                        
                         <div>
                             <Button
                                 id="createProductBtn"

@@ -161,8 +161,8 @@ export const updateProduct = (id, productData) => async (dispatch) => {
             type: UPDATE_PRODUCT_REQUEST,
         });
 
-        const config = { headers: { "Content-Type": "application/json" } };
-        const { data } = await axios.put(`/api/v1/admin/product/${id}`, productData, config);
+        // Não defini o Content-Type, pois o axios gerencia isso automaticamente ao usar FormData
+        const { data } = await axios.put(`/api/v1/admin/product/${id}`, productData);
 
         dispatch({
             type: UPDATE_PRODUCT_SUCCESS,
