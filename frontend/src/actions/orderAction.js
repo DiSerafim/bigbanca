@@ -12,6 +12,9 @@ import {
     ORDER_DETAILS_FAIL,
     ORDER_DETAILS_REQUEST,
     ORDER_DETAILS_SUCCESS,
+    UPDATE_ORDERS_FAIL,
+    UPDATE_ORDERS_REQUEST,
+    UPDATE_ORDERS_SUCCESS,
 } from "../constants/orderConstants";
 
 import axios from "axios";
@@ -89,6 +92,28 @@ export const getAllOrders = () => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: ALL_ORDERS_FAIL,
+            payload: error.response.data.message,
+        });
+    };
+};
+
+// atualiza pedido - Admin
+export const updateOrder = (id, order) => async (dispatch) => {
+    try {
+        dispatch({
+            type: UPDATE_ORDERS_REQUEST,
+        });
+
+        const config = { headers: { "Content-Type":"application/json" } };
+        const { data } = await axios.post("/api/v1/order/new", order, config);
+
+        dispatch({
+            type: UPDATE_ORDERS_SUCCESS,
+            payload: data,
+        });
+    } catch (error) {
+        dispatch({
+            type: UPDATE_ORDERS_FAIL,
             payload: error.response.data.message,
         });
     };
