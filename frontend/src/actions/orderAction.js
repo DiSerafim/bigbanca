@@ -6,6 +6,9 @@ import {
     CREATE_ORDER_FAIL,
     CREATE_ORDER_REQUEST,
     CREATE_ORDER_SUCCESS,
+    DELETE_ORDERS_FAIL,
+    DELETE_ORDERS_REQUEST,
+    DELETE_ORDERS_SUCCESS,
     MY_ORDERS_FAIL,
     MY_ORDERS_REQUEST,
     MY_ORDERS_SUCCESS,
@@ -97,7 +100,7 @@ export const getAllOrders = () => async (dispatch) => {
     };
 };
 
-// atualiza pedido - Admin
+// Atualiza pedido - Admin
 export const updateOrder = (id, order) => async (dispatch) => {
     try {
         dispatch({
@@ -105,15 +108,36 @@ export const updateOrder = (id, order) => async (dispatch) => {
         });
 
         const config = { headers: { "Content-Type":"application/json" } };
-        const { data } = await axios.post("/api/v1/order/new", order, config);
+        const { data } = await axios.put(`/api/v1/order/${id}`, order, config);
 
         dispatch({
             type: UPDATE_ORDERS_SUCCESS,
-            payload: data,
+            payload: data.success,
         });
     } catch (error) {
         dispatch({
             type: UPDATE_ORDERS_FAIL,
+            payload: error.response.data.message,
+        });
+    };
+};
+
+// Deleta pedido - Admin
+export const deleteOrder = (id) => async (dispatch) => {
+    try {
+        dispatch({
+            type: DELETE_ORDERS_REQUEST,
+        });
+
+        const { data } = await axios.delete(`/api/v1/order/${id}`);
+
+        dispatch({
+            type: DELETE_ORDERS_SUCCESS,
+            payload: data.success,
+        });
+    } catch (error) {
+        dispatch({
+            type: DELETE_ORDERS_FAIL,
             payload: error.response.data.message,
         });
     };
