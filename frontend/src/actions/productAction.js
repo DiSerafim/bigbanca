@@ -55,7 +55,7 @@ export const getProduct = (
     }
 };
 
-// Action Redux Exibir Produtos
+// Action Redux Exibir Produtos Admin
 export const getAdminProduct = () => async (dispatch) => {
     try {
         dispatch({ type: ADMIN_PRODUCT_REQUEST });
