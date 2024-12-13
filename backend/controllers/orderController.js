@@ -88,7 +88,7 @@ exports.updateOrder = catchAsyncErrors(async (req, res, next) => {
         return next(new ErrorHandler("Produto já foi entregue", 400));
     }
 
-    if (req.body.status === "Enviado para entrega") {
+    if (req.body.status === "Preparando") {
         order.orderItems.forEach(async (o) => {
             await updateStock(o.product, o.quantity);
         });

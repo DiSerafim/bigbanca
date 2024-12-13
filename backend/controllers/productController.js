@@ -4,7 +4,7 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const ApiFeatures = require("../utils/apifeatures");
 const cloudinary = require("cloudinary");
 
-// Cria um produto -- ADMIN
+// Cria um produto -- Admin
 exports.createProduct = catchAsyncErrors(async (req, res, next) => {
     let images = [];
   
@@ -71,7 +71,7 @@ exports.getAllProducts = catchAsyncErrors(async (req, res, next) => {
     }
 });
 
-// Exibe todos os produtos (ADMIN)
+// Exibe todos os produtos -- Admin
 exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
     const products = await Product.find();
     res.status(200).json({
