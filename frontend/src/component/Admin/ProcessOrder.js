@@ -10,6 +10,7 @@ import { useAlert } from "react-alert";
 import { clearErrors, getOrderDetails, updateOrder } from "../../actions/orderAction";
 import { UPDATE_ORDERS_RESET } from "../../constants/orderConstants";
 import Loader from "../layout/Loader/Loader";
+import "./ProcessOrder.css";
 
 const ProcessOrder = () => {
     const dispatch = useDispatch();
@@ -47,7 +48,7 @@ const ProcessOrder = () => {
 
     return (
         <Fragment>
-            <MetaData title={"Informações para envio"} />
+            <MetaData title={"Processar pedido"} />
             <div className="dashboard">
                 <Sidebar />
                 <div className="newProductContainer">
@@ -91,15 +92,15 @@ const ProcessOrder = () => {
                                             <p
                                                 className={
                                                     order.paymentInfo &&
-                                                    order.paymentInfo.status === "Entregue"
+                                                    order.paymentInfo.status === "succeeded"
                                                     ? "greenColor"
                                                     : "redColor"
                                                 }
                                             >
                                                 {order.paymentInfo &&
-                                                    order.paymentInfo.status === "Entregue"
-                                                    ? "PAID"
-                                                    : "NOT PAID"
+                                                    order.paymentInfo.status === "succeeded"
+                                                    ? "Pago"
+                                                    : "Aguardando pagamento"
                                                 }
                                             </p>
                                         </div>
@@ -110,14 +111,14 @@ const ProcessOrder = () => {
                                         </div>
                                     </div>
 
-                                    <Typography>Informações da Situação</Typography>
+                                    <Typography>Status de entrega</Typography>
 
                                     <div className="orderDetailsContainerBox">
                                         <div>
                                             <p
                                                 className={
                                                     order.orderStatus &&
-                                                    order.orderStatus.status === "Entregue"
+                                                    order.orderStatus === "Entregue"
                                                     ? "greenColor"
                                                     : "redColor"
                                                 }
@@ -129,7 +130,7 @@ const ProcessOrder = () => {
                                 </div>
 
                                 <div className="confirmCartItems">
-                                    <Typography>Your Cart Items:</Typography>
+                                    <Typography>Items no carrinho:</Typography>
                                     <div className="confirmCartItemsContainer">
                                         {order.orderItems &&
                                         order.orderItems.map((item) => (
@@ -139,8 +140,8 @@ const ProcessOrder = () => {
                                                 {item.name}
                                             </Link>{" "}
                                             <span>
-                                                {item.quantity} X ₹{item.price} ={" "}
-                                                <b>₹{item.price * item.quantity}</b>
+                                                {item.quantity} X{ } R${item.price} ={" "}
+                                                <b>R$ {item.price * item.quantity}</b>
                                             </span>
                                             </div>
                                         ))}
@@ -150,25 +151,25 @@ const ProcessOrder = () => {
                                 {/*  */}
                                 <div
                                     style={{
-                                    display: order.orderStatus === "Delivered" ? "none" : "block",
+                                    display: order.orderStatus === "Entregue" ? "none" : "block",
                                     }}
                                 >
                                     <form
                                     className="updateOrderForm"
                                     onSubmit={updateOrderSubmitHandler}
                                     >
-                                    <h1>Process Order</h1>
+                                    <h1>Processar pedido</h1>
 
                                     <div>
                                         <AccountTree />
                                         <select onChange={(e) => setStatus(e.target.value)}>
-                                        <option value="">Choose Category</option>
-                                        {order.orderStatus === "Processing" && (
-                                            <option value="Shipped">Shipped</option>
+                                        <option value="">Escolha a situação</option>
+                                        {order.orderStatus === "Preparando" && (
+                                            <option value="Enviado">Enviado</option>
                                         )}
 
-                                        {order.orderStatus === "Shipped" && (
-                                            <option value="Delivered">Delivered</option>
+                                        {order.orderStatus === "Enviado" && (
+                                            <option value="Entregue">Entregue</option>
                                         )}
                                         </select>
                                     </div>
@@ -180,7 +181,7 @@ const ProcessOrder = () => {
                                         loading ? true : false || status === "" ? true : false
                                         }
                                     >
-                                        Process
+                                        Atualizar
                                     </Button>
                                     </form>
                             </div>

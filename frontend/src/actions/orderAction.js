@@ -107,8 +107,8 @@ export const updateOrder = (id, order) => async (dispatch) => {
             type: UPDATE_ORDERS_REQUEST,
         });
 
-        const config = { headers: { "Content-Type":"application/json" } };
-        const { data } = await axios.put(`/api/v1/order/${id}`, order, config);
+        const config = { headers: { "Content-Type": "application/json" } };
+        const { data } = await axios.put(`/api/v1/admin/order/${id}`, order, config);
 
         dispatch({
             type: UPDATE_ORDERS_SUCCESS,
@@ -129,7 +129,7 @@ export const deleteOrder = (id) => async (dispatch) => {
             type: DELETE_ORDERS_REQUEST,
         });
 
-        const { data } = await axios.delete(`/api/v1/order/${id}`);
+        const { data } = await axios.delete(`/api/v1/admin/order/${id}`);
 
         dispatch({
             type: DELETE_ORDERS_SUCCESS,
