@@ -231,14 +231,17 @@ exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
 // Deleta usuário (Admin)
 exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
     const user = await User.findByIdAndDelete(req.params.id);
-    // remove a foto do cloudinary posteriormente
 
     if (!user) {
         return next(new ErrorHandler(`Usuário não encontrado com ID: ${req.params.id}`, 400))
     }
 
+    const imageId = user.avatar.public_id;
+    await cloudinary.v2.uploader.destroy(imageId);
+    await user.remove();
+
     res.status(200).json({
         success: true,
-        message: "Usuário foi removido",
+        message: "Usuário excluído!",
     });
 });
