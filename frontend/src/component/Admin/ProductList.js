@@ -29,7 +29,7 @@ const ProductList = () => {
             dispatch(clearErros());
         }
         if (deleteError) {
-            alert.error(deleteError());
+            alert.error(deleteError);
             dispatch(clearErros());
         }
         if (isDeleted) {

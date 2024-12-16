@@ -18,6 +18,7 @@ import {
 import { getAdminProduct } from "../../actions/productAction";
 import { getAllOrders } from "../../actions/orderAction";
 import { useSelector, useDispatch } from "react-redux";
+import { getAllUsers } from "../../actions/userAction.js";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ArcElement);
 
@@ -26,6 +27,7 @@ const Dashboard = () => {
 
     const { products } = useSelector((state) => state.products);
     const { orders } = useSelector((state) => state.allOrders);
+    const { users } = useSelector((state) => state.allUsers);
 
     let outOfStock = 0;
 
@@ -37,7 +39,8 @@ const Dashboard = () => {
 
     useEffect(() => {
         dispatch(getAdminProduct());
-        dispatch(getAllOrders);
+        dispatch(getAllOrders());
+        dispatch(getAllUsers());
     }, [dispatch]);
 
     const lineState = {
@@ -85,7 +88,7 @@ const Dashboard = () => {
                         </Link>
                         <Link to="/admin/users">
                             <p>Usuários</p>
-                            <p>2</p>
+                            <p>{users && users.length}</p>
                         </Link>
                     </div>
                 </div>
