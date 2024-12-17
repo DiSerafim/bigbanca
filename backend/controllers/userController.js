@@ -218,7 +218,7 @@ exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
         email: req.body.email,
         role: req.body.role,
     }
-    const user = await User.findByIdAndUpdate(req.params.id, newUserRole, {
+    await User.findByIdAndUpdate(req.params.id, newUserRole, {
         new: true,
         runValidators: true,
         useFindAndModify: false,
