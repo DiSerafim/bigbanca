@@ -8,6 +8,8 @@ import {
     newProductReducer,
     deleteProductsReducer,
     updateProductReducer,
+    productReviewsReducer,
+    reviewReducer,
 } from "./reducers/productReducer";
 import { profileReducer, userReducer, forgotPasswordReducer, allUsersReducer, userDetailsReducer } from "./reducers/userReducer";
 import { cartReducer } from "./reducers/cartReducer";
@@ -31,6 +33,8 @@ const reducer = combineReducers({
     order: orderReducer,
     allUsers: allUsersReducer,
     userDetails: userDetailsReducer,
+    productReviews: productReviewsReducer,
+    review: reviewReducer,
 });
 
 let initialState = {
