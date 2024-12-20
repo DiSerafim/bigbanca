@@ -273,36 +273,37 @@ export const productReviewsReducer = (state = { reviews: [] }, action) => {
 };
 
 // Redux Para Deletar Avaliações
-export const reviewReducer = (state = { reviews: {} }, action) => {
+export const reviewReducer = (state = {}, action) => {
     switch (action.type) {
         case DELETE_REVIEW_REQUEST:
-            return {
-                ...state,
-                loading: true,
-            };
+        return {
+            ...state,
+            loading: true,
+        };
         case DELETE_REVIEW_SUCCESS:
-            return {
-                loading: false,
-                isDeleted: action.payload,
-            };
+        return {
+            ...state,
+            loading: false,
+            isDeleted: action.payload,
+        };
         case DELETE_REVIEW_FAIL:
-            return {
-                ...state,
-                loading: false,
-                error: action.payload,
-            };
+        return {
+            ...state,
+            loading: false,
+            error: action.payload,
+        };
         case DELETE_REVIEW_RESET:
-            return {
-                ...state,
-                isDeleted: false,
-            };
+        return {
+            ...state,
+            isDeleted: false,
+        };
         case CLEAR_ERRORS:
-            return {
-                ...state,
-                error: null,
-            };
+        return {
+            ...state,
+            error: null,
+        };
 
         default:
-            return state;
+        return state;
     }
 };
